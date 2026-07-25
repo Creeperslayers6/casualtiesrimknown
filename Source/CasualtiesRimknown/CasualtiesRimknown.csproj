@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CasualtiesRimknown_Mod.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_RemoveTraits.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_RemoveHediffs.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_SetSkills.cs" />
+    <Compile Include="HediffComp\HediffComp_RemoveTraits.cs" />
+    <Compile Include="HediffComp\HediffComp_RemoveHediffs.cs" />
+    <Compile Include="HediffComp\HediffComp_SetSkills.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

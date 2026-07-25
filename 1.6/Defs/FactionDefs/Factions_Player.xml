@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>CR_PlayerExpieColony</defName>
+		<label>New Escapees</label>
+		<description>A colony of recently-escaped sawians from the Grey Planet.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Researcher</basicMemberKind> <!-- REVIEW! -->
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker> <!-- REVIEW! -->
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker> <!-- REVIEW! -->
+		<allowedCultures><li>Corunan</li></allowedCultures> <!-- REVIEW -->
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li> <!-- REVIEW! -->
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<forageabilityFactor>1.5</forageabilityFactor> <!-- Time spent on the Grey Planet taught them well. -->
+		<startingResearchTags>
+			<li>ClassicStart</li> <!-- REVIEW! -->
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li> <!-- REVIEW! -->
+			<li>ClassicStartTechprints</li> <!-- REVIEW! -->
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li> <!-- REVIEW! -->
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

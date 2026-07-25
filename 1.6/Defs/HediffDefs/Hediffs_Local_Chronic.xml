@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="ChronicDiseaseBase">
+		<defName>CR_Hollow</defName>
+		<label>Hollow</label>
+		<labelNoun>a hollow mind</labelNoun>
+		<description>Neurological condition which presents with a near complete loss of personality and memory. Patients also appear unfazed by stress factors which usually causes breakdowns./n/nThis condition seemingly can not be cured and in rare cases may cause a hatred for "Witches".</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerSecond">
+				<severityPerSecond>0.1</severityPerSecond>
+			</li>
+			<li Class="CasualtiesRimknown.HediffCompProperties_RemoveHediffs">
+				<hediffs>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+				</hediffs>
+			</li>
+			<li Class="CasualtiesRimknown.HediffCompProperties_RemoveTraits">
+				<traits>
+					<li>Nudist</li>
+					<li>Bloodlust</li>
+					<li>Kind</li>
+					<li>Psychopath</li>
+					<li>Cannibal</li>
+					<li>Abrasive</li>
+					<li>TooSmart</li>
+					<li>Brawler</li>
+					<li>Masochist</li>
+					<li>NightOwl</li>
+					<li>Greedy</li>
+					<li>Jealous</li>
+					<li>Ascetic</li>
+					<li>Gay</li>
+					<li>Bisexual</li>
+					<li>Asexual</li>
+					<li>Pyromaniac</li>
+					<li>Wimp</li>
+					<li>Nimble</li>
+					<li>FastLearner</li>
+					<li>SlowLearner</li>
+					<li>Undergrounder</li>
+					<li>Transhumanist</li>
+					<li>BodyPurist</li>
+					<li>DislikesMen</li>
+					<li>DislikesWomen</li>
+					<li>TorturedArtist</li>
+					<li>Gourmand</li>
+					<li>SpeedOffset</li>
+					<li>DrugDesire</li>
+					<li>NaturalMood</li>
+					<li>Nerves</li>
+					<li>Neurotic</li>
+					<li>Industriousness</li>
+					<li>PsychicSensitivity</li>
+					<li>ShootingAccuracy</li>
+					<li>Occultist</li>
+					<li>Joyous</li>
+					<li>Disturbing</li>
+					<li>VoidFascination</li>
+					<li>Recluse</li>
+				</traits>
+			</li>
+			<li Class="CasualtiesRimknown.HediffCompProperties_SetSkills">
+				<skills>
+					<Construction>0</Construction>
+					<Plants>0</Plants>
+					<Intellectual>0</Intellectual>
+					<Mining>0</Mining>
+					<Shooting>0</Shooting>
+					<Melee>0</Melee>
+					<Social>0</Social>
+					<Animals>0</Animals>
+					<Cooking>0</Cooking>
+					<Medicine>0</Medicine>
+					<Artistic>0</Artistic>
+					<Crafting>0</Crafting>
+				</skills>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>debug_pain</label>
+				<partEfficiencyOffset></partEfficiencyOffset>
+				<painOffset>1</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>debug_hollowed</label>
+				<minSeverity>1</minSeverity>
+				<blocksMentalBreaks>true</blocksMentalBreaks>
+				<blocksInspirations>true</blocksInspirations>
+				<pctAllThoughtNullification>1</pctAllThoughtNullification>
+				<overrideMoodBase>0.5</overrideMoodBase>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>-1</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
+	<packageId>Creeperslayers6.CasualtiesRimknown</packageId>
+	<name>Casualties: Rimknown</name>
+	<author>Creeperslayers6</author>
+	<description>Insert Description Here!</description>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
+			<packageId>Erin.Expie</packageId>
+			<displayName>Erin's Experiment (Expie)</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	
+	<loadAfter>
+		<li>ludeon.rimworld</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>Erin.Expie</li>
+	</loadAfter>
 	
 </ModMetaData>
