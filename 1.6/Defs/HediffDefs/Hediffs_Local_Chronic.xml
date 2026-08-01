@@ -4,7 +4,11 @@
 		<defName>CR_Hollow</defName>
 		<label>Hollow</label>
 		<labelNoun>a hollow mind</labelNoun>
-		<description>Neurological condition which presents with a near complete loss of personality and memory. Patients also appear unfazed by stress factors which usually causes breakdowns./n/nThis condition seemingly can not be cured and in rare cases may cause a hatred for "Witches".</description>
+		<description>Neurological condition which presents with a near complete loss of personality and memory. Patients also appear unfazed by stress factors which usually causes breakdowns.\n\nThis condition seemingly can not be cured and in rare cases may cause a hatred for "Witches".</description>
+		<descriptionHyperlinks>
+			<ThingDef>CR_Mindwipe</ThingDef>
+		</descriptionHyperlinks>
+		<maxSeverity>1</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerSecond">
 				<severityPerSecond>0.1</severityPerSecond>
@@ -79,7 +83,6 @@
 		</comps>
 		<stages>
 			<li>
-				<label>debug_pain</label>
 				<partEfficiencyOffset></partEfficiencyOffset>
 				<painOffset>1</painOffset>
 				<capMods>
@@ -90,12 +93,11 @@
 				</capMods>
 			</li>
 			<li>
-				<label>debug_hollowed</label>
 				<minSeverity>1</minSeverity>
 				<blocksMentalBreaks>true</blocksMentalBreaks>
 				<blocksInspirations>true</blocksInspirations>
 				<pctAllThoughtNullification>1</pctAllThoughtNullification>
-				<overrideMoodBase>0.5</overrideMoodBase>
+				<overrideMoodBase>0.45</overrideMoodBase>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>

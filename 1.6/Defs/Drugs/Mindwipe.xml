@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="DrugBase">
+		<defName>CR_Mindwipe</defName>
+		<label>mindwipe</label>
+		<description>A glitterworld-tech drug which leaves patients completely devoid of their memories, leaving behind an empty husk only capable of performing basic tasks.\n\nSawians report this drug is on administered as a last resort when non-treatment will result in death. Conventional medicine/treatment is ineffective.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CR_Hollow</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Item/Drug/Mindwipe</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.45</Mass>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<minRewardCount>3</minRewardCount>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<drugCategory>Medical</drugCategory>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}</ingestReportString>
+			<chairSearchRadius>0</chairSearchRadius>
+			<tableDesired>false</tableDesired>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CR_Hollow</hediffDef>
+					<severity>0.01</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

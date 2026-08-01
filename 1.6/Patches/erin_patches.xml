@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Last Stand Gene Injection -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/XenotypeDef[defName="ERN_Expie"]/genes/li[text()="ERN_ExpieVoice"]</xpath>
+		<value>
+			<li>CR_LastStand</li>
+		</value>
+	</Operation>
+</Patch>

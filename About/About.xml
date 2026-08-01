@@ -10,6 +10,12 @@
 
 	<modDependencies>
 		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
 		</li>
@@ -26,6 +32,7 @@
 	</modDependencies>
 	
 	<loadAfter>
+		<li>brrainz.harmony</li>
 		<li>ludeon.rimworld</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>Erin.Expie</li>
