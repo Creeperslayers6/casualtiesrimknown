@@ -7,4 +7,13 @@
 			<li>CR_LastStand</li>
 		</value>
 	</Operation>
+	
+	<!-- Lore Accurate Experiment Name Injection-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="ERN_Expie"]</xpath>
+		<value>
+			<nameMaker>CR_NamerPersonExperiment</nameMaker>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		</value>
+	</Operation>
 </Patch>

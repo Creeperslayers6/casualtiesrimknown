@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>CR_Chipped</defName>
+		<hediffClass>CasualtiesRimknown.Hediffs.Hediff_Chipped</hediffClass>
+		<label>uni-health brain chip</label>
+		<description>A neural implant which allows its user to closely track their vitals and other medically-relevant information.\n\nThe chip also seem capable to transmitting and receiving information to a central control station.</description>
+		<descriptionShort>A neural implant which allows its user to closely track their vitals.</descriptionShort>
+		<duplicationAllowed>false</duplicationAllowed>
+		<defaultInstallPart>Brain</defaultInstallPart>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<minSeverity>5</minSeverity>
+				<label>INTRACRANIAL EXPLOSIVE DEVICE ARMED</label>
+				<lifeThreatening>true</lifeThreatening>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SurgeryInspectable">
+				<surgicalDetectionDesc>{PAWN_nameDef} has a chip embedded in {PAWN_possessive} brain. It appears benign now, but {SURGEON_nameDef} is worried about a component attached to it. A highly skilled doctor might be able to remove it.</surgicalDetectionDesc>
+			</li>
+			<li Class="HediffCompProperties_ReactOnDamage">
+				<damageDefIncoming>EMP</damageDefIncoming>
+				<createHediff>BrainShock</createHediff>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

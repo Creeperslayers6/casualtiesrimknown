@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========== Company Fighters =========-->
+	<PawnKindDef Name="CompanyExpieBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionDef>CR_TheCompany</defaultFactionDef>
+		<maxGenerationAge>25</maxGenerationAge>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<!-- Backstory? -->
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<disallowedTraits>
+			<li>Nudist</li>
+		</disallowedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef Name="Company_Expie_TroopBase" ParentName="CompanyExpieBase" Abstract="True">
+		<isFighter>true</isFighter>
+		<combatPower>60</combatPower>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="Company_Expie_TroopBase" Name="CR_CorpUntrainedTroop">
+		<defName>CR_CorporateUntrainedTroop</defName>
+		<label>untrained troop</label>
+		<gearHealthRange>0.8~3</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<apparelMoney>400~600</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<weaponMoney>250~400</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialWillRange>0~3</initialWillRange>
+		<initialResistanceRange>10~18</initialResistanceRange>
+		<combatEnhancingDrugsChance>0.10</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CR_CorpUntrainedTroop">
+		<defName>CR_CorporateUntrainedTroopChipped</defName>
+		<startingHediffs>
+			<li>
+				<def>CR_Chipped</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="Company_Expie_TroopBase" Name="CR_CorpTrainedTroop">
+		<defName>CR_CorporateTrainedTroop</defName>
+		<label>trained troop</label>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelMoney>600~1000</apparelMoney>
+		<apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<weaponMoney>300~600</weaponMoney>
+		<techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>400~1400</techHediffsMoney>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialWillRange>3~8</initialWillRange>
+		<initialResistanceRange>13~28</initialResistanceRange>
+		<combatEnhancingDrugsChance>0.4</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~4</combatEnhancingDrugsCount>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CR_CorpTrainedTroop">
+		<defName>CR_CorporateTrainedTroopChipped</defName>
+		<startingHediffs>
+			<li>
+				<def>CR_Chipped</def>
+			</li>
+		</startingHediffs>
+		<factionLeader>true</factionLeader>
+	</PawnKindDef>
+</Defs>

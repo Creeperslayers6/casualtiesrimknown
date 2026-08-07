@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- THE COMPANY FACTION | HOSTILE -->
+	<FactionDef ParentName="FactionBase">
+		<defName>CR_TheCompany</defName>
+		<label>a spacer corporation</label>
+		<fixedName>The Company™</fixedName>
+		<categoryTag>CR_TheCompany</categoryTag>
+		<description>Test Description</description>
+		<pawnSingular>expendable</pawnSingular>
+		<pawnsPlural>expendables</pawnsPlural>
+		<settlementGenerationWeight>0.15</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>captain</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<techLevel>Spacer</techLevel>
+		<factionNameMaker>NamerFactionEmpire</factionNameMaker> <!-- REVIEW!!! -->
+		<settlementNameMaker>CR_NamerSettlementCompany</settlementNameMaker>
+		<allowedCultures> <!-- REVIEW!!! -->
+			<li>Sophian</li>
+		</allowedCultures>
+		<arrivalLayerWhitelist>
+			<li>Surface</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">Orbit</li>
+		</arrivalLayerWhitelist>
+		<requiredMemes>
+			<li MayRequire="Ludeon.Rimworld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.Rimworld.Ideology">Loyalist</li>
+		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="Ludeon.Rimworld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.Rimworld.Ideology">Loyalist</li>
+		</allowedMemes>
+		<disallowedPrecepts>
+			<li>Slavery_Classic</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>ImperialCommon</li> <!-- REVIEW!!! -->
+					<li>CR_ExpieChildCompany</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<xenotypeSet>
+			<xenotypeChances>
+				<ERN_Expie>999</ERN_Expie>
+			</xenotypeChances>
+		</xenotypeSet>
+		<naturalEnemy>true</naturalEnemy>
+		<permanentEnemyToEveryoneExcept>
+			<li>OutlanderCivil</li>
+			<li>TribeCivil</li>
+			<li>PlayerTribe</li>
+			<li>PlayerColony</li>
+			<li>Ancients</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">TradersGuild</li>
+		</permanentEnemyToEveryoneExcept>
+		<apparelStuffFilter>
+			<stuffCategoriesToAllow>
+				<li>Metallic</li>
+				<li>Fabric</li>
+			</stuffCategoriesToAllow>
+			<disallowedThingDefs>
+				<li>DevilstrandCloth</li>
+			</disallowedThingDefs>
+		</apparelStuffFilter>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<colorSpectrum>
+			<li>(0.85, 0.75, 0.85)</li>
+		</colorSpectrum>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<!--Constant 1 at all points levels-->
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>EmpireRaidLootMaker</raidLootMaker> <!-- REVIEW!!! -->
+		<maxPawnCostPerTotalPointsCurve> <!-- REVIEW!!!!! -->
+			<points>
+				<li>(500, 100)</li>
+				<!-- Can always use relatively strong pawns, because empire doesn't really have weak ones -->
+				<li>(1000, 150)</li>
+				<li>(2000, 250)</li>
+				<li>(2001, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers> <!-- REVIEW!!! -->
+			<li>
+				<!-- Normal fights -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<CR_CorporateUntrainedTroopChipped>4</CR_CorporateUntrainedTroopChipped>
+					<CR_CorporateUntrainedTroop>1</CR_CorporateUntrainedTroop>
+					<CR_CorporateTrainedTroopChipped>2</CR_CorporateTrainedTroopChipped>
+					<CR_CorporateTrainedTroop>0.3</CR_CorporateTrainedTroop>
+			</options>
+			</li>
+			<li>
+				<!-- breach fights -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<CR_CorporateUntrainedTroopChipped>4</CR_CorporateUntrainedTroopChipped>
+					<CR_CorporateUntrainedTroop>1</CR_CorporateUntrainedTroop>
+					<CR_CorporateTrainedTroopChipped>2</CR_CorporateTrainedTroopChipped>
+					<CR_CorporateTrainedTroop>0.3</CR_CorporateTrainedTroop>
+				</options>
+			</li>
+			<li>
+				<!-- Base defense, mainly ranged with melee mix-ins -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<CR_CorporateUntrainedTroopChipped>7</CR_CorporateUntrainedTroopChipped>
+					<CR_CorporateUntrainedTroop>1</CR_CorporateUntrainedTroop>
+					<CR_CorporateTrainedTroopChipped>1</CR_CorporateTrainedTroopChipped>
+					<CR_CorporateTrainedTroop>0.3</CR_CorporateTrainedTroop>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>75</configurationListOrderPriority>
+		<disallowedRaidAgeRestrictions>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+		</disallowedRaidAgeRestrictions>
+		<canRequestTraders>false</canRequestTraders>
+		<canGenerateQuestSites>false</canGenerateQuestSites>
+	</FactionDef>
+	
+	<!-- ========= Names ========== -->
+	<RulePackDef>
+		<defName>CR_NamerSettlementCompany</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=12)->[townname_wordgen]</li>
+				<li>r_name(p=6)->[townname_fixed]</li>
+				<li>r_name(p=4)->[townname_combo]</li>
+				<li>r_name->[townname_near]</li>
+
+				<li>topicalnoun->[Game]</li>
+				<li>topicalnoun->[BodyPart]</li>
+
+				<li>townname_combo->[topicalnoun] [TerrainFeature]</li>
+				<li>townname_combo->[topicalnoun] [Community]</li>
+				<li>townname_combo->[topicalnoun]'s [TerrainFeature]</li>
+				<li>townname_combo->[topicalnoun]'s [Community]</li>
+				<li>townname_combo(p=2)->[concept_positive]'s [TerrainFeature]</li>
+				<li>townname_combo(p=2)->[concept_positive] [TerrainFeature]</li>
+				<li>townname_combo(p=2)->[concept_positive] [Community]</li>
+
+				<li>townname_near->[nearnameinitial]-at-the-[TerrainFeature]</li>
+				<li>townname_near->[nearnameinitial]-by-the-[TerrainFeature]</li>
+				<li>townname_near->[nearnameinitial]-on-the-[TerrainFeature]</li>
+				<li>nearnameinitial->[townname_wordgen]</li>
+				<li>nearnameinitial->[Community]</li>
+
+				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
+				<li>townname_wordgen(p=2)->[SylE][townend]</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE][townend]</li>
+				<li>townname_wordgen->[TerrainFeature][townend]</li>
+				<li>townname_wordgen->[topicalnoun][townend]</li>
+				<li>townend->ville</li>
+				<li>townend->town</li>
+				<li>townend->hurst</li>
+				<li>townend->bourne</li>
+				<li>townend->brad</li>
+				<li>townend->dale</li>
+				<li>townend->hope</li>
+				<li>townend->ing</li>
+				<li>townend->ness</li>
+				<li>townend->mere</li>
+				<li>townend->shaw</li>
+				<li>townend->wick</li>
+				<li>townend->ton</li>
+				<li>townend->ston</li>
+				<li>townend->os</li>
+				<li>townend->den</li>
+				<li>townend->tas</li>
+				<li>townend->wood</li>
+				<li>townend->land</li>
+				<li>townend->worth</li>
+				<li>townend->roon</li>
+				<li>townend->ron</li>
+				<li>townend->well</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>townname_fixed->Names/OutlanderTown</li>
+				<li>concept_positive->Words/Nouns/Concepts_Positive</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

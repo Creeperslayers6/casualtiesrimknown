@@ -20,7 +20,8 @@ namespace CasualtiesRimknown
 
         private bool resurrecting;
         private bool IsHollowed => pawn.health.hediffSet.HasHediff(DefOfs.HediffDefOf.CR_Hollow); // Hollowed Pawns can't Last Stand!
-        public bool CouldResurrect => usesLeft > 0 && !IsHollowed;
+        private bool BrainIntact => pawn.health.hediffSet.GetPartHealth(pawn.health.hediffSet.GetBrain()) > 0; // Brain must be intact to trigger Last Stand!
+        public bool CouldResurrect => usesLeft > 0 && !IsHollowed && BrainIntact;
         
         private float mentalBreakThreshold = 0.2f;
 
@@ -143,8 +144,8 @@ namespace CasualtiesRimknown
                 return;
             }
             lastKnownMood = (lastKnownMood + pawn.needs.mood.CurLevelPercentage) / 2;
-            string newString = pawn.Name + " new tracked mood: " + lastKnownMood + " : " + NormalizedMoodValue + " | " + pawn.mindState.mentalBreaker.BreakThresholdMajor;
-            Messages.Message(newString, MessageTypeDefOf.NeutralEvent);
+            //string newString = pawn.Name + " new tracked mood: " + lastKnownMood + " : " + NormalizedMoodValue + " | " + pawn.mindState.mentalBreaker.BreakThresholdMajor;
+            //Messages.Message(newString, MessageTypeDefOf.NeutralEvent);
         }
 
         public bool SucceedLastStandRoll()

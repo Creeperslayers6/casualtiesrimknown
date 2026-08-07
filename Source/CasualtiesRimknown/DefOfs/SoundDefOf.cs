@@ -9,13 +9,12 @@ using Verse;
 namespace CasualtiesRimknown.DefOfs
 {
     [DefOf]
-    public static class HediffDefOf
+    public static class SoundDefOf
     {
-        public static HediffDef CR_Hollow;
-        public static HediffDef CR_Chipped;
-        static HediffDefOf()
+        public static SoundDef CR_BrainChip_SelfDestruct;
+        static SoundDefOf()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));
+            DefOfHelper.EnsureInitializedInCtor(typeof(SoundDefOf));
         }
     }
 }

@@ -40,13 +40,15 @@
 		<backstoryFilters>
 			<li>
 				<categories>
-					<li>Outlander</li> <!-- REVIEW!!!! - Should be standard unchipped expie backstory -->
+					<li>CR_ExpieGreyPlanet</li> <!-- REVIEW!!!! - Should be standard unchipped expie backstory -->
+					<li>CR_ExpieChildCompany</li>
 				</categories>
 				<commonality>0.95</commonality>
 			</li>
 			<li>
 				<categories>
 					<li>Offworld</li> <!-- REVIEW!!!! - Should be The Company's Expie Soldiers-->
+					<li>CR_ExpieChildCompany</li>
 				</categories>
 				<commonality>0.05</commonality>
 			</li>
