@@ -62,8 +62,10 @@
     <Compile Include="DefOfs\GeneDefOf.cs" />
     <Compile Include="DefOfs\HediffDefOf.cs" />
     <Compile Include="DefOfs\SoundDefOf.cs" />
+    <Compile Include="DefOfs\ThingDefOf.cs" />
     <Compile Include="DefOfs\ThoughtDefOf.cs" />
     <Compile Include="Hediffs\Hediff_Chipped.cs" />
+    <Compile Include="JobGivers\JobGiver_SeekingMindwipe.cs" />
     <Compile Include="MapComponent\LastStandManager.cs" />
     <Compile Include="Gene\Gene_LastStand.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_RemoveTraits.cs" />
@@ -72,6 +74,9 @@
     <Compile Include="HediffComp\HediffComp_RemoveTraits.cs" />
     <Compile Include="HediffComp\HediffComp_RemoveHediffs.cs" />
     <Compile Include="HediffComp\HediffComp_SetSkills.cs" />
+    <Compile Include="MentalBreakWorkers\MentalBreakWorker_SeekingMindwipe.cs" />
+    <Compile Include="MentalStates\MentalState_SeekingMindwipe.cs" />
+    <Compile Include="MentalStateWorkers\MentalStateWorker_SeekingMindwipe.cs" />
     <Compile Include="Patches\Patch_Corpse.cs" />
     <Compile Include="Patches\Patch_Medical.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

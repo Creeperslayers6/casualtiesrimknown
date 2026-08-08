@@ -5,7 +5,7 @@
 		<label>New Escapees</label>
 		<description>A colony of recently-escaped sawians from the Grey Planet.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Researcher</basicMemberKind> <!-- REVIEW! -->
+		<basicMemberKind>Colonist</basicMemberKind> <!-- REVIEW! -->
 		<pawnSingular>colonist</pawnSingular>
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Industrial</techLevel>
@@ -15,7 +15,8 @@
 		<backstoryFilters>
 			<li>
 				<categories>
-					<li>Outlander</li> <!-- REVIEW! -->
+					<li>CR_ExpieGreyPlanet</li>
+					<li>CR_ExpieChildCompany</li>
 				</categories>
 			</li>
 		</backstoryFilters>

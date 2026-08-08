@@ -173,6 +173,49 @@
 			<Pyromaniac>0</Pyromaniac>
 		</forcedTraits>
 	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_CerealTrader11</defName>
+		<title>cereal trader</title>
+		<titleShort>trader</titleShort>
+		<description>Without any personal aspirations, [PAWN_nameDef] stuck to the cargo mission, until [PAWN_pronoun] encountered a large stash of cereal and milk. Smittened by its taste, [PAWN_nameDef] switched [PAWN_possessive] plans to focus on distributing cereal to as many sawians as possible.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Social>2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_TrapDefuser12</defName>
+		<title>trap defuser</title>
+		<titleShort>defuser</titleShort>
+		<description>During [PAWN_nameDef] stay on the grey planet, [PAWN_pronoun] made it [PAWN_possessive] mission to disarm as many traps as [PAWN_pronoun] could to make transit in the planet as safe as possible.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Construction>3</Construction>
+			<Mining>2</Mining>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Mining</li>
+			<li>Constructing</li>
+		</requiredWorkTags>
+	</BackstoryDef>
 	
 	<!-- Grey Planet Colony Skilled -->
 	<BackstoryDef>
@@ -234,6 +277,7 @@
 		<title>colony courier</title>
 		<titleShort>courier</titleShort>
 		<description>[PAWN_nameDef] was a courier who swiftly traversed from colony to colony. Carrying critical medical supplies and plans for the 'Interplanetary Escape Project' has given [PAWN_nameDef] unparalleled agility, but at the cost of [PAWN_pronoun] physical toughness.</description>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_Expie_GreyPlanet</li>
 		</spawnCategories>
@@ -251,5 +295,45 @@
 			<Nimble>0</Nimble>
 			<Delicate>0</Delicate>
 		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_CaveFarmer13</defName>
+		<title>cave farmer</title>
+		<titleShort>farmer</titleShort>
+		<description>In [PAWN_nameDef]'s colony, [PAWN_pronoun] was entrusted with cultivating the colony various plants like, glowplant, hydreed, stoneplant, etc. While the rimworld natural fauna is different from those of the grey planet, [PAWN_nameDef] has had an easy time adopting to the new crops.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Plants>5</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_ColonyBuilder14</defName>
+		<title>colony builder</title>
+		<titleShort>builder</titleShort>
+		<description>Tearing down life pods, and dismantling old structures with [PAWN_possessive] plasma cutter, [PAWN_nameDef] spent a significant amount of [PAWN_possessive] time building shelters and other buildings at [PAWN_possessive] colony.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Construction>4</Construction>
+			<Mining>3</Mining>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</requiredWorkTags>
 	</BackstoryDef>
 </Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MentalBreakDef>
+		<defName>CR_SeekingMindwipe</defName>
+		<mentalState>CR_SeekingMindwipe</mentalState>
+		<workerClass>CasualtiesRimknown.MentalBreakWorkers.MentalBreakWorker_SeekingMindwipe</workerClass>
+		<intensity>Extreme</intensity>
+		<baseCommonality>0.5</baseCommonality>
+	</MentalBreakDef>
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>CR_SeekingMindwipe</defName>
+		<stateClass>CasualtiesRimknown.MentalStates.MentalState_SeekingMindwipe</stateClass>
+		<workerClass>CasualtiesRimknown.MentalStateWorkers.MentalStateWorker_SeekingMindwipe</workerClass>
+		<label>seeking mindwipe</label>
+		<category>Misc</category>
+		<blockInteractionInitiationExcept>
+		</blockInteractionInitiationExcept>
+		<blockInteractionRecipientExcept>
+		</blockInteractionRecipientExcept>
+		<blockRandomInteraction>true</blockRandomInteraction>
+		
+		<minTicksBeforeRecovery>40000</minTicksBeforeRecovery>
+		<maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
+		<recoverFromSleep>true</recoverFromSleep>
+		<nameColor>(0.5, 0.9, 0.5)</nameColor>
+		<moodRecoveryThought>Catharsis</moodRecoveryThought>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<recoveryMessage>{0} is no longer seeking out mindwipe.</recoveryMessage>
+		<beginLetter>{0}'s despair has spiraled out of control.\n\n[PAWN_pronoun] has decided to silence their thoughts by self-administering Mindwipe.</beginLetter>
+		<beginLetterDef>ThreatSmall</beginLetterDef>
+		<baseInspectLine>Mental state: Seeking out Mindwipe</baseInspectLine>
+		<allowBeatfire>false</allowBeatfire>
+	</MentalStateDef>
+	
+</Defs>
