@@ -114,4 +114,25 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+	<HediffDef>
+		<defName>CR_RapidNeuronRegenerationSickness</defName>
+		<label>rapid neuron regeneration sickness</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This person's neurons are being regenerated at a rapid-pace.\n\nWhile the condition should pass given time, the nanomachines shouldn't be disrupted with another dose, otherwise mistakes can be made.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CR_Mindwipe</ThingDef>
+		</descriptionHyperlinks>
+		<initialSeverity>1</initialSeverity>
+		<duplicationAllowed>false</duplicationAllowed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.8333</severityPerDay> <!-- Intended to last 72,000 ticks or 20 minutes IRL. A day in Rimworld is 60,000 ticks. -->
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="CasualtiesRimknown.HediffCompProperties_MindwipeOnSeverity">
+				<mindwipeSeverity>1.01</mindwipeSeverity>
+			</li>
+		</comps>
+	</HediffDef>
 </Defs>

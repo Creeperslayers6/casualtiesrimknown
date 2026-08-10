@@ -64,6 +64,8 @@
     <Compile Include="DefOfs\SoundDefOf.cs" />
     <Compile Include="DefOfs\ThingDefOf.cs" />
     <Compile Include="DefOfs\ThoughtDefOf.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_MindwipeOnSeverity.cs" />
+    <Compile Include="HediffComps\HediffComp_MindwipeOnSeverity.cs" />
     <Compile Include="Hediffs\Hediff_Chipped.cs" />
     <Compile Include="JobGivers\JobGiver_SeekingMindwipe.cs" />
     <Compile Include="MapComponent\LastStandManager.cs" />
@@ -71,9 +73,9 @@
     <Compile Include="HediffCompProperties\HediffCompProperties_RemoveTraits.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_RemoveHediffs.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_SetSkills.cs" />
-    <Compile Include="HediffComp\HediffComp_RemoveTraits.cs" />
-    <Compile Include="HediffComp\HediffComp_RemoveHediffs.cs" />
-    <Compile Include="HediffComp\HediffComp_SetSkills.cs" />
+    <Compile Include="HediffComps\HediffComp_RemoveTraits.cs" />
+    <Compile Include="HediffComps\HediffComp_RemoveHediffs.cs" />
+    <Compile Include="HediffComps\HediffComp_SetSkills.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_SeekingMindwipe.cs" />
     <Compile Include="MentalStates\MentalState_SeekingMindwipe.cs" />
     <Compile Include="MentalStateWorkers\MentalStateWorker_SeekingMindwipe.cs" />

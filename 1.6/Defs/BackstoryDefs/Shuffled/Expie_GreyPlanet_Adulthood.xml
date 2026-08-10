@@ -216,8 +216,53 @@
 			<li>Constructing</li>
 		</requiredWorkTags>
 	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_CaveArtist15</defName>
+		<title>cave artist</title>
+		<titleShort>artist</titleShort>
+		<description>Having discovered that glowfruit can be crushed into an ink, [PAWN_nameDef] decided to draw out [PAWN_possessive] thoughts onto scrap paper. [PAWN_nameDef] was unable to hold onto [PAWN_possessive] artwork, but [PAWN_pronoun] hopes that others found them during their descent.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_NaturalAsshole16</defName>
+		<title>natural born asshole</title>
+		<titleShort>asshole</titleShort>
+		<description>Despite [PAWN_nameDef]'s best efforts, [PAWN_pronoun] is unable to keep [PAWN_possessive] thoughts to [PAWN_possessive]self. Due to this, [PAWN_nameDef] has found that others will actively refuse to work with [PAWN_objective], leading to [PAWN_nameDef] learning how to survive on [PAWN_possessive] own.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Social>-4</Social>
+			<Cooking>2</Cooking>
+			<Medicine>2</Medicine>
+			<Plants>4</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Abrasive>0</Abrasive>
+		</forcedTraits>
+	</BackstoryDef>
 	
-	<!-- Grey Planet Colony Skilled -->
+	<!-- ========= Grey Planet Colony Skilled ========= -->
 	<BackstoryDef>
 		<defName>CR_Expie_ColonyUnchipper5</defName>
 		<title>colony unchipper</title>
