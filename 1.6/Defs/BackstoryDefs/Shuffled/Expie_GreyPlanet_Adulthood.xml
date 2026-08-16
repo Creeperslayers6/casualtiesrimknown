@@ -346,7 +346,7 @@
 		<defName>CR_Expie_CaveFarmer13</defName>
 		<title>cave farmer</title>
 		<titleShort>farmer</titleShort>
-		<description>In [PAWN_nameDef]'s colony, [PAWN_pronoun] was entrusted with cultivating the colony various plants like, glowplant, hydreed, stoneplant, etc. While the rimworld natural fauna is different from those of the grey planet, [PAWN_nameDef] has had an easy time adopting to the new crops.</description>
+		<description>In [PAWN_nameDef]'s colony, [PAWN_pronoun] was entrusted with cultivating the colony various plants like, glowplant, hydreed, stoneplant, etc.\n\nWhile the rimworld natural fauna is different from those of the grey planet, [PAWN_nameDef] has had an easy time adopting to the new crops.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieGreyPlanet</li>

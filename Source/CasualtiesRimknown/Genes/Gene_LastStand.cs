@@ -19,6 +19,7 @@ namespace CasualtiesRimknown
         private TickTimer warmupTimer = new TickTimer();
 
         private bool resurrecting;
+        public bool Resurrecting => resurrecting;
         private bool IsHollowed => pawn.health.hediffSet.HasHediff(DefOfs.HediffDefOf.CR_Hollow); // Hollowed Pawns can't Last Stand!
         private bool BrainIntact => pawn.health.hediffSet.GetPartHealth(pawn.health.hediffSet.GetBrain()) > 0; // Brain must be intact to trigger Last Stand!
         public bool CouldResurrect => usesLeft > 0 && !IsHollowed && BrainIntact;
@@ -30,6 +31,9 @@ namespace CasualtiesRimknown
 
         private static readonly float ResurrectDurationSeconds = 8f;
         private static readonly FloatRange WarmupSeconds = new FloatRange(1f, 2f);
+
+        private bool evaluatedChance = false;
+        public bool EvaluateChance => evaluatedChance;
 
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
@@ -57,16 +61,18 @@ namespace CasualtiesRimknown
 
         private void TryTriggerWarmupResurrection()
         {
-            Log.Message("Gene_LastStand Trigger Wakeup!");
-            if (!resurrecting && usesLeft > 0)
+            //Log.Message("Gene_LastStand Trigger Wakeup!" + " : " + CouldResurrect);
+            if (!resurrecting && CouldResurrect)
             {
                 bool passedLastChanceCheck = SucceedLastStandRoll();
+                //Log.Message("Roll Resurrect Chance: " + NormalizedMoodValue + " : " + passedLastChanceCheck);
                 if (passedLastChanceCheck)
                 {
                     resurrecting = true;
                     warmupTimer.Start(GenTicks.TicksGame, WarmupSeconds.RandomInRange.SecondsToTicks(), Use);
                 }
             }
+            evaluatedChance = true;
         }
 
         private void Use()
@@ -117,7 +123,7 @@ namespace CasualtiesRimknown
 
         public void TickRare()
         {
-            Log.Message("tick!");
+            Log.Message($"tick! : {pawn.Name}");
             if (!warmupTimer.Finished)
             {
                 warmupTimer.TickIntervalDelta();

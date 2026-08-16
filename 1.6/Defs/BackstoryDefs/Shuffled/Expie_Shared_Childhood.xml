@@ -24,7 +24,7 @@
 		<defName>CR_ExpieChild_DisturbedSleeper6</defName>
 		<title>disturbed sleeper</title>
 		<titleShort>light-sleeper</titleShort>
-		<description>As part of an experiment on sawian stamina, [PAWN_nameDef] was subjected to constant physical tests with very little sleep in-between. The experience has trained [PAWN_nameDef] how to sleep lightly, at the cost of [PAWN_possessive] cellmates.</description>
+		<description>As part of an experiment on sawian stamina, [PAWN_nameDef] was subjected to constant physical tests with very little sleep in-between.\n\nThe experience has trained [PAWN_nameDef] how to sleep lightly, at the cost of [PAWN_possessive] cellmates.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CR_ExpieChildCompany</li>
@@ -47,7 +47,7 @@
 		<defName>CR_ExpieChild_ForcedAugmentation7</defName>
 		<title>forced augmentation</title>
 		<titleShort>augmented</titleShort>
-		<description>[PAWN_nameDef] was subjected at an early age to various experiments which involved invasive body-modification while [PAWN_pronoun] was still awake. [PAWN_nameDef] is unable to look at body augments again without being reminded of the agonizing pain.</description>
+		<description>[PAWN_nameDef] was subjected at an early age to various experiments which involved invasive body-modification while [PAWN_pronoun] was still awake.\n\n[PAWN_nameDef] is unable to look at body augments again without being reminded of the agonizing pain.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CR_ExpieChildCompany</li>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef>
+		<defName>CR_SonicShockwave</defName>
+		<workerClass>CasualtiesRimknown.DamageWorkers.DamageWorker_SonicShockwave</workerClass> <!-- REVIEW!!! -->
+		<label>sonic shockwave</label>
+		<!-- Basic -->
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} had their organs perforated by barotrauma.</deathMessage>
+		<impactSoundType>Blunt</impactSoundType>
+		<makesBlood>false</makesBlood>
+		<!-- Damage -->
+		<hediff>CR_InternalBleeding</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Sharp</armorCategory>
+		<defaultDamage>75</defaultDamage>
+		<defaultArmorPenetration>1</defaultArmorPenetration>
+		<minDamageToFragment>15</minDamageToFragment>
+		<!-- Effect on Buildings -->
+		<buildingDamageFactor>0</buildingDamageFactor>
+		<buildingDamageFactorPassable>0</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>0</buildingDamageFactorImpassable>
+		<!-- Effect on Plants / Corpses -->
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<plantDamageFactor>0.85</plantDamageFactor>
+		<corpseDamageFactor>0.50</corpseDamageFactor>
+		<!-- Explosion -->
+		<explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<expolosionPropagationSpeed>1</expolosionPropagationSpeed>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+</Defs>
