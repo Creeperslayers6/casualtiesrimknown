@@ -25,6 +25,7 @@ namespace CasualtiesRimknown.Patches
             if (__instance?.InnerPawn.genes?.HasActiveGene(DefOfs.GeneDefOf.CR_LastStand) == true)
             {
                 Gene_LastStand lastStandGene = (Gene_LastStand)__instance.InnerPawn.genes.GetGene(DefOfs.GeneDefOf.CR_LastStand);
+                //Log.Message("Patch Corpse Check! - " + lastStandGene.CouldResurrect);
                 if (lastStandGene.CouldResurrect)
                 {
                     map.GetComponent<LastStandManager>().Register(__instance);

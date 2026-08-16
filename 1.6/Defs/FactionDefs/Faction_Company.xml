@@ -6,7 +6,7 @@
 		<label>a spacer corporation</label>
 		<fixedName>The Company™</fixedName>
 		<categoryTag>CR_TheCompany</categoryTag>
-		<description>Test Description</description>
+		<description>A large conglomerate based in a distant glitterworld which produces a variety of goods such as technology and advanced medicine.\n\nIt isn't clear why The Company is involving itself with this Rimworld, but many suspect it could be linked to the new furry Xenotypes that arrived a while ago. However, colonies that accept these Xenotypes or try to look into this company tend to fall into ruin.</description>
 		<pawnSingular>expendable</pawnSingular>
 		<pawnsPlural>expendables</pawnsPlural>
 		<settlementGenerationWeight>0.15</settlementGenerationWeight>
@@ -49,7 +49,7 @@
 		<backstoryFilters>
 			<li>
 				<categories>
-					<li>ImperialCommon</li> <!-- REVIEW!!! -->
+					<li>CR_ExpieCompany</li>
 					<li>CR_ExpieChildCompany</li>
 				</categories>
 			</li>

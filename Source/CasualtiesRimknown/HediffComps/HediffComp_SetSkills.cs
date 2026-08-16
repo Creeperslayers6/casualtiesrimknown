@@ -12,13 +12,17 @@ namespace CasualtiesRimknown
     {
         public HediffCompProperties_SetSkills Props => (HediffCompProperties_SetSkills)props;
 
-        public override void CompPostTickInterval(ref float severityAdjustment, int delta)
+        public override void CompPostPostAdd(DamageInfo? dinfo)
         {
-            if (!Props.manuallyTriggered && !(parent.Severity < Props.severity))
-            {
-                Trigger();
-            }
+            Trigger();
         }
+        //public override void CompPostTickInterval(ref float severityAdjustment, int delta)
+        //{
+        //    if (!Props.manuallyTriggered && !(parent.Severity < Props.severity))
+        //    {
+        //        Trigger();
+        //    }
+        //}
 
         public void Trigger()
         {

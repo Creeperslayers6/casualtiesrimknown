@@ -6,6 +6,7 @@
 		<label>uni-health brain chip</label>
 		<description>A neural implant which allows its user to closely track their vitals and other medically-relevant information.\n\nThe chip also seem capable to transmitting and receiving information to a central control station.</description>
 		<descriptionShort>A neural implant which allows its user to closely track their vitals.</descriptionShort>
+		<initialSeverity>1</initialSeverity>
 		<duplicationAllowed>false</duplicationAllowed>
 		<defaultInstallPart>Brain</defaultInstallPart>
 		<stages>
@@ -22,10 +23,6 @@
 		<comps>
 			<li Class="HediffCompProperties_SurgeryInspectable">
 				<surgicalDetectionDesc>{PAWN_nameDef} has a chip embedded in {PAWN_possessive} brain. It appears benign now, but {SURGEON_nameDef} is worried about a component attached to it. A highly skilled doctor might be able to remove it.</surgicalDetectionDesc>
-			</li>
-			<li Class="HediffCompProperties_ReactOnDamage">
-				<damageDefIncoming>EMP</damageDefIncoming>
-				<createHediff>BrainShock</createHediff>
 			</li>
 		</comps>
 	</HediffDef>

@@ -12,6 +12,9 @@ namespace CasualtiesRimknown.DefOfs
     public static class ThingDefOf
     {
         public static ThingDef CR_Mindwipe;
+
+        public static ThingDef CR_Turret_SoundCannonBasic;
+        public static ThingDef CR_Skyfaller_SoundCannonIncoming;
         static ThingDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf));

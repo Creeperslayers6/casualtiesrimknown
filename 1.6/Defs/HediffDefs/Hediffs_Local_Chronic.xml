@@ -135,4 +135,81 @@
 			</li>
 		</comps>
 	</HediffDef>
+
+	<HediffDef>
+		<defName>CR_NeuralBoosted</defName>
+		<label>neural boosted</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The brain structure was modified in a way which allows the individual to utilize more of their muscle strength. No side-effects for this condition are unknown.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CR_NeuralBooster</ThingDef>
+		</descriptionHyperlinks>
+		<initialSeverity>1</initialSeverity>
+		<duplicationAllowed>false</duplicationAllowed>
+		<comps>
+			<li Class="CasualtiesRimknown.HediffCompProperties_OnNeuralBoosting">
+				<neuralBoostPenaltySeverity>1</neuralBoostPenaltySeverity>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.25</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.75</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>4</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>2</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>CR_BrainGrowth</defName>
+		<label>brain growth</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The neurons in this person brain is regenerating, undoing damage from prior wounds.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CR_Braingrow</ThingDef>
+			<ThingDef>CR_NeuralBooster</ThingDef>
+		</descriptionHyperlinks>
+		<initialSeverity>1</initialSeverity>
+		<duplicationAllowed>false</duplicationAllowed>
+		<comps>
+			<li Class="CasualtiesRimknown.HediffCompProperties_HealBrainWounds">
+				<secondsBetweenHealCycle>1</secondsBetweenHealCycle>
+				<severityReduction>1</severityReduction>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerSecond">
+				<severityPerSecond>-0.01</severityPerSecond> <!-- Intended to last 100 seconds IRL.-->
+			</li>
+		</comps>
+	</HediffDef>
 </Defs>

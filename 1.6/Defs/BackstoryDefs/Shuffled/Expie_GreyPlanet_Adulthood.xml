@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--
+	Backstories for Experiments who were deployed on the CARGO MISSION.
+	===================================================================
+	Due to interference from sympathetic scientists, an abnormal amount
+	of experiments were sent with defective brain chips or none at all
+	(the unchipped). This allowed unchipped experiments to abandon the
+	cargo mission and setup colonies on the Grey Planet and even help
+	unchip chipped experiments.
 	
+	While many experiments did settle in the Grey Planet colonies, a
+	good number never settled down and stay on the move, living off 
+	the land.
+	
+	Once the plans for the "Interplanetary Escape Project" had been
+	completed and distributed amongst the planet, many experiments
+	were able to escape from the Grey Planet onto the nearest Rimworld,
+	where they could hopefully have an easier life, and where the Company
+	would be more exposed trying to eliminate them.
+	-->
 	<!-- Survivors -->
 	
 	<BackstoryDef>
@@ -152,7 +170,8 @@
 		<defName>CR_Expie_PyroLandscaper10</defName>
 		<title>pyro landscaper</title>
 		<titleShort>pyro</titleShort>
-		<description>[PAWN_nameDef]'s life changed when [PAWN_pronoun] discovered fire. \n\n\PLEASE FINISH THIS!!!!</description>
+		<description>Trapped within the Overgrown Depths, [PAWN_nameDef] was sure [PAWN_possessive] life was over when [PAWN_pronoun] got surrounded by thornbacks. However, by chance, [PAWN_nameDef] managed to start a fire which swarmed the caves and the thornbacks.
+		\nManaging to escape the burning cave, [PAWN_nameDef] was forever changed by this experience. Fire is the path to salvation.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieGreyPlanet</li>
@@ -221,7 +240,8 @@
 		<defName>CR_Expie_CaveArtist15</defName>
 		<title>cave artist</title>
 		<titleShort>artist</titleShort>
-		<description>Having discovered that glowfruit can be crushed into an ink, [PAWN_nameDef] decided to draw out [PAWN_possessive] thoughts onto scrap paper. [PAWN_nameDef] was unable to hold onto [PAWN_possessive] artwork, but [PAWN_pronoun] hopes that others found them during their descent.</description>
+		<description>Having discovered that glowfruit can be crushed into an ink, [PAWN_nameDef] decided to draw out [PAWN_possessive] thoughts onto scrap paper.
+		\n[PAWN_nameDef] was unable to hold onto [PAWN_possessive] artwork, but [PAWN_pronoun] hopes that others found them during their descent.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieGreyPlanet</li>
@@ -240,7 +260,8 @@
 		<defName>CR_Expie_NaturalAsshole16</defName>
 		<title>natural born asshole</title>
 		<titleShort>asshole</titleShort>
-		<description>Despite [PAWN_nameDef]'s best efforts, [PAWN_pronoun] is unable to keep [PAWN_possessive] thoughts to [PAWN_possessive]self. Due to this, [PAWN_nameDef] has found that others will actively refuse to work with [PAWN_objective], leading to [PAWN_nameDef] learning how to survive on [PAWN_possessive] own.</description>
+		<description>Despite [PAWN_nameDef]'s best efforts, [PAWN_pronoun] is unable to keep [PAWN_possessive] thoughts to [PAWN_possessive]self.
+		\nDue to this, [PAWN_nameDef] has found that others will actively refuse to work with [PAWN_objective], leading to [PAWN_nameDef] learning how to survive on [PAWN_possessive] own.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieGreyPlanet</li>
@@ -346,7 +367,7 @@
 		<defName>CR_Expie_CaveFarmer13</defName>
 		<title>cave farmer</title>
 		<titleShort>farmer</titleShort>
-		<description>In [PAWN_nameDef]'s colony, [PAWN_pronoun] was entrusted with cultivating the colony various plants like, glowplant, hydreed, stoneplant, etc. While the rimworld natural fauna is different from those of the grey planet, [PAWN_nameDef] has had an easy time adopting to the new crops.</description>
+		<description>In [PAWN_nameDef]'s colony, [PAWN_pronoun] was entrusted with cultivating the colony various plants like, glowplant, hydreed, stoneplant, etc.\n\nWhile the rimworld natural fauna is different from those of the grey planet, [PAWN_nameDef] has had an easy time adopting to the new crops.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieGreyPlanet</li>

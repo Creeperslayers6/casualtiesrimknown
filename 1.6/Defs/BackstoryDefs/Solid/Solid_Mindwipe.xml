@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Attempted to add Backstories for Mindwiped Pawns. Didn't see a way to change a Pawn's Backstory -->
+	<BackstoryDef>
+		<defName>CR_ForgottenChildhood</defName>
+		<title>???</title>
+		<titleShort>???</titleShort>
+		<description>[PAWN_nameDef] is unable to recall [PAWN_possessive] childhood.</description>
+		<shuffleable>false</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ForgottenAdulthood</defName>
+		<title>???</title>
+		<titleShort>???</titleShort>
+		<description>[PAWN_nameDef] is unable to recall [PAWN_possessive] adulthood.</description>
+		<shuffleable>false</shuffleable>
+	</BackstoryDef>
+</Defs>

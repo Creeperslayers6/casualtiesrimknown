@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Sound Cannon Base -->
+	<ThingDef ParentName="BuildingBase" Abstract="True" Name="CR_SoundCannonBase">
+		<thingClass>CasualtiesRimknown.Buildings.Building_TurretSonic</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<drawHighlight>true</drawHighlight>
+		<drawHighlightOnlyForHostile>true</drawHighlightOnlyForHostile>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<combatPower>45</combatPower> <!-- same as a scavenger --> <!-- REVIEW!!! -->
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>CR_Cannon_SoundTurret</turretGunDef>
+			<turretBurstWarmupTime>5</turretBurstWarmupTime>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>CasualtiesRimknown.PlaceWorkers.PlaceWorker_ShowTurretRadius_ArcShock</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	<!-- Sound Cannon (Basic) -->
+	<ThingDef ParentName="CR_SoundCannonBase">
+		<defName>CR_Turret_SoundCannonBasic</defName>
+		<label>sound cannon turret</label>
+		<description>An automatic sonic weapon capable of firing a 190dB blast. Covering one's ears will not protect foes nor friends alike. Due to its cheap construction, the transducer burns out immediately when firing.</description> <!-- REVIEW!!! -->
+		<graphicData>
+			<texPath>Things/Building/Security/TurretMini_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>CasualtiesRimknown/Things/Building/Security/Sound_Cannon/TurretSoundCannon_MenuIcon</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<statBases> <!-- REVIEW!!! -->
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>2700</WorkToBuild>
+			<Mass>10</Mass>
+			<Beauty>-20</Beauty>
+			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+		</statBases> <!-- REVIEW!!! -->
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until transducer replacement</fuelLabel>
+				<fuelGizmoLabel>Transducer durability</fuelGizmoLabel>
+				<outOfFuelMessage>Needs new transducer</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>1</fuelCapacity>
+				<fuelMultiplier>1</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>false</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>Stun</li>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+		</comps>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount> <!-- REVIEW!!! -->
+		<costList> <!-- REVIEW!!! -->
+			<Steel>85</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList> <!-- REVIEW!!! -->
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite> <!-- REVIEW!!! -->
+		<designationHotKey>Misc2</designationHotKey>
+		<researchPrerequisites>
+			<li>CR_SonicTransducer</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- Sound Cannon (Advanced) -->
+	<ThingDef ParentName="CR_SoundCannonBase">
+		<defName>CR_Turret_SoundCannonAdvanced</defName>
+		<label>advanced sound cannon turret</label>
+		<description>An automatic sonic weapon capable of firing a 190dB blast. Covering one's ears will not protect foes nor friends alike. Modified with improved components and an external power supply, this turret is capable of firing multiple times.</description> <!-- REVIEW!!! -->
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Building/Security/Sound_Cannon/TurretSonic_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>CasualtiesRimknown/Things/Building/Security/Sound_Cannon/TurretSoundCannon_Advanced_MenuIcon</uiIconPath>
+		<uiIconScale>0.90</uiIconScale> <!-- REVIEW!!! -->
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>9000</WorkToBuild>
+			<Mass>45</Mass>
+			<Beauty>-15</Beauty>
+			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>EMP</li>
+					<li>Stun</li>
+				</affectedDamageDefs>
+			</li>
+		</comps>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<designationHotKey>Misc2</designationHotKey>
+		<researchPrerequisites>
+			<li>CR_AdvancedSonicTransducer</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<!-- Sonic Transducer Def (Sound Cannon Turret Top) -->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>CR_Cannon_SoundTurret</defName>
+		<label>sound cannon transducer</label>
+		<description>An array of piezoelectric transducers powered by high-yield capacitors made to be mounted on a turret.</description>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Building/Security/Sound_Cannon/TurretSoundCannon_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>CasualtiesRimknown.Verbs.Verb_ArcShockwave</verbClass>
+				<range>30</range>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- Sound Cannon Skyfaller Def -->
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>CR_Skyfaller_SoundCannonIncoming</defName>
+		<label>sound cannon (incoming)</label>
+		<graphicData>
+			<texPath>Things/Special/DropPod</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>1.9</drawSize>
+		</graphicData>
+		<skyfaller>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+			<shadowSize>(2.5, 2.5)</shadowSize>
+		</skyfaller>
+	</ThingDef>
+</Defs>

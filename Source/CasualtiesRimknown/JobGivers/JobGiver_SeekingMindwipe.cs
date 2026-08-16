@@ -31,7 +31,7 @@ namespace CasualtiesRimknown.JobGivers
             {
                 return null;
             }
-            Job job = JobMaker.MakeJob(JobDefOf.Ingest, mindwipe);
+            Job job = JobMaker.MakeJob(RimWorld.JobDefOf.Ingest, mindwipe);
             job.count = 1;
             job.ignoreForbidden = IgnoreForbid(pawn);
             job.canBashDoors = true;
@@ -57,7 +57,7 @@ namespace CasualtiesRimknown.JobGivers
                 }
                 return true;
             };
-            return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(DefOfs.ThingDefOf.CR_Mindwipe), PathEndMode.OnCell, TraverseParms.For(pawn), 9999f, validator);
+            return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(DefOfs.ThingDefOf.CR_Mindwipe), PathEndMode.OnCell, TraverseParms.For(pawn, canBashDoors: true, canBashFences: true), 9999f, validator);
         }
     }
 }

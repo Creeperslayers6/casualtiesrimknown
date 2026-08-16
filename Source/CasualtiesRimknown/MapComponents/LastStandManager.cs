@@ -16,6 +16,7 @@ namespace CasualtiesRimknown
         {
             if (newCorpse?.InnerPawn.genes.HasActiveGene(DefOfs.GeneDefOf.CR_LastStand) == true)
             {
+                Log.Message("Requested Add" + newCorpse.ThingID);
                 lastStandCapableCorpses.Add(newCorpse);
             }
         }
@@ -39,6 +40,12 @@ namespace CasualtiesRimknown
                         continue;
                     }
                     Gene_LastStand firstGene = (Gene_LastStand)lastStandCapableCorpses[i].InnerPawn.genes.GetGene(DefOfs.GeneDefOf.CR_LastStand);
+                    if (firstGene.EvaluateChance && !firstGene.Resurrecting)
+                    {
+                        //Log.Message("Removing Tick Check - Failed Check! : " + lastStandCapableCorpses[i].ThingID);
+                        lastStandCapableCorpses.Remove(lastStandCapableCorpses[i]);
+                        continue;
+                    }
                     firstGene.TickRare();
                 }
             }

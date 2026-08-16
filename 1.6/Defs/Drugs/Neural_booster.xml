@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="DrugBase">
+		<defName>CR_NeuralBooster</defName>
+		<label>neural booster</label>
+		<description>A weird mix of glitterworld-tech drugs which has been claimed to improve motor function permenantly. Multiple doses are not advised.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CR_RapidNeuronRegenerationSickness</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Item/Drug/NeuralBooster</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.45</Mass>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<minRewardCount>1</minRewardCount>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<drugCategory>Medical</drugCategory>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}</ingestReportString>
+			<chairSearchRadius>0</chairSearchRadius>
+			<tableDesired>false</tableDesired>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CR_NeuralBoosted</hediffDef>
+					<severity>1</severity>
+				</li>
+				<li Class="CasualtiesRimknown.IngestionOutcomeDoers.IngestionOutcomeDoer_HealBrainWounds">
+					<severityReduction>3</severityReduction>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CR_RapidNeuronRegenerationSickness</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>DrugProduction</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+			<displayPriority>1600</displayPriority>
+		</recipeMaker>
+		<costList>
+			<CR_Braingrow>1</CR_Braingrow>
+			<CR_Mindwipe>1</CR_Mindwipe>
+			<Neutroamine>1</Neutroamine>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -4,7 +4,7 @@
 	<PawnKindDef Name="CompanyExpieBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionDef>CR_TheCompany</defaultFactionDef>
-		<maxGenerationAge>25</maxGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<!-- Backstory? -->
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>

@@ -13,6 +13,9 @@ namespace CasualtiesRimknown.DefOfs
     {
         public static HediffDef CR_Hollow;
         public static HediffDef CR_Chipped;
+
+        public static HediffDef CR_InternalBleeding;
+        public static HediffDef CR_Hemothorax;
         static HediffDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));

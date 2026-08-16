@@ -47,7 +47,7 @@
 			</li>
 			<li>
 				<categories>
-					<li>Offworld</li> <!-- REVIEW!!!! - Should be The Company's Expie Soldiers-->
+					<li>CR_ExpieCompany</li> <!-- REVIEW!!!! - Should be The Company's Expie Soldiers-->
 					<li>CR_ExpieChildCompany</li>
 				</categories>
 				<commonality>0.05</commonality>

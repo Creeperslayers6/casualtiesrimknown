@@ -36,6 +36,10 @@
       <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="0MultiplayerAPI">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2606448745\1.6\Assemblies\0MultiplayerAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -58,18 +62,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buildings\Building_TurretSonic.cs" />
     <Compile Include="CasualtiesRimknown_Mod.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_SonicShockwave.cs" />
+    <Compile Include="DefOfs\DamageDefOf.cs" />
+    <Compile Include="DefOfs\EffecterDefOf.cs" />
+    <Compile Include="DefOfs\FactionDefOf.cs" />
     <Compile Include="DefOfs\GeneDefOf.cs" />
     <Compile Include="DefOfs\HediffDefOf.cs" />
+    <Compile Include="DefOfs\JobDefOf.cs" />
     <Compile Include="DefOfs\SoundDefOf.cs" />
     <Compile Include="DefOfs\ThingDefOf.cs" />
     <Compile Include="DefOfs\ThoughtDefOf.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_HealBrainWounds.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_MindwipeOnSeverity.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_OnNeuralBoosting.cs" />
+    <Compile Include="HediffComps\HediffComp_HealBrainWounds.cs" />
     <Compile Include="HediffComps\HediffComp_MindwipeOnSeverity.cs" />
+    <Compile Include="HediffComps\HediffComp_OnNeuralBoosting.cs" />
     <Compile Include="Hediffs\Hediff_Chipped.cs" />
+    <Compile Include="Hediffs\Hediff_Hemothorax.cs" />
+    <Compile Include="Hediffs\Hediff_InternalBleeding.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_SoundCannonDrop.cs" />
+    <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_HealBrainWounds.cs" />
+    <Compile Include="JobDrivers\JobDriver_VomitBlood.cs" />
     <Compile Include="JobGivers\JobGiver_SeekingMindwipe.cs" />
-    <Compile Include="MapComponent\LastStandManager.cs" />
-    <Compile Include="Gene\Gene_LastStand.cs" />
+    <Compile Include="MapComponents\LastStandManager.cs" />
+    <Compile Include="Genes\Gene_LastStand.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_RemoveTraits.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_RemoveHediffs.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_SetSkills.cs" />
@@ -81,7 +100,11 @@
     <Compile Include="MentalStateWorkers\MentalStateWorker_SeekingMindwipe.cs" />
     <Compile Include="Patches\Patch_Corpse.cs" />
     <Compile Include="Patches\Patch_Medical.cs" />
+    <Compile Include="PlaceWorkers\PlaceWorker_ShowTurretRadius_ArcShock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\BrainHealingUtility.cs" />
+    <Compile Include="Utilities\VomitBloodUtility.cs" />
+    <Compile Include="Verbs\Verb_ArcShockwave.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
