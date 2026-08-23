@@ -67,7 +67,10 @@
     <Compile Include="DamageWorkers\DamageWorker_SonicShockwave.cs" />
     <Compile Include="DefOfs\DamageDefOf.cs" />
     <Compile Include="DefOfs\EffecterDefOf.cs" />
+<<<<<<< HEAD
     <Compile Include="DefOfs\FactionDefOf.cs" />
+=======
+>>>>>>> 988897d8c42d901fcb88f1bd671baaf847d082c8
     <Compile Include="DefOfs\GeneDefOf.cs" />
     <Compile Include="DefOfs\HediffDefOf.cs" />
     <Compile Include="DefOfs\JobDefOf.cs" />
@@ -83,8 +86,11 @@
     <Compile Include="Hediffs\Hediff_Chipped.cs" />
     <Compile Include="Hediffs\Hediff_Hemothorax.cs" />
     <Compile Include="Hediffs\Hediff_InternalBleeding.cs" />
+<<<<<<< HEAD
     <Compile Include="IncidentWorkers\IncidentWorker_SoundCannonDrop.cs" />
     <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_HealBrainWounds.cs" />
+=======
+>>>>>>> 988897d8c42d901fcb88f1bd671baaf847d082c8
     <Compile Include="JobDrivers\JobDriver_VomitBlood.cs" />
     <Compile Include="JobGivers\JobGiver_SeekingMindwipe.cs" />
     <Compile Include="MapComponents\LastStandManager.cs" />
@@ -102,7 +108,10 @@
     <Compile Include="Patches\Patch_Medical.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowTurretRadius_ArcShock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Utilities\BrainHealingUtility.cs" />
+=======
+>>>>>>> 988897d8c42d901fcb88f1bd671baaf847d082c8
     <Compile Include="Utilities\VomitBloodUtility.cs" />
     <Compile Include="Verbs\Verb_ArcShockwave.cs" />
   </ItemGroup>
