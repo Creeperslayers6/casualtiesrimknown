@@ -54,10 +54,9 @@
 			</li>
 		</backstoryFilters>
 		<caravanTraderKinds> <!-- REVIEW!!! -->
-			<li>Caravan_Outlander_BulkGoods</li>
-			<li>Caravan_Outlander_CombatSupplier</li>
-			<li>Caravan_Outlander_Exotic</li>
-			<li>Caravan_Outlander_PirateMerchant</li>
+			<li>CR_Caravan_Sawian_BulkGoods</li>
+			<li>CR_Caravan_Sawian_CombatSupplier</li>
+			<li>CR_Caravan_Sawian_Exotic</li>
 		</caravanTraderKinds> <!-- REVIEW -->
 		<visitorTraderKinds> <!-- REVIEW -->
 			<li>Visitor_Outlander_Standard</li>
