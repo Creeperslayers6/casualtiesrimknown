@@ -13,6 +13,7 @@ namespace CasualtiesRimknown.DefOfs
     {
         // Chipped Hediff
         public static SoundDef CR_BrainChip_SelfDestruct;
+        public static SoundDef CR_BrainChip_GizmoSFX;
 
         // SoundCannon ThingDef
         public static SoundDef CR_SoundCannon_Charging;

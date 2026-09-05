@@ -62,21 +62,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\Toils_Selfharm.cs" />
     <Compile Include="Buildings\Building_TurretSonic.cs" />
     <Compile Include="CasualtiesRimknown_Mod.cs" />
     <Compile Include="DamageWorkers\DamageWorker_SonicShockwave.cs" />
     <Compile Include="DefOfs\DamageDefOf.cs" />
     <Compile Include="DefOfs\EffecterDefOf.cs" />
-<<<<<<< HEAD
     <Compile Include="DefOfs\FactionDefOf.cs" />
-=======
->>>>>>> 988897d8c42d901fcb88f1bd671baaf847d082c8
     <Compile Include="DefOfs\GeneDefOf.cs" />
     <Compile Include="DefOfs\HediffDefOf.cs" />
     <Compile Include="DefOfs\JobDefOf.cs" />
     <Compile Include="DefOfs\SoundDefOf.cs" />
     <Compile Include="DefOfs\ThingDefOf.cs" />
     <Compile Include="DefOfs\ThoughtDefOf.cs" />
+    <Compile Include="DefOfs\XenotypeDefOf.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_HealBrainWounds.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_MindwipeOnSeverity.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_OnNeuralBoosting.cs" />
@@ -86,13 +85,15 @@
     <Compile Include="Hediffs\Hediff_Chipped.cs" />
     <Compile Include="Hediffs\Hediff_Hemothorax.cs" />
     <Compile Include="Hediffs\Hediff_InternalBleeding.cs" />
-<<<<<<< HEAD
     <Compile Include="IncidentWorkers\IncidentWorker_SoundCannonDrop.cs" />
     <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_HealBrainWounds.cs" />
-=======
->>>>>>> 988897d8c42d901fcb88f1bd671baaf847d082c8
+    <Compile Include="JobDrivers\JobDriver_Selfharm.cs" />
+    <Compile Include="JobDrivers\JobDriver_SelfharmEye.cs" />
+    <Compile Include="JobDrivers\JobDriver_SelfharmSlashOnce.cs" />
+    <Compile Include="JobDrivers\JobDriver_SelfharmSlashTerminal.cs" />
     <Compile Include="JobDrivers\JobDriver_VomitBlood.cs" />
     <Compile Include="JobGivers\JobGiver_SeekingMindwipe.cs" />
+    <Compile Include="JobGivers\JobGiver_SelfharmEvent.cs" />
     <Compile Include="MapComponents\LastStandManager.cs" />
     <Compile Include="Genes\Gene_LastStand.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_RemoveTraits.cs" />
@@ -102,16 +103,15 @@
     <Compile Include="HediffComps\HediffComp_RemoveHediffs.cs" />
     <Compile Include="HediffComps\HediffComp_SetSkills.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_SeekingMindwipe.cs" />
+    <Compile Include="MentalBreakWorkers\MentalBreakWorker_SelfharmEvent.cs" />
     <Compile Include="MentalStates\MentalState_SeekingMindwipe.cs" />
+    <Compile Include="MentalStates\MentalState_SelfharmEvent.cs" />
     <Compile Include="MentalStateWorkers\MentalStateWorker_SeekingMindwipe.cs" />
     <Compile Include="Patches\Patch_Corpse.cs" />
     <Compile Include="Patches\Patch_Medical.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowTurretRadius_ArcShock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Utilities\BrainHealingUtility.cs" />
-=======
->>>>>>> 988897d8c42d901fcb88f1bd671baaf847d082c8
     <Compile Include="Utilities\VomitBloodUtility.cs" />
     <Compile Include="Verbs\Verb_ArcShockwave.cs" />
   </ItemGroup>

@@ -31,5 +31,30 @@
 		<baseInspectLine>Mental state: Seeking out Mindwipe</baseInspectLine>
 		<allowBeatfire>false</allowBeatfire>
 	</MentalStateDef>
-	
+
+	<MentalBreakDef>
+		<defName>CR_SelfharmEvent</defName>
+		<mentalState>CR_SelfharmEvent</mentalState>
+		<workerClass>CasualtiesRimknown.MentalBreakWorkers.MentalBreakWorker_SelfharmEvent</workerClass>
+		<intensity>Extreme</intensity>
+		<baseCommonality>0.5</baseCommonality>
+	</MentalBreakDef>
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>CR_SelfharmEvent</defName>
+		<stateClass>CasualtiesRimknown.MentalStates.MentalState_SelfharmEvent</stateClass>
+		<label>self-harming</label>
+		<category>Misc</category>
+		<blockInteractionInitiationExcept />
+		<blockInteractionRecipientExcept />
+		<blockRandomInteraction>true</blockRandomInteraction>
+		<minTicksBeforeRecovery>40000</minTicksBeforeRecovery> <!-- REVIEW!!! -->
+		<maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery> <!-- REVIEW!!! -->
+		<recoverFromSleep>true</recoverFromSleep>
+		<nameColor>(0.5, 0.9, 0.5)</nameColor>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<beginLetter>{0}'s despair has spiraled out of control.\n\nThis Rimworld is just as miserable as the Grey Planet.\n\n{0} has decided to lash out against [PAWN_possessive]self.</beginLetter>
+		<beginLetterDef>ThreatSmall</beginLetterDef>
+		<baseInspectLine>Mental state: Self-harming</baseInspectLine>
+		<allowBeatfire>false</allowBeatfire>
+	</MentalStateDef>
 </Defs>

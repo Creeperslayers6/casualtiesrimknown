@@ -40,8 +40,8 @@ namespace CasualtiesRimknown.Hediffs
         private bool stunnedByEMP = false;
         // Timer Durations (seconds)
         private float detonationTimerDuration = 4.2f;
-        private FloatRange armingTimerDurationRange = new FloatRange(5f, 60f);
-        private float minimumArmingTime = 5f;
+        private FloatRange armingTimerDurationRange = new FloatRange(5f, 300f); // Regular Arming Time After Activation (Simulates TheCompany™ Checking On Subject)
+        private float minimumArmingTime = 5f; // Minimum Arming Time Left After Regular Arm Timer Finishes (Does not progress when stunned by EMP!)
         private float stunTimerDuration = 15f;
         // Timers
         TickTimer detonationTimer = new TickTimer();
@@ -143,8 +143,6 @@ namespace CasualtiesRimknown.Hediffs
             {
                 pawn.TakeDamage(new DamageInfo(DamageDefOf.Bomb, 999, 0, -1, pawn, pawnBrain));
             }
-            //Hediff brainInjury = pawn.health.AddHediff(DefOfs.HediffDefOf.Shredded, Part);
-            //brainInjury.Severity = 30;
         }
 
         public override void ExposeData()
@@ -206,6 +204,9 @@ namespace CasualtiesRimknown.Hediffs
             }
             commandIncreaseSeverity.action = delegate
             {
+                SoundInfo soundData = SoundInfo.OnCamera();
+                soundData.pitchFactor = 1f - ((Severity - 1) * 0.15f);
+                DefOfs.SoundDefOf.CR_BrainChip_GizmoSFX.PlayOneShot(soundData);
                 Severity = Mathf.Clamp(Severity + 1, 0, 5);
                 if (Severity == 5)
                 {

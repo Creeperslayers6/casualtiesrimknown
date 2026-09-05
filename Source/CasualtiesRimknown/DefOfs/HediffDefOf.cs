@@ -11,6 +11,10 @@ namespace CasualtiesRimknown.DefOfs
     [DefOf]
     public static class HediffDefOf
     {
+        // Rimworld HediffDef
+        public static HediffDef Scratch;
+
+        // Casualties: Rimknown HediffDef
         public static HediffDef CR_Hollow;
         public static HediffDef CR_Chipped;
 

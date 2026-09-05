@@ -125,6 +125,23 @@
 		</forcedTraits>
 	</BackstoryDef>
 	
+	<!-- Medical Experiments-->
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_BraingrowDefect12</defName>
+		<title>braingrow defect</title>
+		<titleShort>brainfried</titleShort>
+		<description>[PAWN_nameDef] brain was used to fine tune an improved version of the Braingrow Medicine.
+		\nUnfortunately, due to a miscalibration of the mechanites, [PAWN_nameDef]'s hippocampus was damaged, impairing [PAWN_possessive] ability to learn.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<forcedTraits>
+			<SlowLearner>0</SlowLearner>
+		</forcedTraits>
+	</BackstoryDef>
+	
 	<!-- Scientist' Pet Projects -->
 	<BackstoryDef>
 		<defName>CR_ExpieChild_ScienceApprentice3</defName>
@@ -234,5 +251,19 @@
 		<requiredWorkTags>
 			<li>Cooking</li>
 		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_BleakChild13</defName>
+		<title>bleak child</title>
+		<titleShort>hopeless</titleShort>
+		<description>[PAWN_nameDef]'s time with The Company™ was a complete nightmare. Between the constant experiments, crackdowns, and the Cargo Mission; [PAWN_nameDef] has become convinenced that [PAWN_possessive] life will not get better.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<forcedTraits>
+			<NaturalMood>-2</NaturalMood>
+		</forcedTraits>
 	</BackstoryDef>
 </Defs>
