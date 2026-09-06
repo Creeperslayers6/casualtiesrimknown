@@ -73,7 +73,7 @@
 		<title>uncaring opportunist</title>
 		<titleShort>opportunist</titleShort>
 		<description>[PAWN_nameDef] was delighted when [PAWN_pronoun] was informed that [PAWN_pronoun] will be deployed as part of an extermination squad. Being part of an extermination squad meant that [PAWN_pronoun] would be treated vastly better should [PAWN_pronoun] succeed.
-		\n[PAWN_nameDef] is unsure why the other experiments would object to an oppertunity such as this.</description>
+			\n[PAWN_nameDef] is unsure why the other experiments would object to an opportunity such as this.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieCompany</li>
@@ -195,8 +195,9 @@
 	<BackstoryDef>
 		<defName>CR_ExpieCorp_DrugTestbed8</defName>
 		<title>drug testbed</title>
-		<titleShort>testbed</titleShort>
-		<description>To test if combat stimulants would improve the survival rate of extermination sawians, the scientists subjected [PAWN_nameDef] to extensive drug testing. Despite their initial expectations, [PAWN_nameDef] was extremely receptive to the testing, super eager each time they went to pickup [PAWN_objective].</description>
+		<titleShort>test bed</titleShort>
+		<description>To test if combat stimulants would improve the survival rate of extermination sawians, the scientists subjected [PAWN_nameDef] to extensive drug testing.
+		\nDespite their initial expectations, [PAWN_nameDef] was extremely receptive to the testing, super eager each time they went to pickup [PAWN_objective].</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieCompany</li>

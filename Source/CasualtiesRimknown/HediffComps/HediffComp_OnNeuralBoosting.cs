@@ -19,6 +19,7 @@ namespace CasualtiesRimknown.HediffComps
             {
                 // +100 SICKNESS
                 // -30 BRAIN HEALTH
+
                 // +0.855L/m Internal Bleeding
                 BodyPartRecord pawnTorso = base.Pawn.health.hediffSet.GetBodyPartRecord(BodyPartDefOf.Torso);
                 Hediff internalBleeding = HediffMaker.MakeHediff(DefOfs.HediffDefOf.CR_InternalBleeding, base.Pawn, pawnTorso);
@@ -36,7 +37,15 @@ namespace CasualtiesRimknown.HediffComps
                         base.Pawn.health.AddHediff(hediff3);
                     }
                 }
-                // Ragdoll! 1s
+                // 80% Muscle Damage!
+                foreach (BodyPartRecord bodyPart in base.Pawn.health.hediffSet.GetNotMissingParts()
+                    .Where((BodyPartRecord part) => part.def.tags.Contains(BodyPartTagDefOf.MovingLimbCore) || part.def.tags.Contains(BodyPartTagDefOf.ManipulationLimbCore)))
+                {
+                    Hediff muscleStrain = HediffMaker.MakeHediff(DefOfs.HediffDefOf.CR_MuscleStrain, base.Pawn, bodyPart);
+                    muscleStrain.Severity = 0.8f;
+                    base.Pawn.health.AddHediff(muscleStrain);
+                }
+                // Ragdoll! 1s (second)
                 base.Pawn.jobs.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), Verse.AI.JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
             }
         }

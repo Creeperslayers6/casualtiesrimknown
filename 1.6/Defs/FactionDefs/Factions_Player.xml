@@ -11,7 +11,7 @@
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker> <!-- REVIEW! -->
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker> <!-- REVIEW! -->
-		<allowedCultures><li>Corunan</li></allowedCultures> <!-- REVIEW -->
+		<allowedCultures><li>CR_Liathian</li></allowedCultures> <!-- REVIEW -->
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -20,7 +20,7 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<factionIconPath>CasualtiesRimknown/World/WorldObjects/Expanding/MapIcon_Sawian</factionIconPath>
 		<forageabilityFactor>1.5</forageabilityFactor> <!-- Time spent on the Grey Planet taught them well. -->
 		<startingResearchTags>
 			<li>ClassicStart</li> <!-- REVIEW! -->

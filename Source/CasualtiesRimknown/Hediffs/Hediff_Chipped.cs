@@ -106,7 +106,7 @@ namespace CasualtiesRimknown.Hediffs
         // Listens for Pawn being Downed!
         public override void Notify_Downed()
         {
-            if (!deviceArming)
+            if (!deviceArming && pawn.Faction == Find.FactionManager.FirstFactionOfDef(DefOfs.FactionDefOf.CR_TheCompany))
             {
                 StartArmingSequence();
             }

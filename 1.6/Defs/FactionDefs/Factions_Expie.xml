@@ -5,17 +5,17 @@
 		<pawnsPlural>sawians</pawnsPlural>
 		<categoryTag>CR_SawianOutlander</categoryTag>
 		<listOrderPriority>10</listOrderPriority>
-		<settlementGenerationWeight>0.5</settlementGenerationWeight>
+		<settlementGenerationWeight>0.15</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>elder</leaderTitle> <!-- REVIEW -->
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath> <!-- REVIEW -->
+		<factionIconPath>CasualtiesRimknown/World/WorldObjects/Expanding/MapIcon_Sawian</factionIconPath>
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker> <!-- REVIEW -->
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures>
-			<li>Rustican</li> <!-- REVIEW -->
+			<li>CR_Liathian</li> <!-- REVIEW -->
 		</allowedCultures>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
@@ -165,7 +165,7 @@
 	<FactionDef ParentName="CR_SawianOutlanderFactionBase">
 		<defName>CR_SawianOutlanderCivil</defName>
 		<label>civil sawian settlements</label>
-		<description>These unchipped sawians have settled here for a few decades after escaping the Grey Planet./n/n FINISH THIS DESCRIPTION!!!! This particular group is accepting of other civil groups.</description>
+		<description>These unchipped sawians have settled here for a few decades after escaping the Grey Planet, only bringing some of the tech and medicine present there with them..\n\nThey usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThis particular group is accepting of other civil groups.</description>
 		<colorSpectrum>
 			<li>(0.50, 0.30, 0.50)</li>
 			<li>(0.60, 0.40, 0.90)</li>
@@ -178,7 +178,8 @@
 	<FactionDef ParentName="CR_SawianOutlanderFactionBase">
 		<defName>CR_SawianOutlanderRough</defName>
 		<label>rough sawian settlements</label>
-		<description>These unchipped sawians have settled here for a few years or a couple decades after escaping the Grey Planet./n/n FINISH THIS DESCRIPTION!!!! This particular group is traumatized by their treatment from The Company and is hostile with outsiders.</description>
+		<description>These unchipped sawians have settled here for a few decades after escaping the Grey Planet, only bringing some of the tech and medicine present there with them..\n\nThey usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThis particular group is traumatized by their treatment from The Company™ and is hostile with outsiders.</description>
+		<factionIconPath>CasualtiesRimknown/World/WorldObjects/Expanding/MapIcon_SawianRough</factionIconPath>
 		<colorSpectrum>
 			<li>(0.50, 0.10, 0.30)</li>
 			<li>(0.90, 0.40, 0.60)</li>

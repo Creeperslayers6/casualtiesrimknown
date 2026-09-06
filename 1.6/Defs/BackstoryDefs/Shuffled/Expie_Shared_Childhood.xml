@@ -64,7 +64,7 @@
 		<defName>CR_ExpieChild_Bully2</defName>
 		<title>mess hall bully</title>
 		<titleShort>bully</titleShort>
-		<description>In [PAWN_nameDef]'s section, food rations were intentionally underrationed. To survive, [PAWN_nameDef] learnt how to fight with their fists.</description>
+		<description>In [PAWN_nameDef]'s section, food rations were intentionally underrationed. To survive, [PAWN_nameDef] learnt how to fight with [PAWN_pronoun] fists.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CR_ExpieChildCompany</li>

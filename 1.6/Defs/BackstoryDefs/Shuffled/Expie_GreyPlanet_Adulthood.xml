@@ -316,7 +316,8 @@
 		<defName>CR_Expie_GuiltySoldier20</defName>
 		<title>guilty soldier</title>
 		<titleShort>ex-soldier</titleShort>
-		<description>Despite being a corporate soldier from The Company™, [PAWN_nameDef] was accepted with open arms into the colony. However, despite protests from others, [PAWN_pronoun] is unable to shake the guilt of [PAWN_possessive] actions and refuses any niceties from [PAWN_possessive] fellow colonists.</description>
+		<description>Despite being a corporate soldier from The Company™, [PAWN_nameDef] was accepted with open arms into the colony.
+		\nHowever, despite protests from others, [PAWN_pronoun] is unable to shake the guilt of [PAWN_possessive] actions and refuses any niceties from [PAWN_possessive] fellow colonists.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieGreyPlanet</li>

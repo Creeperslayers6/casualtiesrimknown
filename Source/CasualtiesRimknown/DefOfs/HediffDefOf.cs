@@ -15,6 +15,8 @@ namespace CasualtiesRimknown.DefOfs
         public static HediffDef Scratch;
 
         // Casualties: Rimknown HediffDef
+        public static HediffDef CR_MuscleStrain;
+
         public static HediffDef CR_Hollow;
         public static HediffDef CR_Chipped;
 
