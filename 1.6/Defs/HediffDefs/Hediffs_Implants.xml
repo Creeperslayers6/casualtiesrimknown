@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ====== UNI-HEALTH BRAIN CHIP ====== -->
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>CR_Chipped</defName>
 		<hediffClass>CasualtiesRimknown.Hediffs.Hediff_Chipped</hediffClass>
@@ -26,4 +27,13 @@
 			</li>
 		</comps>
 	</HediffDef>
+	
+	<!-- Needed for the Hediff Triggered Explosion! -->
+	<ThingDef>
+		<defName>CR_BrainChipBomb</defName>
+		<label>intracranial explosive device</label>
+		<description>A small explosive device embedded within the uni-health brain chip mounted on the subject's brain stem.</description>
+		<thingClass>Thing</thingClass>
+		<category>None</category>
+	</ThingDef>
 </Defs>

@@ -1,40 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--========== Company Fighters =========-->
-	<PawnKindDef Name="CompanyExpieBase" Abstract="True">
+	<PawnKindDef Name="CR_CompanyExpieBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionDef>CR_TheCompany</defaultFactionDef>
-		<maxGenerationAge>30</maxGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<!-- Backstory? -->
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<invNutrition>2.55</invNutrition>
-		<apparelTags>
-			<li>IndustrialBasic</li>
-			<li>IndustrialAdvanced</li>
-		</apparelTags>
 		<disallowedTraits>
 			<li>Nudist</li>
 		</disallowedTraits>
 	</PawnKindDef>
 
-	<PawnKindDef Name="Company_Expie_TroopBase" ParentName="CompanyExpieBase" Abstract="True">
-		<isFighter>true</isFighter>
-		<combatPower>60</combatPower>
+	<PawnKindDef Name="CR_Company_Expie_TroopBase" ParentName="CR_CompanyExpieBase" Abstract="True">
+		<styleItemTags>
+			<li>
+				<tag>Soldier</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>400~700</apparelMoney>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Cloth</stuff>
+			</li>
+		</specificApparelRequirements>
 	</PawnKindDef>
-	
-	<PawnKindDef ParentName="Company_Expie_TroopBase" Name="CR_CorpUntrainedTroop">
-		<defName>CR_CorporateUntrainedTroop</defName>
-		<label>untrained troop</label>
-		<gearHealthRange>0.8~3</gearHealthRange>
+
+	<PawnKindDef ParentName="CR_Company_Expie_TroopBase" Name="CR_CompanyExpie_Untrained" Abstract="True">
+		<gearHealthRange>0.6~2</gearHealthRange>
 		<apparelTags>
 			<li>IndustrialMilitaryBasic</li>
+			<li>BeltDefensePop</li>
 		</apparelTags>
-		<apparelMoney>400~600</apparelMoney>
-		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-		<weaponTags>
-			<li>Gun</li>
-		</weaponTags>
 		<weaponMoney>250~400</weaponMoney>
 		<techHediffsChance>0.04</techHediffsChance>
 		<techHediffsMoney>200~700</techHediffsMoney>
@@ -43,59 +54,253 @@
 			<li>Simple</li>
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
-		<initialWillRange>0~3</initialWillRange>
-		<initialResistanceRange>10~18</initialResistanceRange>
-		<combatEnhancingDrugsChance>0.10</combatEnhancingDrugsChance>
-		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CR_CorpUntrainedTroop">
-		<defName>CR_CorporateUntrainedTroopChipped</defName>
-		<startingHediffs>
-			<li>
-				<def>CR_Chipped</def>
-			</li>
-		</startingHediffs>
+	<PawnKindDef ParentName="CR_Company_Expie_TroopBase" Name="CR_CompanyExpie_Trained" Abstract="True">
+		<gearHealthRange>0.7~3.2</gearHealthRange>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>6~10</initialResistanceRange>
+		<!-- | -->
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<apparelMoney>1000~1500</apparelMoney>
+	</PawnKindDef>
+
+	<!-- =========== UNTRAINED TROOPS ========= -->
+	<!-- Corporate Fodder are sawians sent with little gear to engage in melee combat.-->
+	<PawnKindDef ParentName="CR_CompanyExpie_Untrained" Name="CR_CorporateFodder">
+		<defName>CR_CorporateFodder</defName>
+		<label>corporate fodder</label>
+		<combatPower>50</combatPower>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="Company_Expie_TroopBase" Name="CR_CorpTrainedTroop">
-		<defName>CR_CorporateTrainedTroop</defName>
-		<label>trained troop</label>
-		<gearHealthRange>0.8~2</gearHealthRange>
-		<apparelTags>
-			<li>IndustrialMilitaryBasic</li>
-			<li>IndustrialMilitaryAdvanced</li>
-		</apparelTags>
-		<apparelMoney>600~1000</apparelMoney>
-		<apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+	<!-- Corporate Grunt are sawians sent with little gear to engage in short-range ranged combat.-->
+	<PawnKindDef ParentName="CR_CompanyExpie_Untrained" Name="CR_CorporateGrunt">
+		<defName>CR_CorporateGrunt</defName>
+		<label>corporate grunt</label>
+		<combatPower>60</combatPower>
 		<weaponTags>
 			<li>Gun</li>
 		</weaponTags>
-		<weaponMoney>300~600</weaponMoney>
-		<techHediffsChance>0.1</techHediffsChance>
-		<techHediffsMoney>400~1400</techHediffsMoney>
-		<techHediffsTags>
-			<li>ImplantEmpireCommon</li>
-		</techHediffsTags>
-		<initialWillRange>3~8</initialWillRange>
-		<initialResistanceRange>13~28</initialResistanceRange>
-		<combatEnhancingDrugsChance>0.4</combatEnhancingDrugsChance>
-		<combatEnhancingDrugsCount>1~4</combatEnhancingDrugsCount>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	
+	<!-- ========= TRAINED TROOPS ========== -->
+	<!-- Corporate Soldiers are sawians sent with modest gear as general ranged infantry.-->
+	<PawnKindDef ParentName="CR_CompanyExpie_Trained" Name="CR_CorporateSoldier">
+		<defName>CR_CorporateSoldier</defName>
+		<label>corporate soldier</label>
+		<combatPower>85</combatPower>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<weaponMoney>330~650</weaponMoney>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>6~10</range>
+				<range>4~14</range>
 			</li>
 		</skills>
 	</PawnKindDef>
-
-	<PawnKindDef ParentName="CR_CorpTrainedTroop">
-		<defName>CR_CorporateTrainedTroopChipped</defName>
+	
+	<!-- Corporate Grenadiers are sawians sent with modest gear as ranged AOE fire-support.-->
+	<PawnKindDef ParentName="CR_CompanyExpie_Trained" Name="CR_CorporateGrenadier">
+		<defName>CR_CorporateGrenadier</defName>
+		<label>corporate grenadier</label>
+		<combatPower>70</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<weaponMoney>500~500</weaponMoney>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>3~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<!-- Corporate Snipers are sawians sent with light gear as long-ranged fire support.-->
+	<PawnKindDef ParentName="CR_CompanyExpie_Trained" Name="CR_CorporateMarksman">
+		<defName>CR_CorporateMarksman</defName>
+		<label>corporate marksman</label>
+		<combatPower>110</combatPower>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<weaponMoney>600~600</weaponMoney>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~16</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<!-- Corporate Breachers are sawians sent with decent gear as dedicated breach and melee units.-->
+	<PawnKindDef ParentName="CR_CompanyExpie_Trained" Name="CR_CorporateBreacher">
+		<defName>CR_CorporateBreacher</defName>
+		<label>corporate breacher</label>
+		<combatPower>120</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<weaponMoney>200~500</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<!-- ========= SENIOR TROOPS (ALWAYS CHIPPED) ========== -->
+	<!-- Senior Corporate Soldiers are experienced corporate soldiers sent with high-end gear to assist more noviced units.-->
+	<PawnKindDef ParentName="CR_CompanyExpie_Trained">
+		<defName>CR_SeniorCorporateSoldierChipped</defName>
+		<label>senior corporate soldier</label>
+		<factionLeader>true</factionLeader>
+		<combatPower>140</combatPower>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>2500~3500</apparelMoney>
+		<weaponMoney>1200~1200</weaponMoney>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>GunSingleUse</li>
+			<li>Flamethrower</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<!-- SENIOR TROOP ARE ALWAYS CHIPPED -->
 		<startingHediffs>
 			<li>
 				<def>CR_Chipped</def>
 			</li>
 		</startingHediffs>
-		<factionLeader>true</factionLeader>
+	</PawnKindDef>
+
+	<!-- >====== CHIPPED VARIENTS (SHOULD BE MAJORITY OF UNITS) ======< -->
+	<PawnKindDef ParentName="CR_CorporateFodder">
+		<defName>CR_CorporateFodderChipped</defName>
+		<startingHediffs>
+			<li>
+				<def>CR_Chipped</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CR_CorporateGrunt">
+		<defName>CR_CorporateGruntChipped</defName>
+		<startingHediffs>
+			<li>
+				<def>CR_Chipped</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CR_CorporateSoldier">
+		<defName>CR_CorporateSoldierChipped</defName>
+		<startingHediffs>
+			<li>
+				<def>CR_Chipped</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CR_CorporateMarksman">
+		<defName>CR_CorporateMarksmanChipped</defName>
+		<startingHediffs>
+			<li>
+				<def>CR_Chipped</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CR_CorporateGrenadier">
+		<defName>CR_CorporateGrenadierChipped</defName>
+		<startingHediffs>
+			<li>
+				<def>CR_Chipped</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CR_CorporateBreacher">
+		<defName>CR_CorporateBreacherChipped</defName>
+		<startingHediffs>
+			<li>
+				<def>CR_Chipped</def>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
 </Defs>

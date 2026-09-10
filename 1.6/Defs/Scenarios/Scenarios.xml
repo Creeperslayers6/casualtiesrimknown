@@ -11,10 +11,43 @@
 			</playerFaction>
 			<parts>
 				<!-- Config pages -->
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-					<def>ConfigPage_ConfigureStartingPawns</def>
+				<!--
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
 					<pawnChoiceCount>8</pawnChoiceCount>
+					<overrideKinds>
+						<li>
+							<xenotype>ERN_Expie</xenotype>
+							<pawnKind>Colonist</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>ERN_Expie</xenotype>
+							<count>3</count>
+							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+				
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				-->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<leftBehindPawnKind>CR_ExpieColonist</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>CR_ExpieColonist</kindDef>
+							<count>3</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
@@ -23,14 +56,6 @@
 				</li>
 
 				<!-- Player pawns modifiers -->
-				<li Class="ScenPart_ForcedHediff">
-					<def>ForcedHediff</def>
-					<chance>0.5</chance>
-					<context>PlayerStarter</context>
-					<hideOffMap>True</hideOffMap>
-					<hediff>CryptosleepSickness</hediff>
-					<severityRange>1~1</severityRange>
-				</li>
 
 				<!-- Player starting things -->
 				<li Class="ScenPart_StartingThing_Defined">
@@ -121,11 +146,39 @@
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>This is a test!</text>
-					<textKey>GameStartDialog</textKey>
+					<text>The pod wasn't anything too elegant, but you and your friend would take anything to get off this forsaken planet.\n\nThe pod didn't quite survive the landing, but you are alive. Now its time to turn this planet into a new home.</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 			</parts>
 		</scenario>
 	</ScenarioDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>CR_ExpieColonist</defName>
+		<label>colonist</label>
+		<defaultFactionDef>CR_PlayerExpieColony</defaultFactionDef>
+		<xenotypeSet>
+			<xenotypeChances>
+				<ERN_Expie>999</ERN_Expie>
+			</xenotypeChances>
+		</xenotypeSet>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
 </Defs>

@@ -112,7 +112,8 @@
 		<defName>CR_ExpieChild_CircadianAnomaly10</defName>
 		<title>circadian anomaly</title>
 		<titleShort>night owl</titleShort>
-		<description>[PAWN_nameDef] was used as a subject to study circadian rhythms and how light influenced sleep schedules. After months of work, the scientists were able to invert [PAWN_nameDef] rhythm. Being awake when everyone else was asleep has socially isolated [PAWN_nameDef] however.</description>
+		<description>[PAWN_nameDef] was used as a subject to study circadian rhythms and how light influenced sleep schedules. After months of work, the scientists were able to invert [PAWN_nameDef] rhythm.
+		\nBeing awake when everyone else was asleep has socially isolated [PAWN_nameDef] however.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CR_ExpieChildCompany</li>

@@ -311,7 +311,7 @@ namespace CasualtiesRimknown.Buildings
                         TryStartShootSomething(canBeginBurstImmediately: true);
                     }
                 }
-                top.TurretTopTick();
+                top.TurretTopTick(); // TODO: CHECK IF WE CAN DISABLE THIS SO THE TURRET DOESN'T ROTATE WHEN USED!
             }
             else
             {

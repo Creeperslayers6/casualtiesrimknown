@@ -9,13 +9,13 @@
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
-		<leaderTitle>elder</leaderTitle> <!-- REVIEW -->
+		<leaderTitle>elder</leaderTitle>
 		<factionIconPath>CasualtiesRimknown/World/WorldObjects/Expanding/MapIcon_Sawian</factionIconPath>
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker> <!-- REVIEW -->
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures>
-			<li>CR_Liathian</li> <!-- REVIEW -->
+			<li>CR_Liathian</li>
 		</allowedCultures>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
@@ -40,14 +40,14 @@
 		<backstoryFilters>
 			<li>
 				<categories>
-					<li>CR_ExpieGreyPlanet</li> <!-- REVIEW!!!! - Should be standard unchipped expie backstory -->
+					<li>CR_ExpieGreyPlanet</li>
 					<li>CR_ExpieChildCompany</li>
 				</categories>
 				<commonality>0.95</commonality>
 			</li>
 			<li>
 				<categories>
-					<li>CR_ExpieCompany</li> <!-- REVIEW!!!! - Should be The Company's Expie Soldiers-->
+					<li>CR_ExpieCompany</li>
 					<li>CR_ExpieChildCompany</li>
 				</categories>
 				<commonality>0.05</commonality>

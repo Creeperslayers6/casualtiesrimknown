@@ -2,7 +2,7 @@
 <Defs>
 	<DamageDef>
 		<defName>CR_SonicShockwave</defName>
-		<workerClass>CasualtiesRimknown.DamageWorkers.DamageWorker_SonicShockwave</workerClass> <!-- REVIEW!!! -->
+		<workerClass>CasualtiesRimknown.DamageWorkers.DamageWorker_SonicShockwave</workerClass>
 		<label>sonic shockwave</label>
 		<!-- Basic -->
 		<externalViolence>true</externalViolence>

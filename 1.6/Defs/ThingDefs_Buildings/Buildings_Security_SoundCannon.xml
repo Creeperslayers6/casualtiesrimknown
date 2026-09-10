@@ -14,7 +14,7 @@
 		<hasTooltip>true</hasTooltip>
 		<designationCategory>Security</designationCategory>
 		<building>
-			<combatPower>45</combatPower> <!-- same as a scavenger --> <!-- REVIEW!!! -->
+			<combatPower>60</combatPower> <!-- REVIEW!!! -->
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>CR_Cannon_SoundTurret</turretGunDef>
 			<turretBurstWarmupTime>5</turretBurstWarmupTime>
@@ -121,7 +121,7 @@
 			</shadowData>
 		</graphicData>
 		<uiIconPath>CasualtiesRimknown/Things/Building/Security/Sound_Cannon/TurretSoundCannon_Advanced_MenuIcon</uiIconPath>
-		<uiIconScale>0.90</uiIconScale> <!-- REVIEW!!! -->
+		<uiIconScale>0.90</uiIconScale>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Flammability>0.5</Flammability>

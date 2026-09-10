@@ -12,8 +12,6 @@ namespace CasualtiesRimknown.Hediffs
     {
         private float hemothoraxSeverityIncreaseValue = 0.1f;
         private Hediff hediffHemothorax = null;
-        public override string LabelBase => !pawn.RaceProps.IsMechanoid ? base.LabelBase : "CR_InternalBleeding_MechanoidLabel".Translate();
-        public override string Description => !pawn.RaceProps.IsMechanoid ?  base.Description : "CR_InternalBleeding_MechanoidDesc".Translate();
         public override void PostAdd(DamageInfo? dinfo)
         {
             base.PostAdd(dinfo);

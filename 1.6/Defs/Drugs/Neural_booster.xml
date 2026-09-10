@@ -5,6 +5,7 @@
 		<label>neural booster</label>
 		<description>A weird mix of glitterworld-tech drugs which has been claimed to improve motor function permenantly. Multiple doses are not advised.</description>
 		<descriptionHyperlinks>
+			<HediffDef>CR_NeuralBoosted</HediffDef>
 			<HediffDef>CR_RapidNeuronRegenerationSickness</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>

@@ -16,13 +16,6 @@ namespace CasualtiesRimknown
         {
             Trigger();
         }
-        //public override void CompPostTickInterval(ref float severityAdjustment, int delta)
-        //{
-        //    if (!Props.manuallyTriggered && !(parent.Severity < Props.severity))
-        //    {
-        //        Trigger();
-        //    }
-        //}
 
         public void Trigger()
         {

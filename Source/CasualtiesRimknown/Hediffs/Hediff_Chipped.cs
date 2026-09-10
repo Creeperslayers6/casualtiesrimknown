@@ -38,16 +38,35 @@ namespace CasualtiesRimknown.Hediffs
         private bool explosiveArmed = false;
         private bool deviceArming = false;
         private bool stunnedByEMP = false;
+        private bool stunnedBySolarFlare => pawn.Map.gameConditionManager.ElectricityDisabled(pawn.Map);
+
+        private bool IsStunned => stunnedByEMP || stunnedBySolarFlare; //TODO: ADD TEXT INDICATION THAT CHIP IS STUNNED!
         // Timer Durations (seconds)
         private float detonationTimerDuration = 4.2f;
         private FloatRange armingTimerDurationRange = new FloatRange(5f, 300f); // Regular Arming Time After Activation (Simulates TheCompany™ Checking On Subject)
         private float minimumArmingTime = 5f; // Minimum Arming Time Left After Regular Arm Timer Finishes (Does not progress when stunned by EMP!)
-        private float stunTimerDuration = 15f;
+        private float stunTimerDuration = 120f;
         // Timers
         TickTimer detonationTimer = new TickTimer();
         TickTimer armingTimer = new TickTimer();
         TickTimer armingTimerFinal = new TickTimer();
         TickTimer stunTimer = new TickTimer();
+        //
+        public override string LabelInBrackets
+        {
+            get
+            {
+                if (IsStunned)
+                {
+                    return "CR_NeuralChip_Stunned".Translate();
+                }
+                if (CurStage != null && !CurStage.label.NullOrEmpty())
+                {
+                    return CurStage.label;
+                }
+                return null;
+            }
+        }
         //
         private static readonly CachedTexture DetonateGizmoTexture = new CachedTexture("CasualtiesRimknown/UI/Gizmos/DetonateSkull");
 
@@ -115,7 +134,7 @@ namespace CasualtiesRimknown.Hediffs
         public override void TickInterval(int delta)
         {
             base.TickInterval(delta);
-            if (explosiveArmed && !detonationTimer.Finished && !stunnedByEMP)
+            if (explosiveArmed && !detonationTimer.Finished && !IsStunned)
             {
                 detonationTimer.TickIntervalDelta();
             }
@@ -127,7 +146,7 @@ namespace CasualtiesRimknown.Hediffs
             {
                 armingTimer.TickIntervalDelta();
             }
-            if (armingTimer.Finished && !armingTimerFinal.Finished && !stunnedByEMP)
+            if (armingTimer.Finished && !armingTimerFinal.Finished && !IsStunned)
             {
                 armingTimerFinal.TickIntervalDelta();
             }
@@ -136,12 +155,32 @@ namespace CasualtiesRimknown.Hediffs
         private void Explode()
         {
             Map currentMap = pawn.Map;
+            pawn.TakeDamage(new DamageInfo(DamageDefOf.Bomb, 50, 0, -1, pawn, null, DefOfs.ThingDefOf.CR_BrainChipBomb));
+            GenExplosion.DoExplosion(pawn.Position, currentMap, explosionRadius, DamageDefOf.Bomb, pawn, explosionDamage, -1, null, DefOfs.ThingDefOf.CR_BrainChipBomb);
+            DestroyBrain();
+        }
+
+        private void DestroyBrain()
+        {
             BodyPartRecord pawnBrain = pawn.health.hediffSet.GetBrain();
-            pawn.TakeDamage(new DamageInfo(DamageDefOf.Bomb, 50, 0, -1, pawn));
-            GenExplosion.DoExplosion(pawn.Position, currentMap, explosionRadius, DamageDefOf.Bomb, pawn, explosionDamage);
             if (pawnBrain != null)
             {
-                pawn.TakeDamage(new DamageInfo(DamageDefOf.Bomb, 999, 0, -1, pawn, pawnBrain));
+                if (pawn.Dead)
+                {
+                    BodyPartRecord pawnHead = pawn.health.hediffSet.GetBodyPartRecord(BodyPartDefOf.Head);
+                    Hediff_MissingPart headExploded = (Hediff_MissingPart)HediffMaker.MakeHediff(HediffDefOf.MissingBodyPart, pawn, pawnHead);
+                    headExploded.IsFresh = true;
+                    pawn.health.AddHediff(headExploded);
+                    Log.Message("Added Missing Head Hediff!");
+                }
+                else
+                {
+                    if (pawnBrain != null && !pawn.health.hediffSet.HasMissingPartFor(pawnBrain))
+                    {
+                        pawn.TakeDamage(new DamageInfo(DamageDefOf.Bomb, 999, 0, -1, pawn, pawnBrain, DefOfs.ThingDefOf.CR_BrainChipBomb));
+                        Log.Message("Okay, we're just blowing this head up!");
+                    }
+                }
             }
         }
 
@@ -171,6 +210,10 @@ namespace CasualtiesRimknown.Hediffs
             foreach (Gizmo gizmo in base.GetGizmos())
             {
                 yield return gizmo;
+            }
+            if (!Visible && !DebugSettings.godMode)
+            {
+                yield break;
             }
             Command_Action commandIncreaseSeverity = new Command_Action();
             commandIncreaseSeverity.icon = DetonateGizmoTexture.Texture;

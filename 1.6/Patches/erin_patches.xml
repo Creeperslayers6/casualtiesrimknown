@@ -16,4 +16,21 @@
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		</value>
 	</Operation>
+	
+	<!-- Expie' Tail Corpse Fix Patch -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="ERN_ExpieTail"]/renderNodeProperties/li</xpath>
+		<value>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+		</value>
+	</Operation>
+	
+	<!-- Revert the Base Erin' Faction Patch -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances/ERN_Expie</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances/ERN_Expie</xpath>
+	</Operation>
 </Patch>

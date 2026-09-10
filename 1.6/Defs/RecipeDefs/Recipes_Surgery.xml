@@ -30,4 +30,34 @@
 			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CR_BrainChipRemoval</defName>
+		<label>neural chip removal</label>
+		<description>Surgically removes the Uni-health Brain Chip from the patient's brain stem.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>removing a neural chip from TargetA.</jobString>
+		<workAmount>1500</workAmount>
+		<removesHediff>CR_Chipped</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s neural chip.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.5</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
 </Defs>

@@ -59,7 +59,6 @@
 				<ERN_Expie>999</ERN_Expie>
 			</xenotypeChances>
 		</xenotypeSet>
-		<naturalEnemy>true</naturalEnemy>
 		<permanentEnemyToEveryoneExcept>
 			<li>OutlanderCivil</li>
 			<li>TribeCivil</li>
@@ -100,37 +99,53 @@
 				<li>(2001, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
-		<pawnGroupMakers> <!-- REVIEW!!! -->
+		<pawnGroupMakers>
 			<li>
 				<!-- Normal fights -->
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<CR_CorporateUntrainedTroopChipped>4</CR_CorporateUntrainedTroopChipped>
-					<CR_CorporateUntrainedTroop>1</CR_CorporateUntrainedTroop>
-					<CR_CorporateTrainedTroopChipped>2</CR_CorporateTrainedTroopChipped>
-					<CR_CorporateTrainedTroop>0.3</CR_CorporateTrainedTroop>
-			</options>
+					<CR_CorporateFodderChipped>9</CR_CorporateFodderChipped>
+					<CR_CorporateFodder>1</CR_CorporateFodder>
+					<CR_CorporateGruntChipped>9</CR_CorporateGruntChipped>
+					<CR_CorporateGrunt>1</CR_CorporateGrunt>
+					<CR_CorporateSoldierChipped>18</CR_CorporateSoldierChipped>
+					<CR_CorporateSoldier>2</CR_CorporateSoldier>
+					<CR_CorporateBreacherChipped>4</CR_CorporateBreacherChipped>
+					<CR_CorporateBreacher>1</CR_CorporateBreacher>
+					<CR_CorporateMarksmanChipped>3</CR_CorporateMarksmanChipped>
+					<CR_CorporateMarksman>1</CR_CorporateMarksman>
+					<CR_SeniorCorporateSoldierChipped>2</CR_SeniorCorporateSoldierChipped>
+				</options>
 			</li>
 			<li>
 				<!-- breach fights -->
 				<kindDef>Combat</kindDef>
 				<commonality>10</commonality>
 				<options>
-					<CR_CorporateUntrainedTroopChipped>4</CR_CorporateUntrainedTroopChipped>
-					<CR_CorporateUntrainedTroop>1</CR_CorporateUntrainedTroop>
-					<CR_CorporateTrainedTroopChipped>2</CR_CorporateTrainedTroopChipped>
-					<CR_CorporateTrainedTroop>0.3</CR_CorporateTrainedTroop>
+					<CR_CorporateFodderChipped>9</CR_CorporateFodderChipped>
+					<CR_CorporateFodder>1</CR_CorporateFodder>
+					<CR_CorporateGruntChipped>9</CR_CorporateGruntChipped>
+					<CR_CorporateGrunt>1</CR_CorporateGrunt>
+					<CR_CorporateSoldierChipped>18</CR_CorporateSoldierChipped>
+					<CR_CorporateSoldier>2</CR_CorporateSoldier>
+					<CR_CorporateBreacherChipped>4</CR_CorporateBreacherChipped>
+					<CR_CorporateBreacher>1</CR_CorporateBreacher>
+					<CR_CorporateGrenadierChipped>4</CR_CorporateGrenadierChipped>
+					<CR_CorporateGrenadier>1</CR_CorporateGrenadier>
+					<CR_SeniorCorporateSoldierChipped>2</CR_SeniorCorporateSoldierChipped>
 				</options>
 			</li>
 			<li>
 				<!-- Base defense, mainly ranged with melee mix-ins -->
 				<kindDef>Settlement</kindDef>
 				<options>
-					<CR_CorporateUntrainedTroopChipped>7</CR_CorporateUntrainedTroopChipped>
-					<CR_CorporateUntrainedTroop>1</CR_CorporateUntrainedTroop>
-					<CR_CorporateTrainedTroopChipped>1</CR_CorporateTrainedTroopChipped>
-					<CR_CorporateTrainedTroop>0.3</CR_CorporateTrainedTroop>
+					<CR_CorporateFodderChipped>9</CR_CorporateFodderChipped>
+					<CR_CorporateFodder>1</CR_CorporateFodder>
+					<CR_CorporateGruntChipped>9</CR_CorporateGruntChipped>
+					<CR_CorporateGrunt>1</CR_CorporateGrunt>
+					<CR_CorporateSoldierChipped>9</CR_CorporateSoldierChipped>
+					<CR_CorporateSoldier>1</CR_CorporateSoldier>
 				</options>
 			</li>
 		</pawnGroupMakers>

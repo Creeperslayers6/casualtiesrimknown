@@ -171,7 +171,7 @@
 		<title>backstabbing charmer</title>
 		<titleShort>backstabber</titleShort>
 		<description>[PAWN_nameDef]'s job was simple. [PAWN_pronoun] would reach out with settlements that have come in contact with other sawians and gather information from them. Once [PAWN_pronoun] got all the information [PAWN_pronoun] needed. [PAWN_possessive] squad would eliminate the settlement. Nobody was to know of the existance of the sawians.
-		\nDue to [PAWN_nameDef] importance, [PAWN_pronoun] was modified to be more appealing, though [PAWN_pronoun] gained an ego through this.</description>
+		\nDue to [PAWN_nameDef] importance, [PAWN_pronoun] was modified to be more appealing, though [PAWN_pronoun] gained a bit of an ego through this.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieCompany</li>
@@ -239,5 +239,223 @@
 		<forcedTraits>
 			<Jealous>0</Jealous>
 		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_MovingTarget10</defName>
+		<title>moving target</title>
+		<titleShort>target</titleShort>
+		<description>To increase the accuracy of the chipped soldiers being deployed, [PAWN_nameDef] and a few others were selected by the scientists to serve as live moving targets. The effectiveness of the program was designated inconclusive and the ethics board soon cracked down on it.
+		\nDespite expecting a bit of a respite after the program's termination, [PAWN_nameDef] found [PAWN_possessive] being deployed instead.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>3</Melee>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_FallGuy11</defName>
+		<title>fall guy</title>
+		<titleShort>fall guy</titleShort>
+		<titleFemale>fall gal</titleFemale>
+		<titleShortFemale>fall gal</titleShortFemale>
+		<description>To test the effectiveness of the Turbulent crystal shard at reducing fall impacts, the scientists decided to use [PAWN_nameDef] by having [PAWN_objective] fall from ever increasing heights.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>2</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_UnremarkableSoldier12</defName>
+		<title>unremarkable soldier</title>
+		<titleShort>soldier</titleShort>
+		<description>After growing up, [PAWN_nameDef] was about as unremarkable as a sawian could be. [PAWN_pronoun] woke up on time, participated with the experiments with no fuss, eat [PAWN_possessive] meals, and then went to sleep.
+		\nThis demeanor didn't change once [PAWN_pronoun] was selected to be deployed.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_FieldCook13</defName>
+		<title>field cook</title>
+		<titleShort>cook</titleShort>
+		<description>Despite being deployed with food rations, deployments often ran out of food before getting the chance to be extracted.
+		\nTo reduce the number of fatalities due to starvation, [PAWN_nameDef] was taught how to scavenge food, butcher animals, and cook to feed [PAWN_possessive] unit.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Animals>3</Animals>
+			<Plants>4</Plants>
+			<Cooking>4</Cooking>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Cooking</li>
+			<li>Animals</li>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_BackseatObserver14</defName>
+		<title>backseat observer</title>
+		<titleShort>observer</titleShort>
+		<description>Tasked by a particular scientist, [PAWN_nameDef] works undercover obtaining intelligence on the state of the unchipped colonies, silently reporting it back to the scientist.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>-3</Shooting>
+			<Melee>4</Melee>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_TunnelDiver15</defName>
+		<title>tunnel diver</title>
+		<titleShort>diver</titleShort>
+		<description>On [PAWN_possessive] first deployment, [PAWN_nameDef] unit was unsuccessful {REVIEW!}</description> <!-- REVIEW!!! -->
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Mining>3</Mining>
+			<Construction>4</Construction>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Undergrounder>0</Undergrounder>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef> <!-- REVIEW!!! -->
+		<defName>CR_ExpieCorp_DisgracedPet16</defName>
+		<title>disgraced pet</title>
+		<titleShort>forsakened</titleShort>
+		<description>[PAWN_nameDef] used to be the private pet of one upper level scientist and showered with more privileges than most sawians can dream of. However, one day, the scientist out of nowhere decided to abandon [PAWN_nameDef], tossing [PAWN_pronoun] back with the rest of the sawians.
+		\nWhile [PAWN_pronoun] doesn't know what [PAWN_pronoun] wrong, the other sawians haven't forgotten watching [PAWN_objective] be paraded around the facility.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>-5</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Jealous>0</Jealous>
+		</forcedTraits>
+	</BackstoryDef> <!-- REVIEW!!! -->
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_SilentAssassin17</defName>
+		<title>silent assassin</title>
+		<titleShort>assassin</titleShort>
+		<description>[PAWN_nameDef]'s job was very simple. Assassinate anyone that The Company™ tells [PAWN_objective], even if it one of [PAWN_possessive] squadmates.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>8</Melee>
+			<Shooting>-3</Shooting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_Warmonger18</defName>
+		<title>warmonger</title>
+		<titleShort>warmonger</titleShort>
+		<description>[PAWN_nameDef] was tasked to use [PAWN_possessive] social skills to keep morale high amongst [PAWN_possessive] squadmates.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>6</Social>
+			<Melee>3</Melee>
+			<Shooting>-1</Shooting>
+			<Artistic>3</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
 	</BackstoryDef>
 </Defs>

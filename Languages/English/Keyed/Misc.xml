@@ -7,6 +7,8 @@
 	<CR_LastStandTriggered>{PAWN_nameDef}'s story does not end here!</CR_LastStandTriggered>
 	
 	<!-- Chipped -->
+	<CR_NeuralChip_Stunned>Stunned</CR_NeuralChip_Stunned>
+	
 	<CR_TerminateButton_1>Terminate</CR_TerminateButton_1>
 	<CR_TerminateButton_2>Are you sure?</CR_TerminateButton_2>
 	<CR_TerminateButton_3>Are you ABSOLUTELY sure?</CR_TerminateButton_3>
@@ -17,10 +19,6 @@
 	<CR_TerminateButton_Desc_Armed>This pawn's brain matter is about to become one with their immediate surroundings.</CR_TerminateButton_Desc_Armed>
 	
 	<CR_TerminateButton_Disabled>It's too late to change your mind.</CR_TerminateButton_Disabled>
-	
-	<!-- Internal Bleeding Hediff -->
-	<CR_InternalBleeding_MechanoidLabel>internal coolant leak</CR_InternalBleeding_MechanoidLabel>
-	<CR_InternalBleeding_MechanoidDesc>Coolant is leaking inside the part, shorting out components in the areas affected. Repairs Recommended.</CR_InternalBleeding_MechanoidDesc>
 	
 	<!-- Messages -->
 	<CR_CompanySentTrapWarningMessage>Warning: A payload from {0} has been detected entering the map!</CR_CompanySentTrapWarningMessage>

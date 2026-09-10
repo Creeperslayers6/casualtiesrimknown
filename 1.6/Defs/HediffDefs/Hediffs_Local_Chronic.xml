@@ -14,6 +14,7 @@
 			<li Class="HediffCompProperties_SeverityPerSecond">
 				<severityPerSecond>0.1</severityPerSecond>
 			</li>
+			<li Class="CasualtiesRimknown.HediffCompProperties_WipeBackstory"/>
 			<li Class="CasualtiesRimknown.HediffCompProperties_RemoveHediffs">
 				<hediffs>
 					<li>Dementia</li>
@@ -123,6 +124,7 @@
 		<description>This person's neurons are being regenerated at a rapid-pace.\n\nWhile the condition should pass given time, the nanomachines shouldn't be disrupted with another dose, otherwise mistakes can be made.</description>
 		<descriptionHyperlinks>
 			<ThingDef>CR_Mindwipe</ThingDef>
+			<ThingDef>CR_NeuralBooster</ThingDef>
 		</descriptionHyperlinks>
 		<initialSeverity>1</initialSeverity>
 		<duplicationAllowed>false</duplicationAllowed>
@@ -225,8 +227,7 @@
 		<maxSeverity>1</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.8333</severityPerDay>
-				<!-- Intended to last 72,000 ticks or 20 minutes IRL. A day in Rimworld is 60,000 ticks. -->
+				<severityPerDay>-0.8333</severityPerDay> <!-- Intended to last 72,000 ticks or 20 minutes IRL. A day in Rimworld is 60,000 ticks. -->
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 		</comps>

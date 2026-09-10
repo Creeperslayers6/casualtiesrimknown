@@ -28,12 +28,41 @@ namespace CasualtiesRimknown.DamageWorkers
 
         private void stunPawn(Pawn pawn, DamageInfo dinfo)
         {
-            pawn?.stances?.stunner?.StunFor(stunDuration.SecondsToTicks(), dinfo.Instigator, addBattleLog: false, showMote: true);
+            // Reduce Stun on Mechanoids
+            int stunDurationDenominator = !pawn.RaceProps.IsMechanoid ? 1 : 2;
+            pawn?.stances?.stunner?.StunFor(stunDuration.SecondsToTicks() / stunDurationDenominator, dinfo.Instigator, addBattleLog: false, showMote: true);
         }
 
         protected override BodyPartRecord ChooseHitPart(DamageInfo dinfo, Pawn pawn)
         {
-            return pawn.health.hediffSet.GetRandomNotMissingPart(dinfo.Def, dinfo.Height, BodyPartDepth.Outside);
+            return GetSpecificRandomNotMissingPart(pawn, dinfo.Def, dinfo.Height, BodyPartDepth.Outside);
+        }
+
+        // Return BodyPartRecords that can bleed.
+        private BodyPartRecord GetSpecificRandomNotMissingPart(Pawn pawn, DamageDef damDef, BodyPartHeight height = BodyPartHeight.Undefined, BodyPartDepth depth = BodyPartDepth.Undefined, BodyPartRecord partParent = null)
+        {
+            IEnumerable<BodyPartRecord> enumerable = null;
+            if (pawn.health.hediffSet.GetNotMissingParts(height, depth, null, partParent).Any((BodyPartRecord p) => p.coverageAbs > 0f && p.def.bleedRate > 0))
+            {
+                enumerable = pawn.health.hediffSet.GetNotMissingParts(height, depth, null, partParent).Where((BodyPartRecord p) => p.def.bleedRate > 0);
+            }
+            else
+            {
+                if (!pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, depth, null, partParent).Any((BodyPartRecord p) => p.coverageAbs > 0f && p.def.bleedRate > 0))
+                {
+                    return null;
+                }
+                enumerable = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, depth, null, partParent).Where((BodyPartRecord p) => p.def.bleedRate > 0);
+            }
+            if (enumerable.TryRandomElementByWeight((BodyPartRecord x) => x.coverageAbs * x.def.GetHitChanceFactorFor(damDef), out var result))
+            {
+                return result;
+            }
+            if (enumerable.TryRandomElementByWeight((BodyPartRecord x) => x.coverageAbs, out result))
+            {
+                return result;
+            }
+            return null;
         }
 
         // Removed ExplosionVisualEffectCenter(explosion); from ExplosionStart

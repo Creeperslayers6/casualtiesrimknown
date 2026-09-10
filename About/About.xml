@@ -18,6 +18,7 @@
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
+			<steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/</steamWorkshopUrl>
 		</li>
 		<li>
 			<packageId>Erin.Expie</packageId>
@@ -34,6 +35,7 @@
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>ludeon.rimworld</li>
+		<li>ludeon.rimworld.biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>Erin.Expie</li>
 	</loadAfter>

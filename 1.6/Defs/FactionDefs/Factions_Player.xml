@@ -11,7 +11,12 @@
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker> <!-- REVIEW! -->
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker> <!-- REVIEW! -->
-		<allowedCultures><li>CR_Liathian</li></allowedCultures> <!-- REVIEW -->
+		<allowedCultures><li>CR_Liathian</li></allowedCultures>
+		<xenotypeSet>
+			<xenotypeChances>
+				<ERN_Expie>999</ERN_Expie>
+			</xenotypeChances>
+		</xenotypeSet>
 		<backstoryFilters>
 			<li>
 				<categories>
