@@ -74,7 +74,9 @@
     <Compile Include="DefOfs\HediffDefOf.cs" />
     <Compile Include="DefOfs\HistoryEventDefOf.cs" />
     <Compile Include="DefOfs\JobDefOf.cs" />
+    <Compile Include="DefOfs\RulePackDefOf.cs" />
     <Compile Include="DefOfs\SoundDefOf.cs" />
+    <Compile Include="DefOfs\TaleDefOf.cs" />
     <Compile Include="DefOfs\ThingDefOf.cs" />
     <Compile Include="DefOfs\ThoughtDefOf.cs" />
     <Compile Include="DefOfs\XenotypeDefOf.cs" />
@@ -110,11 +112,13 @@
     <Compile Include="MentalStates\MentalState_SeekingMindwipe.cs" />
     <Compile Include="MentalStates\MentalState_SelfharmEvent.cs" />
     <Compile Include="MentalStateWorkers\MentalStateWorker_SeekingMindwipe.cs" />
+    <Compile Include="Patches\Patch_AdministerIngestible.cs" />
     <Compile Include="Patches\Patch_Corpse.cs" />
     <Compile Include="Patches\Patch_Medical.cs" />
     <Compile Include="Patches\Patch_Faction.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowTurretRadius_ArcShock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Mindwiped.cs" />
     <Compile Include="Utilities\BrainHealingUtility.cs" />
     <Compile Include="Utilities\VomitBloodUtility.cs" />
     <Compile Include="Verbs\Verb_ArcShockwave.cs" />

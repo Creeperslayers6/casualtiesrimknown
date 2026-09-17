@@ -14,7 +14,7 @@
 		<hasTooltip>true</hasTooltip>
 		<designationCategory>Security</designationCategory>
 		<building>
-			<combatPower>60</combatPower> <!-- REVIEW!!! -->
+			<combatPower>60</combatPower>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>CR_Cannon_SoundTurret</turretGunDef>
 			<turretBurstWarmupTime>5</turretBurstWarmupTime>
@@ -30,7 +30,7 @@
 	<ThingDef ParentName="CR_SoundCannonBase">
 		<defName>CR_Turret_SoundCannonBasic</defName>
 		<label>sound cannon turret</label>
-		<description>An automatic sonic weapon capable of firing a 190dB blast. Covering one's ears will not protect foes nor friends alike. Due to its cheap construction, the transducer burns out immediately when firing.</description> <!-- REVIEW!!! -->
+		<description>An automatic sonic weapon capable of firing a 190dB blast. Covering one's ears will not protect foes nor friends alike. Due to its cheap construction, the transducer burns out immediately when firing.</description>
 		<graphicData>
 			<texPath>Things/Building/Security/TurretMini_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -51,14 +51,14 @@
 		<thingCategories>
 			<li>BuildingsSecurity</li>
 		</thingCategories>
-		<statBases> <!-- REVIEW!!! -->
+		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<WorkToBuild>2700</WorkToBuild>
 			<Mass>10</Mass>
 			<Beauty>-20</Beauty>
 			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
-		</statBases> <!-- REVIEW!!! -->
+		</statBases>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Refuelable">
@@ -90,13 +90,13 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount> <!-- REVIEW!!! -->
-		<costList> <!-- REVIEW!!! -->
+		<costStuffCount>50</costStuffCount>
+		<costList>
 			<Steel>85</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-		</costList> <!-- REVIEW!!! -->
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<constructionSkillPrerequisite>5</constructionSkillPrerequisite> <!-- REVIEW!!! -->
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationHotKey>Misc2</designationHotKey>
 		<researchPrerequisites>
 			<li>CR_SonicTransducer</li>
@@ -107,7 +107,7 @@
 	<ThingDef ParentName="CR_SoundCannonBase">
 		<defName>CR_Turret_SoundCannonAdvanced</defName>
 		<label>advanced sound cannon turret</label>
-		<description>An automatic sonic weapon capable of firing a 190dB blast. Covering one's ears will not protect foes nor friends alike. Modified with improved components and an external power supply, this turret is capable of firing multiple times.</description> <!-- REVIEW!!! -->
+		<description>An automatic sonic weapon capable of firing a 190dB blast. Covering one's ears will not protect foes nor friends alike. Modified with improved components and an external power supply, this turret is capable of firing multiple times.</description>
 		<graphicData>
 			<texPath>CasualtiesRimknown/Things/Building/Security/Sound_Cannon/TurretSonic_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -8,7 +8,7 @@
 			<tagToGive>InMentalState</tagToGive>
 			<subNodes>
 				<li Class="ThinkNode_ConditionalMentalState">
-					<state>CR_SeekingMindwipe</state>
+					<state>CR_SelfharmEvent</state>
 					<subNodes>
 						<li Class="CasualtiesRimknown.JobGivers.JobGiver_SelfharmEvent"/>
 						<li Class="ThinkNode_PrioritySorter">

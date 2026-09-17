@@ -574,7 +574,7 @@
 		</forcedTraits>
 	</BackstoryDef>
 
-	<BackstoryDef MayRequire="Ludeon.RimWorld.Biotech">
+	<BackstoryDef>
 		<defName>CR_Expie_ColonyCourier8</defName>
 		<title>colony courier</title>
 		<titleShort>courier</titleShort>

@@ -62,5 +62,8 @@
 				<listOrder>500</listOrder>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

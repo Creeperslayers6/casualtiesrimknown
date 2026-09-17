@@ -42,13 +42,14 @@
 	<MentalStateDef ParentName="BaseMentalState">
 		<defName>CR_SelfharmEvent</defName>
 		<stateClass>CasualtiesRimknown.MentalStates.MentalState_SelfharmEvent</stateClass>
+		<workerClass>MentalStateWorker</workerClass>
 		<label>self-harming</label>
 		<category>Misc</category>
 		<blockInteractionInitiationExcept />
 		<blockInteractionRecipientExcept />
 		<blockRandomInteraction>true</blockRandomInteraction>
-		<minTicksBeforeRecovery>40000</minTicksBeforeRecovery> <!-- REVIEW!!! -->
-		<maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery> <!-- REVIEW!!! -->
+		<minTicksBeforeRecovery>40000</minTicksBeforeRecovery>
+		<maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
 		<recoverFromSleep>true</recoverFromSleep>
 		<nameColor>(0.5, 0.9, 0.5)</nameColor>
 		<blockNormalThoughts>true</blockNormalThoughts>

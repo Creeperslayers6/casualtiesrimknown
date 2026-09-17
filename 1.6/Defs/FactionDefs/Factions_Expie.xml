@@ -53,17 +53,17 @@
 				<commonality>0.05</commonality>
 			</li>
 		</backstoryFilters>
-		<caravanTraderKinds> <!-- REVIEW!!! -->
+		<caravanTraderKinds>
 			<li>CR_Caravan_Sawian_BulkGoods</li>
 			<li>CR_Caravan_Sawian_CombatSupplier</li>
 			<li>CR_Caravan_Sawian_Exotic</li>
-		</caravanTraderKinds> <!-- REVIEW -->
-		<visitorTraderKinds> <!-- REVIEW -->
+		</caravanTraderKinds>
+		<visitorTraderKinds>
 			<li>Visitor_Outlander_Standard</li>
-		</visitorTraderKinds> <!-- REVIEW -->
-		<baseTraderKinds> <!-- REVIEW -->
+		</visitorTraderKinds>
+		<baseTraderKinds>
 			<li>Base_Outlander_Standard</li>
-		</baseTraderKinds> <!-- REVIEW -->
+		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker> <!-- REVIEW -->
 		<maxPawnCostPerTotalPointsCurve>

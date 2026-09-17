@@ -5,12 +5,12 @@
 		<label>New Escapees</label>
 		<description>A colony of recently-escaped sawians from the Grey Planet.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Colonist</basicMemberKind> <!-- REVIEW! -->
+		<basicMemberKind>Colonist</basicMemberKind>
 		<pawnSingular>colonist</pawnSingular>
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Industrial</techLevel>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker> <!-- REVIEW! -->
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker> <!-- REVIEW! -->
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures><li>CR_Liathian</li></allowedCultures>
 		<xenotypeSet>
 			<xenotypeChances>
@@ -28,15 +28,15 @@
 		<factionIconPath>CasualtiesRimknown/World/WorldObjects/Expanding/MapIcon_Sawian</factionIconPath>
 		<forageabilityFactor>1.5</forageabilityFactor> <!-- Time spent on the Grey Planet taught them well. -->
 		<startingResearchTags>
-			<li>ClassicStart</li> <!-- REVIEW! -->
+			<li>ClassicStart</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
-			<li>ClassicStart</li> <!-- REVIEW! -->
-			<li>ClassicStartTechprints</li> <!-- REVIEW! -->
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
 		</startingTechprintsResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
-				<li>Cloth</li> <!-- REVIEW! -->
+				<li>Cloth</li>
 			</thingDefs>
 		</apparelStuffFilter>
 	</FactionDef>

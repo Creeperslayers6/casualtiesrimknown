@@ -368,7 +368,7 @@
 		<defName>CR_ExpieCorp_TunnelDiver15</defName>
 		<title>tunnel diver</title>
 		<titleShort>diver</titleShort>
-		<description>On [PAWN_possessive] first deployment, [PAWN_nameDef] unit was unsuccessful {REVIEW!}</description> <!-- REVIEW!!! -->
+		<description>[PAWN_nameDef] loved being underground so much that the other scientists took note. [PAWN_possessive] affinity towards navigating narrow passageways and dark places made [PAWN_objective] the optimal choice for searching for unchipped colonies on the Grey Planet.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieCompany</li>
@@ -388,12 +388,13 @@
 		</forcedTraits>
 	</BackstoryDef>
 
-	<BackstoryDef> <!-- REVIEW!!! -->
+	<BackstoryDef>
 		<defName>CR_ExpieCorp_DisgracedPet16</defName>
 		<title>disgraced pet</title>
 		<titleShort>forsakened</titleShort>
-		<description>[PAWN_nameDef] used to be the private pet of one upper level scientist and showered with more privileges than most sawians can dream of. However, one day, the scientist out of nowhere decided to abandon [PAWN_nameDef], tossing [PAWN_pronoun] back with the rest of the sawians.
-		\nWhile [PAWN_pronoun] doesn't know what [PAWN_pronoun] wrong, the other sawians haven't forgotten watching [PAWN_objective] be paraded around the facility.</description>
+		<description>[PAWN_nameDef] used to be the personal pet of one of the upper-level scientists. However, one day the scientist abandoned [PAWN_objective] and tossed[PAWN_objective] back with the other sawians.
+		\nWhile [PAWN_pronoun] doesn't know what [PAWN_pronoun] done wrong, the other sawians didn't forget seeing [PAWN_nameDef] being showered with affection.
+		</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieCompany</li>
@@ -410,7 +411,7 @@
 		<forcedTraits>
 			<Jealous>0</Jealous>
 		</forcedTraits>
-	</BackstoryDef> <!-- REVIEW!!! -->
+	</BackstoryDef>
 
 	<BackstoryDef>
 		<defName>CR_ExpieCorp_SilentAssassin17</defName>
@@ -439,7 +440,7 @@
 		<defName>CR_ExpieCorp_Warmonger18</defName>
 		<title>warmonger</title>
 		<titleShort>warmonger</titleShort>
-		<description>[PAWN_nameDef] was tasked to use [PAWN_possessive] social skills to keep morale high amongst [PAWN_possessive] squadmates.</description>
+		<description>[PAWN_nameDef] was tasked to use [PAWN_possessive] social skills to keep morale high amongst [PAWN_possessive] squadmates. Encouraging others to stay on the mission and to eliminate any unchipped saws.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieCompany</li>

@@ -1,4 +1,5 @@
 ﻿using CasualtiesRimknown.AI;
+using CasualtiesRimknown.MentalStates;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,20 @@ namespace CasualtiesRimknown.JobDrivers
     {
         protected override IEnumerable<Toil> MakeNewToils()
         {
-            yield return Toils_General.WaitWith(TargetIndex.A, WAIT_DURATION.SecondsToTicks(), true, false, false);
+            Toil waitToil = Toils_General.Wait(WAIT_DURATION.SecondsToTicks());
+            waitToil.WithProgressBarToilDelay(TargetIndex.A, WAIT_DURATION.SecondsToTicks());
+            yield return waitToil;
             //
             yield return Toils_Selfharm.SlashRandomBodyPartTerminal();
+
+            Toil toil = Toils_General.Do(delegate
+            {
+                if (pawn.MentalState is MentalState_SelfharmEvent selfHarmMentalState)
+                {
+                    selfHarmMentalState?.Notify_FinishedAction();
+                }
+            });
+            yield return toil;
         }
     }
 }

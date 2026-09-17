@@ -14,5 +14,10 @@ namespace CasualtiesRimknown.MentalStates
         {
             return RandomSocialMode.Off;
         }
+
+        public void Notify_FinishedAction()
+        {
+            RecoverFromState();
+        }
     }
 }

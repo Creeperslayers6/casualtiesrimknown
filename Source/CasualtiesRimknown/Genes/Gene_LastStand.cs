@@ -97,6 +97,8 @@ namespace CasualtiesRimknown
                 canSteal = false,
                 invisibleStun = true
             });
+            TaleRecorder.RecordTale(DefOfs.TaleDefOf.CR_LastStandTriggered, pawn);
+            Find.BattleLog.Add(new BattleLogEntry_Event(pawn, DefOfs.RulePackDefOf.CR_Event_LastStandTriggered, pawn));
 
             // TEND BLEEDING WOUNDS!
 
@@ -123,7 +125,6 @@ namespace CasualtiesRimknown
 
         public void TickRare()
         {
-            Log.Message($"tick! : {pawn.Name}");
             if (!warmupTimer.Finished)
             {
                 warmupTimer.TickIntervalDelta();

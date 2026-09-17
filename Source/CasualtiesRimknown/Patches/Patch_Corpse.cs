@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
+using RimWorld;
 using Verse;
 
 namespace CasualtiesRimknown.Patches
@@ -13,7 +14,11 @@ namespace CasualtiesRimknown.Patches
     { 
         internal static void Postfix(Corpse __instance)
         {
-            Gene_LastStand lastStandGene = (Gene_LastStand)__instance?.InnerPawn.genes?.GetGene(DefOfs.GeneDefOf.CR_LastStand);
+            if (__instance.Destroyed || __instance.GetRotStage() != RotStage.Fresh)
+            {
+                return;
+            }
+            Gene_LastStand lastStandGene = (Gene_LastStand)__instance?.InnerPawn?.genes?.GetGene(DefOfs.GeneDefOf.CR_LastStand);
             if (lastStandGene != null && __instance.Spawned)
             {
                 lastStandGene.TickRare();

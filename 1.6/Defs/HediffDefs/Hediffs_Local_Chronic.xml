@@ -59,10 +59,11 @@
 					<li>Industriousness</li>
 					<li>PsychicSensitivity</li>
 					<li>ShootingAccuracy</li>
-					<li>Occultist</li>
-					<li>Joyous</li>
-					<li>Disturbing</li>
-					<li>VoidFascination</li>
+					<li>GreatMemory</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">Occultist</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">Joyous</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">Disturbing</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">VoidFascination</li>
 					<li>Recluse</li>
 				</traits>
 			</li>

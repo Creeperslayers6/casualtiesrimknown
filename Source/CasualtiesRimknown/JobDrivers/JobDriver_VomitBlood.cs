@@ -60,7 +60,7 @@ namespace CasualtiesRimknown.JobDrivers
                 }
             };
             toil.defaultCompleteMode = ToilCompleteMode.Never;
-            toil.WithEffect(effectVomitBlood, TargetIndex.A);
+            toil.WithEffect(effectVomitBlood, TargetIndex.A, filthBloodColor);
             toil.PlaySustainerOrSound(() => SoundDefOf.Vomit);
             yield return toil;
         }

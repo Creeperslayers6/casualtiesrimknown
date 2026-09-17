@@ -5,6 +5,7 @@
 		<defName>CR_Hemothorax</defName>
 		<hediffClass>CasualtiesRimknown.Hediffs.Hediff_Hemothorax</hediffClass>
 		<label>hemothorax</label>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
 		<description>Blood is pooling inside the pleural cavity which is applying pressure on the lungs, interfering with breathing. Treatment is recommended.</description>
 		<defaultInstallPart>Torso</defaultInstallPart>
 		<initialSeverity>0.001</initialSeverity>

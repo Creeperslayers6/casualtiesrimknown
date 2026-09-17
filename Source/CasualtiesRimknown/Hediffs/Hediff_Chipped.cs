@@ -38,12 +38,23 @@ namespace CasualtiesRimknown.Hediffs
         private bool explosiveArmed = false;
         private bool deviceArming = false;
         private bool stunnedByEMP = false;
-        private bool stunnedBySolarFlare => pawn.Map.gameConditionManager.ElectricityDisabled(pawn.Map);
+        private bool StunnedBySolarFlare
+        {
+            get
+            {
+                if (pawn.Map == null)
+                {
+                    return false;
+                }
+                return pawn.Map.GameConditionManager.ElectricityDisabled(pawn.Map);
+            }
+        }
+        // private bool stunnedBySolarFlare => pawn.Map.gameConditionManager.ElectricityDisabled(pawn.Map);
 
-        private bool IsStunned => stunnedByEMP || stunnedBySolarFlare; //TODO: ADD TEXT INDICATION THAT CHIP IS STUNNED!
+        private bool IsStunned => stunnedByEMP || StunnedBySolarFlare; //TODO: ADD TEXT INDICATION THAT CHIP IS STUNNED!
         // Timer Durations (seconds)
         private float detonationTimerDuration = 4.2f;
-        private FloatRange armingTimerDurationRange = new FloatRange(5f, 300f); // Regular Arming Time After Activation (Simulates TheCompany™ Checking On Subject)
+        private FloatRange armingTimerDurationRange = new FloatRange(5f, 600f); // Regular Arming Time After Activation (Simulates TheCompany™ Checking On Subject)
         private float minimumArmingTime = 5f; // Minimum Arming Time Left After Regular Arm Timer Finishes (Does not progress when stunned by EMP!)
         private float stunTimerDuration = 120f;
         // Timers
