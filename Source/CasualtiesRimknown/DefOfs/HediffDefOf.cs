@@ -11,7 +11,17 @@ namespace CasualtiesRimknown.DefOfs
     [DefOf]
     public static class HediffDefOf
     {
+        // Rimworld HediffDef
+        public static HediffDef Scratch;
+
+        // Casualties: Rimknown HediffDef
+        public static HediffDef CR_MuscleStrain;
+
         public static HediffDef CR_Hollow;
+        public static HediffDef CR_Chipped;
+
+        public static HediffDef CR_InternalBleeding;
+        public static HediffDef CR_Hemothorax;
         static HediffDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));

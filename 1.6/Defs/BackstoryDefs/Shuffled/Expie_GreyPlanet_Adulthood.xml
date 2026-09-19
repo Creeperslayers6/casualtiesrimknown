@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+	Backstories for Experiments who were deployed on the CARGO MISSION.
+	===================================================================
+	Due to interference from sympathetic scientists, an abnormal amount
+	of experiments were sent with defective brain chips or none at all
+	(the unchipped). This allowed unchipped experiments to abandon the
+	cargo mission and setup colonies on the Grey Planet and even help
+	unchip chipped experiments.
+	
+	While many experiments did settle in the Grey Planet colonies, a
+	good number never settled down and stay on the move, living off 
+	the land.
+	
+	Once the plans for the "Interplanetary Escape Project" had been
+	completed and distributed amongst the planet, many experiments
+	were able to escape from the Grey Planet onto the nearest Rimworld,
+	where they could hopefully have an easier life, and where the Company
+	would be more exposed trying to eliminate them.
+	-->
+	<!-- Survivors -->
+	
+	<BackstoryDef>
+		<defName>CR_Expie_UnlicensedPharmacist1</defName>
+		<title>unlicensed pharmacist</title>
+		<titleShort>pharmacist</titleShort>
+		<description>During their descent into the grey planet, [PAWN_nameDef] encountered a mini-barrel full of fentanyl and decided for some reason to chug it.
+			\nHaving somehow survived the experience, [PAWN_pronoun] used this knowledge to dillute opioids for an unchipped settlement.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<DrugDesire>2</DrugDesire>
+			<Immunity>1</Immunity>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_ElderThornbackSlayer2</defName>
+		<title>elder thornback slayer</title>
+		<titleShort>salad slayer</titleShort>
+		<description>For one overgrown depths colony, [PAWN_nameDef] was the one everyone relied on to protect the colony from the native Elder Thornbacks.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>6</Shooting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_TraumatizedSurvivor3</defName>
+		<title>traumatized survivor</title>
+		<titleShort>scarred survivor</titleShort>
+		<description>[PAWN_nameDef]'s time spent on the grey planet has left them mentally scarred. While [PAWN_pronoun] has gained various survival skills, [PAWN_pronoun] will collapse when under pain.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Mining>4</Mining>
+			<Medicine>2</Medicine>
+			<Cooking>3</Cooking>
+			<Shooting>3</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+			<li>Cooking</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Wimp>0</Wimp>
+			<Nerves>-1</Nerves>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_SubsurfaceVulture4</defName>
+		<title>subsurface vulture</title>
+		<titleShort>vulture</titleShort>
+		<description>Plunged into the dried desert, food that wouldn't kill [PAWN_objective] was difficult to find. What was plentiful, however, were the bodies of the sawians that came before [PAWN_possessive].
+			\nIn desperation, [PAWN_nameDef] resorted to consuming the corpses that littered the land... and didn't stop when given normal food.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Cooking>2</Cooking>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Cannibal>0</Cannibal>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_GravelDweller7</defName>
+		<title>gravel dweller</title>
+		<titleShort>dweller</titleShort>
+		<description>After escaping with the others to the Rim, [PAWN_nameDef] realized something. After years of torment by scientists on the surface, [PAWN_pronoun] liked it in the caves. For the first time in [PAWN_possessive] life, [PAWN_pronoun] was right where [PAWN_pronoun] was supposed to be.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Mining>4</Mining>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Mining</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Undergrounder>0</Undergrounder>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_HauntedSurvivor9</defName>
+		<title>haunted survivor</title>
+		<titleShort>survivor</titleShort>
+		<description>Despite being stuck in the same situation, not all sawians were open to cooperation. [PAWN_nameDef] found out the hard way when a conversation with a Trader went out.
+		\n[PAWN_nameDef] came out on top, but [PAWN_pronoun] will never be able to forget the screams of the Trader.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>-2</Social>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<forcedTraits>
+			<NaturalMood>-1</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_PyroLandscaper10</defName>
+		<title>pyro landscaper</title>
+		<titleShort>pyro</titleShort>
+		<description>Trapped within the Overgrown Depths, [PAWN_nameDef] was sure [PAWN_possessive] life was over when [PAWN_pronoun] got surrounded by thornbacks. However, by chance, [PAWN_nameDef] managed to start a fire which swarmed the caves and the thornbacks.
+		\nManaging to escape the burning cave, [PAWN_nameDef] was forever changed by this experience. Fire is the path to salvation.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Plants>3</Plants>
+			<Social>-1</Social>
+		</skillGains>
+		<workDisables>
+			<li>Firefighting</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Pyromaniac>0</Pyromaniac>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_CerealTrader11</defName>
+		<title>cereal trader</title>
+		<titleShort>trader</titleShort>
+		<description>Without any personal aspirations, [PAWN_nameDef] stuck to the cargo mission, until [PAWN_pronoun] encountered a large stash of cereal and milk. Smittened by its taste, [PAWN_nameDef] switched [PAWN_possessive] plans to focus on distributing cereal to as many sawians as possible.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Social>2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_TrapDefuser12</defName>
+		<title>trap defuser</title>
+		<titleShort>defuser</titleShort>
+		<description>During [PAWN_nameDef] stay on the grey planet, [PAWN_pronoun] made it [PAWN_possessive] mission to disarm as many traps as [PAWN_pronoun] could to make transit in the planet as safe as possible.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Construction>3</Construction>
+			<Mining>2</Mining>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Mining</li>
+			<li>Constructing</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_CaveArtist15</defName>
+		<title>cave artist</title>
+		<titleShort>artist</titleShort>
+		<description>Having discovered that glowfruit can be crushed into an ink, [PAWN_nameDef] decided to draw out [PAWN_possessive] thoughts onto scrap paper.
+		\n[PAWN_nameDef] was unable to hold onto [PAWN_possessive] artwork, but [PAWN_pronoun] hopes that others found them during their descent.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_NaturalAsshole16</defName>
+		<title>natural born asshole</title>
+		<titleShort>asshole</titleShort>
+		<description>Despite [PAWN_nameDef]'s best efforts, [PAWN_pronoun] is unable to keep [PAWN_possessive] thoughts to [PAWN_possessive]self.
+		\nDue to this, [PAWN_nameDef] has found that others will actively refuse to work with [PAWN_objective], leading to [PAWN_nameDef] learning how to survive on [PAWN_possessive] own.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Social>-4</Social>
+			<Cooking>2</Cooking>
+			<Medicine>2</Medicine>
+			<Plants>4</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Abrasive>0</Abrasive>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_WanderingHerbalist17</defName>
+		<title>wandering herbalist</title>
+		<titleShort>herbalist</titleShort>
+		<description>[PAWN_nameDef] after being deployed onto the Grey Planet discovered that [PAWN_pronoun] has a nack for creating medicines and treatments using the natural fauna.
+		\nTo best use this knowledge, [PAWN_nameDef] spent [PAWN_possessive] time dedicated to wandering around the layers providing aid to any sawians [PAWN_pronoun] encountered.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Plants>6</Plants>
+			<Medicine>3</Medicine>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Caring</li>
+			<li>PlantWork</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<Psychopath>0</Psychopath>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_LootGoblin21</defName>
+		<title>loot goblin</title>
+		<titleShort>goblin</titleShort>
+		<description>[PAWN_nameDef]'s greed knows no bounds. While the local colonies appreciated the high-quality medical loot [PAWN_nameDef] brings in, they would rather [PAWN_pronoun] decide to not attempt to squeeze through tiny gaps to reach a create.</description>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Mining>2</Mining>
+			<Social>4</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Mining</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_AdrenalineJunkie22</defName>
+		<title>adrenaline junkie</title>
+		<titleShort>daredevil</titleShort>
+		<description>Before being rescued by an unchipped colony, [PAWN_nameDef] would always take their time traveling down the layers. This behavior meant that the Punishment Protocol line was never far from [PAWN_nameDef].
+			\nWhile [PAWN_nameDef] no longer has the line following them, [PAWN_pronoun] still claims to taste a bit of metal in [PAWN_possessive] mouth.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>3</Artistic>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>1</SpeedOffset>
+			<Immunity>-1</Immunity>
+		</forcedTraits>
+		<disallowedTraits>
+			<Industriousness>2</Industriousness>
+			<Industriousness>1</Industriousness>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_OilHarvester23</defName>
+		<title>oil harvester</title>
+		<titleShort>pumper</titleShort>
+		<description>Down in the Dried Desert layer, [PAWN_nameDef] manages a little pump setup which extracts the spilled oil littered across the biome.
+		\nWhile buisness was slow at first, couriers soon came by the many, all affilated with the "Interplanetary Escape Project".</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Mining>4</Mining>
+			<Social>2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_ToxirockSweeper24</defName>
+		<title>toxirock sweeper</title>
+		<titleShort>liquidator</titleShort>
+		<description>[PAWN_nameDef]'s time spent on the Grey Planet primarily consisted of clearing out patches of Toxirocks for the colonies down in the Wastelands.
+		\nDespite the fact that many sawians fell gravely ill doing this work, [PAWN_nameDef] seems completely unbothered by the radiation.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<skillGains>
+			<Mining>2</Mining>
+			<Construction>2</Construction>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Mining</li>
+			<li>Constructing</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Immunity>1</Immunity>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_SurfaceScout25</defName>
+		<title>surface scout</title>
+		<titleShort>scout</titleShort>
+		<description>Despite the dangers of being close to the surface, someone was needed to survey the surface of the Grey Planet, observing the ships from The Company™ and chart the orbital path of the nearby Rimworld.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Artistic>4</Artistic>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<SpeedOffset>1</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_SapCollector26</defName>
+		<title>sap collector</title>
+		<titleShort>tapper</titleShort>
+		<description>Down in the Overgrown Depths, [PAWN_nameDef] made a living collecting tree sap from the various underground trees. The sap would then be transported by others to colonies on the layer and beyond.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Plants>5</Plants>
+			<Cooking>3</Cooking>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_WildPopfruitFarmer27</defName>
+		<title>wild popfruit farmer</title>
+		<titleShort>wild farmer</titleShort>
+		<description>[PAWN_nameDef] spent [PAWN_possessive] time on the Grey Planet collecting popfruit and helluce from the various patches of Pop that was growing around [PAWN_possessive] shelter.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Plants>4</Plants>
+			<Cooking>2</Cooking>
+			<Construction>1</Construction>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_ArmsCollector30</defName>
+		<title>arms collector</title>
+		<titleShort>collector</titleShort>
+		<description>If there was something always in high-demand, it would be firearms. [PAWN_nameDef] decided to capitalize on this opportunity by seeking out caches of human' vaults for collection of firearms and ammunition.
+			\nAlong the way, [PAWN_nameDef] also gained a proficiency in shooting.
+		</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Artistic>2</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<Brawler>0</Brawler>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<!-- ========= Colony Generic? ========= -->
+	
+	<BackstoryDef>
+		<defName>CR_Expie_GuiltySoldier20</defName>
+		<title>guilty soldier</title>
+		<titleShort>ex-soldier</titleShort>
+		<description>Despite being a corporate soldier from The Company™, [PAWN_nameDef] was accepted with open arms into the colony.
+		\nHowever, despite protests from others, [PAWN_pronoun] is unable to shake the guilt of [PAWN_possessive] actions and refuses any niceties from [PAWN_possessive] fellow colonists.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<!-- ========= Grey Planet Colony Skilled ========= -->
+	<BackstoryDef>
+		<defName>CR_Expie_ColonyUnchipper5</defName>
+		<title>colony unchipper</title>
+		<titleShort>unchipper</titleShort>
+		<description>Being chipped is a death sentence for anyone who chooses to abandoned the cargo mission. Fortunately, [PAWN_nameDef] was brave and skilled enough to attempt to remove the brain chips.
+		\nWhile not every operation was successful, [PAWN_nameDef]'s resolve and determination to save as many as [PAWN_pronoun] could.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Medicine>8</Medicine>
+			<Shooting>-4</Shooting>
+			<Melee>3</Melee>
+		</skillGains>
+		<possessions>
+			<MedicineIndustrial>3</MedicineIndustrial>
+		</possessions>
+		<requiredWorkTags>
+			<li>Caring</li>
+			<li>Intellectual</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Kind>0</Kind>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_ColonyLeader6</defName>
+		<title>colony leader</title>
+		<titleShort>leader</titleShort>
+		<description>[PAWN_nameDef] was a leader of a colony involved in the 'Interplanetary Escape Project'. Managing the needs of the colony and ensuring the project remains on track while neccesary has taken its toll on [PAWN_possessive] psyche.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_Expie_GreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Social>6</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Neurotic>2</Neurotic>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_ColonyCourier8</defName>
+		<title>colony courier</title>
+		<titleShort>courier</titleShort>
+		<description>[PAWN_nameDef] was a courier who swiftly traversed from colony to colony. Carrying critical medical supplies and plans for the 'Interplanetary Escape Project' has given [PAWN_nameDef] unparalleled agility, but at the cost of [PAWN_pronoun] physical toughness.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_Expie_GreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Social>3</Social>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<SpeedOffset>1</SpeedOffset>
+			<Nimble>0</Nimble>
+			<Delicate>0</Delicate>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_CaveFarmer13</defName>
+		<title>cave farmer</title>
+		<titleShort>farmer</titleShort>
+		<description>In [PAWN_nameDef]'s colony, [PAWN_pronoun] was entrusted with cultivating the colony various plants like, glowplant, hydreed, stoneplant, etc.\n\nWhile the rimworld natural fauna is different from those of the grey planet, [PAWN_nameDef] has had an easy time adopting to the new crops.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Plants>5</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_ColonyBuilder14</defName>
+		<title>colony builder</title>
+		<titleShort>builder</titleShort>
+		<description>Tearing down life pods, and dismantling old structures with [PAWN_possessive] plasma cutter, [PAWN_nameDef] spent a significant amount of [PAWN_possessive] time building shelters and other buildings at [PAWN_possessive] colony.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Construction>4</Construction>
+			<Mining>3</Mining>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_CaveEngineer18</defName>
+		<title>cave engineer</title>
+		<titleShort>engineer</titleShort>
+		<description>[PAWN_nameDef] was in charge of cave shoring for [PAWN_possessive] colony.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Construction>3</Construction>
+			<Mining>4</Mining>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_PerimeterGuard19</defName>
+		<title>perimeter guard</title>
+		<titleShort>guard</titleShort>
+		<description>[PAWN_nameDef] job was to help maintain the security around the many entry points into [PAWN_possessive] colony.
+		\nWhile basic combat skills helped against the occasional shade crawler and sand stalker, dealing with fellow sawians required the skill to decern between an expie that needed help or was a scout from a corporate raid party.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>5</Social>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_Torchbearer28</defName>
+		<title>torchbearer</title>
+		<titleShort>torchbearer</titleShort>
+		<description>To hold leverage against The Company™, it was decided that The Cargo was to be hidden somewhere on the Rimworld. [PAWN_nameDef] was choosen to be one of the few sawians who knew part of intel needed to locate where The Cargo is located.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Social>3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>ManualSkilled</li>
+			<li>Intellectual</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<GreatMemory>0</GreatMemory>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_ShadeCrawlerWrangler29</defName>
+		<title>shade crawler wrangler</title>
+		<titleShort>wrangler</titleShort>
+		<description>[PAWN_nameDef]'s colony suffered from being located nearby a shade crawler nest. To prevent the shade crawlers from infiltrating the colony, [PAWN_nameDef] made it [PAWN_possessive] life to wrangle the shade crawlers. Utilizing its natural cowardice to keep them at bay.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Animals>5</Animals>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+</Defs>

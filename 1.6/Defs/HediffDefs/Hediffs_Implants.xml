@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ====== UNI-HEALTH BRAIN CHIP ====== -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>CR_Chipped</defName>
+		<hediffClass>CasualtiesRimknown.Hediffs.Hediff_Chipped</hediffClass>
+		<label>uni-health brain chip</label>
+		<description>A neural implant which allows its user to closely track their vitals and other medically-relevant information.\n\nThe chip also seem capable to transmitting and receiving information to a central control station.</description>
+		<descriptionShort>A neural implant which allows its user to closely track their vitals.</descriptionShort>
+		<initialSeverity>1</initialSeverity>
+		<duplicationAllowed>false</duplicationAllowed>
+		<defaultInstallPart>Brain</defaultInstallPart>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<minSeverity>5</minSeverity>
+				<label>INTRACRANIAL EXPLOSIVE DEVICE ARMED</label>
+				<lifeThreatening>true</lifeThreatening>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SurgeryInspectable">
+				<surgicalDetectionDesc>{PAWN_nameDef} has a chip embedded in {PAWN_possessive} brain. It appears benign now, but {SURGEON_nameDef} is worried about a component attached to it. A highly skilled doctor might be able to remove it.</surgicalDetectionDesc>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- Needed for the Hediff Triggered Explosion! -->
+	<ThingDef>
+		<defName>CR_BrainChipBomb</defName>
+		<label>intracranial explosive device</label>
+		<description>A small explosive device embedded within the uni-health brain chip mounted on the subject's brain stem.</description>
+		<thingClass>Thing</thingClass>
+		<category>None</category>
+	</ThingDef>
+</Defs>

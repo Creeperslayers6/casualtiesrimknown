@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TaleDef>
+		<defName>CR_LastStandTriggered</defName>
+		<label>last stand</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>PermanentHistorical</type>
+		<maxPerPawn>1</maxPerPawn>
+		<baseInterest>10</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef]'s miraculous recovery from the brink of death</li>
+				<li>image->[PAWN_nameFull] stumbles back to [PAWN_possessive] feet [circumstance_group]</li>
+				<li>circumstance_phrase->to everyone's astonishment</li>
+				<li>circumstance_phrase->with faint laughter from the astral plane</li>
+				<li>circumstance_phrase->with distant cheers from onlookers</li>
+				<li>desc_sentence->[PAWN_possessive] wounds closed up in a way few have ever seen before.</li>
+				<li>desc_sentence->[PAWN_pronoun] looked briefly dazed before getting back up.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+</Defs>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Physical Experiments -->
+	<BackstoryDef>
+		<defName>CR_ExpieChild_FemurBroken1</defName>
+		<title>femur broken child</title>
+		<titleShort>femur broken</titleShort>
+		<description>As a child, [PAWN_nameDef] underwent experiments on the durability of their bones. As a result, [PAWN_possessive] bones are stronger than usual, at the expense of [PAWN_nameDef]'s mental state.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<skillGains>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_DisturbedSleeper6</defName>
+		<title>disturbed sleeper</title>
+		<titleShort>light-sleeper</titleShort>
+		<description>As part of an experiment on sawian stamina, [PAWN_nameDef] was subjected to constant physical tests with very little sleep in-between.
+		\nThe experience has trained [PAWN_nameDef] how to sleep lightly, at the cost of [PAWN_possessive] cellmates.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>2</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<QuickSleeper>0</QuickSleeper>
+			<CreepyBreathing>0</CreepyBreathing>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_ForcedAugmentation7</defName>
+		<title>forced augmentation</title>
+		<titleShort>augmented</titleShort>
+		<description>[PAWN_nameDef] was subjected at an early age to various experiments which involved invasive body-modification while [PAWN_pronoun] was still awake.\n\n[PAWN_nameDef] is unable to look at body augments again without being reminded of the agonizing pain.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<BodyPurist>0</BodyPurist>
+		</forcedTraits>
+	</BackstoryDef>
+	
+	<!-- Social Experiments -->
+	<BackstoryDef>
+		<defName>CR_ExpieChild_Bully2</defName>
+		<title>mess hall bully</title>
+		<titleShort>bully</titleShort>
+		<description>In [PAWN_nameDef]'s section, food rations were intentionally underrationed. To survive, [PAWN_nameDef] learnt how to fight with [PAWN_pronoun] fists.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>-3</Social>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_SelflessChild5</defName>
+		<title>selfless child</title>
+		<titleShort>kind-hearted</titleShort>
+		<description>The odd one out in [PAWN_possessive] section; [PAWN_nameDef] was known for their exceptional kindness and optimistic worldview.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>4</Social>
+			<Animals>2</Animals>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<NaturalMood>1</NaturalMood>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_CircadianAnomaly10</defName>
+		<title>circadian anomaly</title>
+		<titleShort>night owl</titleShort>
+		<description>[PAWN_nameDef] was used as a subject to study circadian rhythms and how light influenced sleep schedules. After months of work, the scientists were able to invert [PAWN_nameDef] rhythm.
+		\nBeing awake when everyone else was asleep has socially isolated [PAWN_nameDef] however.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-5</Social>
+		</skillGains>
+		<forcedTraits>
+			<NightOwl>0</NightOwl>
+		</forcedTraits>
+	</BackstoryDef>
+	
+	<!-- Medical Experiments-->
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_BraingrowDefect12</defName>
+		<title>braingrow defect</title>
+		<titleShort>brainfried</titleShort>
+		<description>[PAWN_nameDef] brain was used to fine tune an improved version of the Braingrow Medicine.
+		\nUnfortunately, due to a miscalibration of the mechanites, [PAWN_nameDef]'s hippocampus was damaged, impairing [PAWN_possessive] ability to learn.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<forcedTraits>
+			<SlowLearner>0</SlowLearner>
+		</forcedTraits>
+	</BackstoryDef>
+	
+	<!-- Scientist' Pet Projects -->
+	<BackstoryDef>
+		<defName>CR_ExpieChild_ScienceApprentice3</defName>
+		<title>scientist's apprentice</title>
+		<titleShort>apprentice</titleShort>
+		<description>Picked out by a new scientist specifically, [PAWN_nameDef] was treated more akin to a pet vs. being the subject of various science experiments. This granted [PAWN_objective] the oppertunity to learn from the scientists
+		\nHowever, this special treatment has encouraged [PAWN_nameDef] to believe that [PAWN_pronoun] is above others.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-3</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Animals</li>
+			<li>Constructing</li>
+			<li>Cooking</li>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_Hunter4</defName>
+		<title>trained hunter</title>
+		<titleShort>hunter</titleShort>
+		<description>With the direction of a notorious scientist, [PAWN_nameDef] was raised to be a ruthless hunter.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Social</li>
+			<li>Caring</li>
+			<li>ManualDumb</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</forcedTraits>
+	</BackstoryDef>
+	
+	<!-- Misc -->
+	<BackstoryDef>
+		<defName>CR_ExpieChild_SecretReader8</defName>
+		<title>secret reader</title>
+		<titleShort>reader</titleShort>
+		<description>[PAWN_nameDef] was able to smuggle a book on farming from a hallway trashcan. With the assistance of an older sawian, [PAWN_pronoun] was taught how to read.
+		\nAfter finishing the book on [PAWN_possessive] own, [PAWN_nameDef] wanted to thank the sawian, but was unable to find them again.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>5</Plants>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_DuneCaretaker9</defName>
+		<title>dune caretaker</title>
+		<titleShort>caretaker</titleShort>
+		<description>For some reason, [PAWN_nameDef]'s sector was assigned a Dune sawian. Completely ignored by any of the scientists and the other sawians, [PAWN_nameDef] took it upon themselves to help care for the dune.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>3</Animals>
+			<Social>2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_SectorCook11</defName>
+		<title>sector cook</title>
+		<titleShort>cook</titleShort>
+		<description>One day while eating [PAWN_possessive] rations, [PAWN_nameDef] realize that some part of the constantly rotating rations paired well with some from the other days. 
+		\nAfter some convincing, [PAWN_pronoun] was able to have some of [PAWN_possessive] sector mates to hold onto some of their rations so [PAWN_pronoun] could combine them for a more appetizing meal.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>5</Cooking>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_BleakChild13</defName>
+		<title>bleak child</title>
+		<titleShort>hopeless</titleShort>
+		<description>[PAWN_nameDef]'s time with The Company™ was a complete nightmare. Between the constant experiments, crackdowns, and the Cargo Mission; [PAWN_nameDef] has become convinenced that [PAWN_possessive] life will not get better.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<forcedTraits>
+			<NaturalMood>-2</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+</Defs>

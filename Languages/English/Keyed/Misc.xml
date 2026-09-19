@@ -4,5 +4,46 @@
 	<CasualtiesRimknownName>Casualties: Rimknown</CasualtiesRimknownName>
 	
 	<!-- Last Stand -->
-	<CR_LastStandTriggered>{PAWN_nameDef}'s story does not end here!</CR_LastStandTriggered>
+	<CR_LastStandTriggered>{PAWN_nameDef} is not giving up just yet!</CR_LastStandTriggered>
+	
+	<!-- Chipped -->
+	<CR_NeuralChip_Stunned>Stunned</CR_NeuralChip_Stunned>
+	
+	<CR_TerminateButton_1>Terminate</CR_TerminateButton_1>
+	<CR_TerminateButton_2>Are you sure?</CR_TerminateButton_2>
+	<CR_TerminateButton_3>Are you ABSOLUTELY sure?</CR_TerminateButton_3>
+	<CR_TerminateButton_4>Are you that desperate to terminate this pawn?</CR_TerminateButton_4>
+	<CR_TerminateButton_5>INTRACRANIAL EXPLOSIVE DEVICE ARMED</CR_TerminateButton_5>
+
+	<CR_TerminateButton_Desc>Terminate this life</CR_TerminateButton_Desc>
+	<CR_TerminateButton_Desc_Armed>This pawn's brain matter is about to become one with their immediate surroundings.</CR_TerminateButton_Desc_Armed>
+	
+	<CR_TerminateButton_Disabled>It's too late to change your mind.</CR_TerminateButton_Disabled>
+	
+	<!-- Messages -->
+	<CR_CompanySentTrapWarningMessage>Warning: A payload from {0} has been detected entering the map!</CR_CompanySentTrapWarningMessage>
+	
+	<!-- ===== Mod Settings ===== -->
+	<!-- Settings: General -->
+	<CR_SettingLabel_General>General Settings</CR_SettingLabel_General>
+	<CR_Setting_General_TriggeringContentToggle>Show Settings which contain Triggering Content?</CR_Setting_General_TriggeringContentToggle>
+	<CR_Setting_General_TriggeringContentToggle_TT>Default: false | WARNING: ONLY FOR SETTINGS MENU, NOT A MASTER TOGGLE!</CR_Setting_General_TriggeringContentToggle_TT>
+	<!-- Settings: The Company -->
+	<CR_SettingLabel_Company>Faction: The Company™ Settings</CR_SettingLabel_Company>
+	<CR_Setting_CompanySendsTraps>The Company™ Sends Traps</CR_Setting_CompanySendsTraps>
+	<CR_Setting_CompanySendsTraps_TT>Default: true</CR_Setting_CompanySendsTraps_TT>
+	<CR_Setting_SilentTrapDeployment>No Warning for The Company™ Traps</CR_Setting_SilentTrapDeployment>
+	<CR_Setting_SilentTrapDeployment_TT>Default: true</CR_Setting_SilentTrapDeployment_TT>
+	<!-- Settings: Trap - Sound Cannon -->
+	<CR_SettingLabel_TrapSoundCannon>Trap - Sound Cannon Settings</CR_SettingLabel_TrapSoundCannon>
+	<CR_Setting_TrapSoundCannon_ShockwaveDestroysLimbs>Sound Cannon Shockwave Destroys Limbs</CR_Setting_TrapSoundCannon_ShockwaveDestroysLimbs>
+	<CR_Setting_TrapSoundCannon_ShockwaveDestroysLimbs_TT>Default: false</CR_Setting_TrapSoundCannon_ShockwaveDestroysLimbs_TT>
+	<CR_Setting_TrapSoundCannon_UseLoudBlastEffect>Sound Cannon Blast Uses Loud SFX</CR_Setting_TrapSoundCannon_UseLoudBlastEffect>
+	<CR_Setting_TrapSoundCannon_UseLoudBlastEffect_TT>Default: false, Caution: LOUD!</CR_Setting_TrapSoundCannon_UseLoudBlastEffect_TT>
+	<!-- Setings: Triggering Content -->
+	<CR_SettingLabel_TriggeringContent>Triggering Content Settings</CR_SettingLabel_TriggeringContent>
+	<CR_Setting_SelfHarm_ContentToggle>Enable Self-Harm Extreme Mental Break</CR_Setting_SelfHarm_ContentToggle>
+	<CR_Setting_SelfHarm_ContentToggle_TT>Default: false</CR_Setting_SelfHarm_ContentToggle_TT>
+	<CR_Setting_SelfHarm_AllXenotypesSelfHarm>Enable Self-Harm Mental Break for All Xenotypes</CR_Setting_SelfHarm_AllXenotypesSelfHarm>
+	<CR_Setting_SelfHarm_AllXenotypesSelfHarm_TT>Default: false</CR_Setting_SelfHarm_AllXenotypesSelfHarm_TT>
 </LanguageData>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+	Backstories for Experiments who weren't deployed on the CARGO MISSION.
+	======================================================================
+	Having not been deployed on the CARGO MISSION, these expies were
+	subjected to further testing by the experiments, until the CARGO MISSION
+	expies started forming colonies on the grey planet.
+	
+	At first, only a few extermination teams were formed to clear out unchipped
+	expie strongholds; but as the colonies started getting strong on the grey
+	planet, the scientists started improving the training the extermination
+	expie were given and started giving them better equipment, especially
+	once news of the "Interplanetary Escape Project" reached the company.
+	
+	Despite their efforts, the unchipped were able to undergo with the
+	"Interplanetary Escape Project" and thousands on expies were able to
+	land on the nearby Rimworld. Since this Rimworld is being occasionally
+	monitored by Glitterworlds, the Company™ is at extreme risk of the
+	existence of Experiments being discovered by the Glitterworld. Unable
+	to muster enough human manpower to face down experiments on the surface,
+	the Company is now reliant on their remaining Expie population to setup
+	strongholds on the Rimworld and land raids on any known unchipped colonies
+	on the Rimworld.
+	-->
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_PlanetJumper1</defName>
+		<title>planet jumper</title>
+		<titleShort>traveler</titleShort>
+		<description>After being extracted from the Grey Planet from their successful extermination mission. [PAWN_nameDef] was given extra training to enhance [PAWN_possessive] combat skills.
+		\nNow [PAWN_pronoun] has been sent to the Rimworld to help clear out the unchipped population there.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_PacifistMedic2</defName>
+		<title>pacifist medic</title>
+		<titleShort>pacifist</titleShort>
+		<description>Despite the scientist's best efforts, [PAWN_nameDef] refused to engage in violence, even to defend [PAWN_possessive]self. However, instead of being disposed of, one scientist figured out that [PAWN_pronoun] could serve as a medic in an extermination squad.
+		\nWhile [PAWN_nameDef] hates combat, [PAWN_pronoun] would rather render medical aid than continue being tortured or executed by the scientists.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Medicine>5</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_UncaringOpportunist3</defName>
+		<title>uncaring opportunist</title>
+		<titleShort>opportunist</titleShort>
+		<description>[PAWN_nameDef] was delighted when [PAWN_pronoun] was informed that [PAWN_pronoun] will be deployed as part of an extermination squad. Being part of an extermination squad meant that [PAWN_pronoun] would be treated vastly better should [PAWN_pronoun] succeed.
+			\n[PAWN_nameDef] is unsure why the other experiments would object to an opportunity such as this.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_ShrewdFollower4</defName>
+		<title>shrewd follower</title>
+		<titleShort>shrewd</titleShort>
+		<description>[PAWN_nameDef] was quick on the uptake when the scientists started acting more weird than normal. Being a fan-favorite amongst the scientists due to [PAWN_possessive] fast learning, [PAWN_nameDef] knew that something went wrong on the Grey Planet, and that [PAWN_pronoun] was going to be deployed.
+			\nWithout the strength to avoid being deployed, [PAWN_nameDef] stay in wait for an opportunity to escape.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Social>2</Social>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_TrapperSpecialist5</defName>
+		<title>trapper specialist</title>
+		<titleShort>trapper</titleShort>
+		<description>Sensing a gift inside [PAWN_nameDef], [PAWN_possessive] assigned scientist trained [PAWN_objective] in the art of fabricating traps. While just a test of intellect at first, once the Company started needing ground troops to clear out unchipped colonies, [PAWN_nameDef] was deployed to put [PAWN_possessive] skills to use.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Construction>4</Construction>
+			<Animals>3</Animals>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Animals</li>
+			<li>Constructing</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_DesignatedBackpack6</defName>
+		<title>designated backpack</title>
+		<titleShort>hauler</titleShort>
+		<description>Seemingly incapable of most tasks. The scientists found it fit that [PAWN_nameDef] would be used as a way to increase the carrying capacity of a squad.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>-4</Shooting>
+			<Animals>-5</Animals>
+		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+			<li>Caring</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+			<SpeedOffset>1</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_BackstabbingCharmer7</defName>
+		<title>backstabbing charmer</title>
+		<titleShort>backstabber</titleShort>
+		<description>[PAWN_nameDef]'s job was simple. [PAWN_pronoun] would reach out with settlements that have come in contact with other sawians and gather information from them. Once [PAWN_pronoun] got all the information [PAWN_pronoun] needed. [PAWN_possessive] squad would eliminate the settlement. Nobody was to know of the existance of the sawians.
+		\nDue to [PAWN_nameDef] importance, [PAWN_pronoun] was modified to be more appealing, though [PAWN_pronoun] gained a bit of an ego through this.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>5</Social>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Beauty>2</Beauty>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_DrugTestbed8</defName>
+		<title>drug testbed</title>
+		<titleShort>test bed</titleShort>
+		<description>To test if combat stimulants would improve the survival rate of extermination sawians, the scientists subjected [PAWN_nameDef] to extensive drug testing.
+		\nDespite their initial expectations, [PAWN_nameDef] was extremely receptive to the testing, super eager each time they went to pickup [PAWN_objective].</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<DrugDesire>2</DrugDesire>
+			<Immunity>1</Immunity>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_CorporateSnitch9</defName>
+		<title>corporate snitch</title>
+		<titleShort>snitch</titleShort>
+		<description>To reduce the number of sawians who abandon the extermination mission, [PAWN_nameDef] was instructed to monitor [PAWN_possessive] squadmates for disloyalty and report it to the company.
+		\nAny sawian who were reported about by [PAWN_nameDef] only found out after their head starts beeping.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>2</Social>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Jealous>0</Jealous>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_MovingTarget10</defName>
+		<title>moving target</title>
+		<titleShort>target</titleShort>
+		<description>To increase the accuracy of the chipped soldiers being deployed, [PAWN_nameDef] and a few others were selected by the scientists to serve as live moving targets. The effectiveness of the program was designated inconclusive and the ethics board soon cracked down on it.
+		\nDespite expecting a bit of a respite after the program's termination, [PAWN_nameDef] found [PAWN_possessive] being deployed instead.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>3</Melee>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_FallGuy11</defName>
+		<title>fall guy</title>
+		<titleShort>fall guy</titleShort>
+		<titleFemale>fall gal</titleFemale>
+		<titleShortFemale>fall gal</titleShortFemale>
+		<description>To test the effectiveness of the Turbulent crystal shard at reducing fall impacts, the scientists decided to use [PAWN_nameDef] by having [PAWN_objective] fall from ever increasing heights.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>2</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_UnremarkableSoldier12</defName>
+		<title>unremarkable soldier</title>
+		<titleShort>soldier</titleShort>
+		<description>After growing up, [PAWN_nameDef] was about as unremarkable as a sawian could be. [PAWN_pronoun] woke up on time, participated with the experiments with no fuss, eat [PAWN_possessive] meals, and then went to sleep.
+		\nThis demeanor didn't change once [PAWN_pronoun] was selected to be deployed.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_FieldCook13</defName>
+		<title>field cook</title>
+		<titleShort>cook</titleShort>
+		<description>Despite being deployed with food rations, deployments often ran out of food before getting the chance to be extracted.
+		\nTo reduce the number of fatalities due to starvation, [PAWN_nameDef] was taught how to scavenge food, butcher animals, and cook to feed [PAWN_possessive] unit.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Animals>3</Animals>
+			<Plants>4</Plants>
+			<Cooking>4</Cooking>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Cooking</li>
+			<li>Animals</li>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_BackseatObserver14</defName>
+		<title>backseat observer</title>
+		<titleShort>observer</titleShort>
+		<description>Tasked by a particular scientist, [PAWN_nameDef] works undercover obtaining intelligence on the state of the unchipped colonies, silently reporting it back to the scientist.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>-3</Shooting>
+			<Melee>4</Melee>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_TunnelDiver15</defName>
+		<title>tunnel diver</title>
+		<titleShort>diver</titleShort>
+		<description>[PAWN_nameDef] loved being underground so much that the other scientists took note. [PAWN_possessive] affinity towards navigating narrow passageways and dark places made [PAWN_objective] the optimal choice for searching for unchipped colonies on the Grey Planet.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Mining>3</Mining>
+			<Construction>4</Construction>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Undergrounder>0</Undergrounder>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_DisgracedPet16</defName>
+		<title>disgraced pet</title>
+		<titleShort>forsakened</titleShort>
+		<description>[PAWN_nameDef] used to be the personal pet of one of the upper-level scientists. However, one day the scientist abandoned [PAWN_objective] and tossed[PAWN_objective] back with the other sawians.
+		\nWhile [PAWN_pronoun] doesn't know what [PAWN_pronoun] done wrong, the other sawians didn't forget seeing [PAWN_nameDef] being showered with affection.
+		</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>-5</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Jealous>0</Jealous>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_SilentAssassin17</defName>
+		<title>silent assassin</title>
+		<titleShort>assassin</titleShort>
+		<description>[PAWN_nameDef]'s job was very simple. Assassinate anyone that The Company™ tells [PAWN_objective], even if it one of [PAWN_possessive] squadmates.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>8</Melee>
+			<Shooting>-3</Shooting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_Warmonger18</defName>
+		<title>warmonger</title>
+		<titleShort>warmonger</titleShort>
+		<description>[PAWN_nameDef] was tasked to use [PAWN_possessive] social skills to keep morale high amongst [PAWN_possessive] squadmates. Encouraging others to stay on the mission and to eliminate any unchipped saws.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>6</Social>
+			<Melee>3</Melee>
+			<Shooting>-1</Shooting>
+			<Artistic>3</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+</Defs>

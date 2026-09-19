@@ -5,17 +5,17 @@
 		<pawnsPlural>sawians</pawnsPlural>
 		<categoryTag>CR_SawianOutlander</categoryTag>
 		<listOrderPriority>10</listOrderPriority>
-		<settlementGenerationWeight>0.5</settlementGenerationWeight>
+		<settlementGenerationWeight>0.15</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
-		<leaderTitle>elder</leaderTitle> <!-- REVIEW -->
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath> <!-- REVIEW -->
+		<leaderTitle>elder</leaderTitle>
+		<factionIconPath>CasualtiesRimknown/World/WorldObjects/Expanding/MapIcon_Sawian</factionIconPath>
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker> <!-- REVIEW -->
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures>
-			<li>Rustican</li> <!-- REVIEW -->
+			<li>CR_Liathian</li>
 		</allowedCultures>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
@@ -40,29 +40,30 @@
 		<backstoryFilters>
 			<li>
 				<categories>
-					<li>Outlander</li> <!-- REVIEW!!!! - Should be standard unchipped expie backstory -->
+					<li>CR_ExpieGreyPlanet</li>
+					<li>CR_ExpieChildCompany</li>
 				</categories>
 				<commonality>0.95</commonality>
 			</li>
 			<li>
 				<categories>
-					<li>Offworld</li> <!-- REVIEW!!!! - Should be The Company's Expie Soldiers-->
+					<li>CR_ExpieCompany</li>
+					<li>CR_ExpieChildCompany</li>
 				</categories>
 				<commonality>0.05</commonality>
 			</li>
 		</backstoryFilters>
-		<caravanTraderKinds> <!-- REVIEW!!! -->
-			<li>Caravan_Outlander_BulkGoods</li>
-			<li>Caravan_Outlander_CombatSupplier</li>
-			<li>Caravan_Outlander_Exotic</li>
-			<li>Caravan_Outlander_PirateMerchant</li>
-		</caravanTraderKinds> <!-- REVIEW -->
-		<visitorTraderKinds> <!-- REVIEW -->
+		<caravanTraderKinds>
+			<li>CR_Caravan_Sawian_BulkGoods</li>
+			<li>CR_Caravan_Sawian_CombatSupplier</li>
+			<li>CR_Caravan_Sawian_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
 			<li>Visitor_Outlander_Standard</li>
-		</visitorTraderKinds> <!-- REVIEW -->
-		<baseTraderKinds> <!-- REVIEW -->
+		</visitorTraderKinds>
+		<baseTraderKinds>
 			<li>Base_Outlander_Standard</li>
-		</baseTraderKinds> <!-- REVIEW -->
+		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker> <!-- REVIEW -->
 		<maxPawnCostPerTotalPointsCurve>
@@ -164,7 +165,7 @@
 	<FactionDef ParentName="CR_SawianOutlanderFactionBase">
 		<defName>CR_SawianOutlanderCivil</defName>
 		<label>civil sawian settlements</label>
-		<description>These unchipped sawians have settled here for a few decades after escaping the Grey Planet./n/n FINISH THIS DESCRIPTION!!!! This particular group is accepting of other civil groups.</description>
+		<description>These unchipped sawians have settled here for a few decades after escaping the Grey Planet, only bringing some of the tech and medicine present there with them..\n\nThey usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThis particular group is accepting of other civil groups.</description>
 		<colorSpectrum>
 			<li>(0.50, 0.30, 0.50)</li>
 			<li>(0.60, 0.40, 0.90)</li>
@@ -177,7 +178,8 @@
 	<FactionDef ParentName="CR_SawianOutlanderFactionBase">
 		<defName>CR_SawianOutlanderRough</defName>
 		<label>rough sawian settlements</label>
-		<description>These unchipped sawians have settled here for a few years or a couple decades after escaping the Grey Planet./n/n FINISH THIS DESCRIPTION!!!! This particular group is traumatized by their treatment from The Company and is hostile with outsiders.</description>
+		<description>These unchipped sawians have settled here for a few decades after escaping the Grey Planet, only bringing some of the tech and medicine present there with them..\n\nThey usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThis particular group is traumatized by their treatment from The Company™ and is hostile with outsiders.</description>
+		<factionIconPath>CasualtiesRimknown/World/WorldObjects/Expanding/MapIcon_SawianRough</factionIconPath>
 		<colorSpectrum>
 			<li>(0.50, 0.10, 0.30)</li>
 			<li>(0.90, 0.40, 0.60)</li>

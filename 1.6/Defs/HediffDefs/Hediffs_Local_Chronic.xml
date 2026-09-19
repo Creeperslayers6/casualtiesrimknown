@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ====== HOLLOW ===== -->
 	<HediffDef ParentName="ChronicDiseaseBase">
 		<defName>CR_Hollow</defName>
 		<label>Hollow</label>
@@ -13,6 +14,7 @@
 			<li Class="HediffCompProperties_SeverityPerSecond">
 				<severityPerSecond>0.1</severityPerSecond>
 			</li>
+			<li Class="CasualtiesRimknown.HediffCompProperties_WipeBackstory"/>
 			<li Class="CasualtiesRimknown.HediffCompProperties_RemoveHediffs">
 				<hediffs>
 					<li>Dementia</li>
@@ -57,10 +59,11 @@
 					<li>Industriousness</li>
 					<li>PsychicSensitivity</li>
 					<li>ShootingAccuracy</li>
-					<li>Occultist</li>
-					<li>Joyous</li>
-					<li>Disturbing</li>
-					<li>VoidFascination</li>
+					<li>GreatMemory</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">Occultist</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">Joyous</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">Disturbing</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">VoidFascination</li>
 					<li>Recluse</li>
 				</traits>
 			</li>
@@ -111,6 +114,236 @@
 				<statOffsets>
 					<PsychicSensitivity>-1</PsychicSensitivity>
 				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>CR_RapidNeuronRegenerationSickness</defName>
+		<label>rapid neuron regeneration sickness</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This person's neurons are being regenerated at a rapid-pace.\n\nWhile the condition should pass given time, the nanomachines shouldn't be disrupted with another dose, otherwise mistakes can be made.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CR_Mindwipe</ThingDef>
+			<ThingDef>CR_NeuralBooster</ThingDef>
+		</descriptionHyperlinks>
+		<initialSeverity>1</initialSeverity>
+		<duplicationAllowed>false</duplicationAllowed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.8333</severityPerDay> <!-- Intended to last 72,000 ticks or 20 minutes IRL. A day in Rimworld is 60,000 ticks. -->
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="CasualtiesRimknown.HediffCompProperties_MindwipeOnSeverity">
+				<mindwipeSeverity>1.01</mindwipeSeverity>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>CR_NeuralBoosted</defName>
+		<label>neural boosted</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<description>The brain structure was modified in a way which allows the individual to utilize more of their muscle strength. No side-effects for this condition are unknown.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CR_NeuralBooster</ThingDef>
+		</descriptionHyperlinks>
+		<initialSeverity>1</initialSeverity>
+		<duplicationAllowed>false</duplicationAllowed>
+		<comps>
+			<li Class="CasualtiesRimknown.HediffCompProperties_OnNeuralBoosting">
+				<neuralBoostPenaltySeverity>1</neuralBoostPenaltySeverity>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.25</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.75</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>4</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>2</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>CR_BrainGrowth</defName>
+		<label>brain growth</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The neurons in this person brain is regenerating, undoing damage from prior wounds.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CR_Braingrow</ThingDef>
+			<ThingDef>CR_NeuralBooster</ThingDef>
+		</descriptionHyperlinks>
+		<initialSeverity>1</initialSeverity>
+		<duplicationAllowed>false</duplicationAllowed>
+		<comps>
+			<li Class="CasualtiesRimknown.HediffCompProperties_HealBrainWounds">
+				<secondsBetweenHealCycle>1</secondsBetweenHealCycle>
+				<severityReduction>1</severityReduction>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerSecond">
+				<severityPerSecond>-0.01</severityPerSecond> <!-- Intended to last 100 seconds IRL.-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>CR_MuscleStrain</defName>
+		<label>muscle strain</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<description>The muscles in this limb has been damaged, reducing part efficiency and requiring time to heal.</description>
+		<duplicationAllowed>false</duplicationAllowed>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.8333</severityPerDay> <!-- Intended to last 72,000 ticks or 20 minutes IRL. A day in Rimworld is 60,000 ticks. -->
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<label>mild</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.1</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.1</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>mild</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.25</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.25</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.375</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.375</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.375</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.625</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.625</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.625</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.75</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.75</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.875</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.875</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.875</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 	</HediffDef>

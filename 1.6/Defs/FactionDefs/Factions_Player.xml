@@ -5,32 +5,38 @@
 		<label>New Escapees</label>
 		<description>A colony of recently-escaped sawians from the Grey Planet.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Researcher</basicMemberKind> <!-- REVIEW! -->
+		<basicMemberKind>Colonist</basicMemberKind>
 		<pawnSingular>colonist</pawnSingular>
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Industrial</techLevel>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker> <!-- REVIEW! -->
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker> <!-- REVIEW! -->
-		<allowedCultures><li>Corunan</li></allowedCultures> <!-- REVIEW -->
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures><li>CR_Liathian</li></allowedCultures>
+		<xenotypeSet>
+			<xenotypeChances>
+				<ERN_Expie>999</ERN_Expie>
+			</xenotypeChances>
+		</xenotypeSet>
 		<backstoryFilters>
 			<li>
 				<categories>
-					<li>Outlander</li> <!-- REVIEW! -->
+					<li>CR_ExpieGreyPlanet</li>
+					<li>CR_ExpieChildCompany</li>
 				</categories>
 			</li>
 		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<factionIconPath>CasualtiesRimknown/World/WorldObjects/Expanding/MapIcon_Sawian</factionIconPath>
 		<forageabilityFactor>1.5</forageabilityFactor> <!-- Time spent on the Grey Planet taught them well. -->
 		<startingResearchTags>
-			<li>ClassicStart</li> <!-- REVIEW! -->
+			<li>ClassicStart</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
-			<li>ClassicStart</li> <!-- REVIEW! -->
-			<li>ClassicStartTechprints</li> <!-- REVIEW! -->
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
 		</startingTechprintsResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
-				<li>Cloth</li> <!-- REVIEW! -->
+				<li>Cloth</li>
 			</thingDefs>
 		</apparelStuffFilter>
 	</FactionDef>

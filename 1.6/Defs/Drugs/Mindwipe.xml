@@ -14,7 +14,7 @@
 		</graphicData>
 		<rotatable>false</rotatable>
 		<statBases>
-			<MarketValue>50</MarketValue>
+			<MarketValue>75</MarketValue>
 			<Mass>0.45</Mass>
 		</statBases>
 		<techLevel>Ultra</techLevel>
@@ -40,5 +40,8 @@
 				<listOrder>500</listOrder>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

@@ -7,4 +7,30 @@
 			<li>CR_LastStand</li>
 		</value>
 	</Operation>
+	
+	<!-- Lore Accurate Experiment Name Injection-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="ERN_Expie"]</xpath>
+		<value>
+			<nameMaker>CR_NamerPersonExperiment</nameMaker>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		</value>
+	</Operation>
+	
+	<!-- Expie' Tail Corpse Fix Patch -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="ERN_ExpieTail"]/renderNodeProperties/li</xpath>
+		<value>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+		</value>
+	</Operation>
+	
+	<!-- Revert the Base Erin' Faction Patch -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances/ERN_Expie</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances/ERN_Expie</xpath>
+	</Operation>
 </Patch>

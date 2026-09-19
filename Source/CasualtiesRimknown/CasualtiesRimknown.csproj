@@ -15,7 +15,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>portable</DebugType>
+    <DebugType>embedded</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\1.6\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -34,6 +34,10 @@
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0MultiplayerAPI">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2606448745\1.6\Assemblies\0MultiplayerAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -58,20 +62,67 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\Toils_Selfharm.cs" />
+    <Compile Include="Buildings\Building_TurretSonic.cs" />
     <Compile Include="CasualtiesRimknown_Mod.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_SonicShockwave.cs" />
+    <Compile Include="DefOfs\DamageDefOf.cs" />
+    <Compile Include="DefOfs\EffecterDefOf.cs" />
+    <Compile Include="DefOfs\BackstoryDefOf.cs" />
+    <Compile Include="DefOfs\FactionDefOf.cs" />
     <Compile Include="DefOfs\GeneDefOf.cs" />
     <Compile Include="DefOfs\HediffDefOf.cs" />
-    <Compile Include="MapComponent\LastStandManager.cs" />
-    <Compile Include="Gene\Gene_LastStand.cs" />
+    <Compile Include="DefOfs\HistoryEventDefOf.cs" />
+    <Compile Include="DefOfs\JobDefOf.cs" />
+    <Compile Include="DefOfs\RulePackDefOf.cs" />
+    <Compile Include="DefOfs\SoundDefOf.cs" />
+    <Compile Include="DefOfs\TaleDefOf.cs" />
+    <Compile Include="DefOfs\ThingDefOf.cs" />
+    <Compile Include="DefOfs\ThoughtDefOf.cs" />
+    <Compile Include="DefOfs\XenotypeDefOf.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_HealBrainWounds.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_MindwipeOnSeverity.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_OnNeuralBoosting.cs" />
+    <Compile Include="HediffCompProperties\HediffCompProperties_WipeBackstory.cs" />
+    <Compile Include="HediffComps\HediffComp_HealBrainWounds.cs" />
+    <Compile Include="HediffComps\HediffComp_MindwipeOnSeverity.cs" />
+    <Compile Include="HediffComps\HediffComp_OnNeuralBoosting.cs" />
+    <Compile Include="HediffComps\HediffComp_WipeBackstory.cs" />
+    <Compile Include="Hediffs\Hediff_Chipped.cs" />
+    <Compile Include="Hediffs\Hediff_Hemothorax.cs" />
+    <Compile Include="Hediffs\Hediff_InternalBleeding.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_SoundCannonDrop.cs" />
+    <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_HealBrainWounds.cs" />
+    <Compile Include="JobDrivers\JobDriver_Selfharm.cs" />
+    <Compile Include="JobDrivers\JobDriver_SelfharmEye.cs" />
+    <Compile Include="JobDrivers\JobDriver_SelfharmSlashOnce.cs" />
+    <Compile Include="JobDrivers\JobDriver_SelfharmSlashTerminal.cs" />
+    <Compile Include="JobDrivers\JobDriver_VomitBlood.cs" />
+    <Compile Include="JobGivers\JobGiver_SeekingMindwipe.cs" />
+    <Compile Include="JobGivers\JobGiver_SelfharmEvent.cs" />
+    <Compile Include="Genes\Gene_LastStand.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_RemoveTraits.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_RemoveHediffs.cs" />
     <Compile Include="HediffCompProperties\HediffCompProperties_SetSkills.cs" />
-    <Compile Include="HediffComp\HediffComp_RemoveTraits.cs" />
-    <Compile Include="HediffComp\HediffComp_RemoveHediffs.cs" />
-    <Compile Include="HediffComp\HediffComp_SetSkills.cs" />
-    <Compile Include="Hediff\Hediff_LastStand.cs" />
+    <Compile Include="HediffComps\HediffComp_RemoveTraits.cs" />
+    <Compile Include="HediffComps\HediffComp_RemoveHediffs.cs" />
+    <Compile Include="HediffComps\HediffComp_SetSkills.cs" />
+    <Compile Include="MentalBreakWorkers\MentalBreakWorker_SeekingMindwipe.cs" />
+    <Compile Include="MentalBreakWorkers\MentalBreakWorker_SelfharmEvent.cs" />
+    <Compile Include="MentalStates\MentalState_SeekingMindwipe.cs" />
+    <Compile Include="MentalStates\MentalState_SelfharmEvent.cs" />
+    <Compile Include="MentalStateWorkers\MentalStateWorker_SeekingMindwipe.cs" />
+    <Compile Include="Patches\Patch_AdministerIngestible.cs" />
     <Compile Include="Patches\Patch_Corpse.cs" />
+    <Compile Include="Patches\Patch_Medical.cs" />
+    <Compile Include="Patches\Patch_Faction.cs" />
+    <Compile Include="PlaceWorkers\PlaceWorker_ShowTurretRadius_ArcShock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Mindwiped.cs" />
+    <Compile Include="Utilities\BrainHealingUtility.cs" />
+    <Compile Include="Utilities\VomitBloodUtility.cs" />
+    <Compile Include="Verbs\Verb_ArcShockwave.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
