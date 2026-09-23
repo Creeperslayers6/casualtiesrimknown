@@ -165,9 +165,12 @@ namespace CasualtiesRimknown.Hediffs
 
         private void Explode()
         {
-            Map currentMap = pawn.Map;
             pawn.TakeDamage(new DamageInfo(DamageDefOf.Bomb, 50, 0, -1, pawn, null, DefOfs.ThingDefOf.CR_BrainChipBomb));
-            GenExplosion.DoExplosion(pawn.Position, currentMap, explosionRadius, DamageDefOf.Bomb, pawn, explosionDamage, -1, null, DefOfs.ThingDefOf.CR_BrainChipBomb);
+            Map currentMap = pawn.Map;
+            if (currentMap != null)
+            {
+                GenExplosion.DoExplosion(pawn.Position, currentMap, explosionRadius, DamageDefOf.Bomb, pawn, explosionDamage, -1, null, DefOfs.ThingDefOf.CR_BrainChipBomb);
+            }
             DestroyBrain();
         }
 
@@ -182,14 +185,14 @@ namespace CasualtiesRimknown.Hediffs
                     Hediff_MissingPart headExploded = (Hediff_MissingPart)HediffMaker.MakeHediff(HediffDefOf.MissingBodyPart, pawn, pawnHead);
                     headExploded.IsFresh = true;
                     pawn.health.AddHediff(headExploded);
-                    Log.Message("Added Missing Head Hediff!");
+                    //Log.Message("Added Missing Head Hediff!");
                 }
                 else
                 {
                     if (pawnBrain != null && !pawn.health.hediffSet.HasMissingPartFor(pawnBrain))
                     {
                         pawn.TakeDamage(new DamageInfo(DamageDefOf.Bomb, 999, 0, -1, pawn, pawnBrain, DefOfs.ThingDefOf.CR_BrainChipBomb));
-                        Log.Message("Okay, we're just blowing this head up!");
+                        //Log.Message("Okay, we're just blowing this head up!");
                     }
                 }
             }

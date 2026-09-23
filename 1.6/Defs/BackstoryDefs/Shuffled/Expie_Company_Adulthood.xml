@@ -17,11 +17,13 @@
 	"Interplanetary Escape Project" and thousands on expies were able to
 	land on the nearby Rimworld. Since this Rimworld is being occasionally
 	monitored by Glitterworlds, the Company™ is at extreme risk of the
-	existence of Experiments being discovered by the Glitterworld. Unable
+	existence of Experiments being discovered by the Glitterworlds. Unable
 	to muster enough human manpower to face down experiments on the surface,
 	the Company is now reliant on their remaining Expie population to setup
-	strongholds on the Rimworld and land raids on any known unchipped colonies
-	on the Rimworld.
+	strongholds on the RimWorld and land raids on any known unchipped colonies
+	on the RimWorld.
+	
+	GOAL COUNT: 22/30~40
 	-->
 	<BackstoryDef>
 		<defName>CR_ExpieCorp_PlanetJumper1</defName>
@@ -458,5 +460,98 @@
 			<li>Social</li>
 			<li>Artistic</li>
 		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_CombatEngineer19</defName>
+		<title>combat engineer</title>
+		<titleShort>engineer</titleShort>
+		<description>To fufill the need for someone with demolition experience in the field, the company trained [PAWN_nameDef] on how to use explosives and shore up shelters for [PAWN_possessive] combat team.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Construction>3</Construction>
+			<Crafting>4</Crafting>
+			<Mining>2</Mining>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Mining</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_UncaringMedic20</defName>
+		<title>uncaring medic</title>
+		<titleShort>medic</titleShort>
+		<description>Compared to the other medics being deployed, [PAWN_nameDef] isn't too worried about mental wellbeing of [PAWN_possessive] patient's mental health. Gleefully ripping shards out at max speed, and carelessly bashing limbs back into its socket.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Medicine>5</Medicine>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_Firebug21</defName>
+		<title>firebug</title>
+		<titleShort>firebug</titleShort>
+		<description>After being subjected to combat training, [PAWN_nameDef] gained a sudden obsession with fire, attempting to start fires at seemingly random.
+		\nDue to [PAWN_nameDef]'s antics, [PAWN_pronoun] was deployed prematurely so the scientists could get rid of [PAWN_objective].</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Melee>-4</Melee>
+			<Social>-3</Social>
+		</skillGains>
+		<forcedTraits>
+			<Pyromaniac>0</Pyromaniac>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieCorp_Torturer22</defName>
+		<title>torturer</title>
+		<titleShort>torturer</titleShort>
+		<description>While the unchipped are offering the location for their safety, The Company™ will not accept this deal. To ensure the location of The Cargo is found, [PAWN_nameDef] and some others have been selected to use more "specialized" methods to extract information from survivors.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieCompany</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
 	</BackstoryDef>
 </Defs>

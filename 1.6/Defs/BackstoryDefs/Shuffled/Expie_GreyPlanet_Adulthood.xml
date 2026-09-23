@@ -17,7 +17,9 @@
 	completed and distributed amongst the planet, many experiments
 	were able to escape from the Grey Planet onto the nearest Rimworld,
 	where they could hopefully have an easier life, and where the Company
-	would be more exposed trying to eliminate them.
+	would be more exposed when trying to eliminate them.
+	
+	GOAL COUNT: 32/40~55
 	-->
 	<!-- Survivors -->
 	
@@ -493,6 +495,27 @@
 		</disallowedTraits>
 	</BackstoryDef>
 
+	<BackstoryDef>
+		<defName>CR_Expie_Writer31</defName>
+		<title>writer</title>
+		<titleShort>writer</titleShort>
+		<description>After finding a notebook and pen, [PAWN_nameDef] decided to log about his experiences while descending through the Grey Planet. This log didn't just contain [PAWN_possessive] experiences, but also of those [PAWN_pronoun] encountered on the way.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Artistic>2</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
 	<!-- ========= Colony Generic? ========= -->
 	
 	<BackstoryDef>
@@ -725,5 +748,30 @@
 		<requiredWorkTags>
 			<li>Animals</li>
 		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_Expie_RecordKeeper32</defName>
+		<title>record keeper</title>
+		<titleShort>recorder</titleShort>
+		<description>To avoid their experiences being forgotten and to teach future generations, [PAWN_nameDef] has taken it upon [PAWN_objective]self to keep a record of saw accounts about their time with The Company™ and on the Grey Planet.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CR_ExpieGreyPlanet</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>2</Artistic>
+			<Social>5</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
 	</BackstoryDef>
 </Defs>

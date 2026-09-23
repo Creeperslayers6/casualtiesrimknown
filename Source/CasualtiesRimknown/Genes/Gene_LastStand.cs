@@ -85,7 +85,7 @@ namespace CasualtiesRimknown
 
         private void Resurrect()
         {
-            Log.Message("Gene_LastStand, Attempt Resurrect Now!");
+            //Log.Message("Gene_LastStand, Attempt Resurrect Now!");
             resurrecting = false;
             ResurrectionUtility.TryResurrect(pawn, new ResurrectionParams
             {
