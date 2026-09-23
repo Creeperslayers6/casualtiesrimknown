@@ -5,7 +5,7 @@
 		<label>Extraction Pod Insertion</label>
 		<description>The modified extraction pod was where the contact said it would be. You and your two fellow sawians enter as the pod burns towards the nearest habitable planet in the system. Some time later, your pod slams into this unknown rimworld.</description>
 		<scenario>
-			<summary>I don't know yet.</summary>
+			<summary>Three crashlanded expies - similar to Crashlanded, but peace with The Company™ is unobtainable.</summary>
 			<playerFaction>
 				<factionDef>CR_PlayerExpieColony</factionDef>
 			</playerFaction>
@@ -31,23 +31,29 @@
 					</xenotypeCounts>
 				</li>
 				
-			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>3</pawnCount>
 					<pawnChoiceCount>8</pawnChoiceCount>
 				</li>
 				-->
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
-					<def>ConfigurePawnsKindDefs</def>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
 					<pawnChoiceCount>8</pawnChoiceCount>
-					<leftBehindPawnKind>CR_ExpieColonist</leftBehindPawnKind>
-					<kindCounts>
+					<overrideKinds>
 						<li>
-							<kindDef>CR_ExpieColonist</kindDef>
+							<xenotype>ERN_Expie</xenotype>
+							<pawnKind>CR_ExpieColonist</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>ERN_Expie</xenotype>
 							<count>3</count>
 							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
 						</li>
-					</kindCounts>
+					</xenotypeCounts>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
@@ -104,11 +110,13 @@
 					<thingDef>Apparel_AdvancedHelmet</thingDef>
 					<stuff>Plasteel</stuff>
 				</li>
+				<!--
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>
 					<count>1</count>
 					<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
 				</li>
+				-->
 
 				<!-- Scatter some things near player start -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
@@ -146,7 +154,7 @@
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>The pod wasn't anything too elegant, but you and your friend would take anything to get off this forsaken planet.\n\nThe pod didn't quite survive the landing, but you are alive. Now its time to turn this planet into a new home.</text>
+					<text>The pod wasn't anything too elegant, but you and your friends would take anything to get off this forsaken planet.\n\nThe pod didn't quite survive the landing, but you are alive. Now its time to turn this planet into a new home.</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 			</parts>
@@ -160,8 +168,18 @@
 		<xenotypeSet>
 			<xenotypeChances>
 				<ERN_Expie>999</ERN_Expie>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+				<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0</Starjack>
 			</xenotypeChances>
 		</xenotypeSet>
+		<!--<useFactionXenotypes>false</useFactionXenotypes>-->
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
 			<li>IndustrialBasic</li>

@@ -22,16 +22,16 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
-		<structureMemeWeights> <!-- REVIEW -->
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
 			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0.35</Structure_Archist>
 			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
-			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
-			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
-			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
-		</structureMemeWeights> <!-- REVIEW -->
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0.45</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0.45</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0.45</Structure_OriginBuddhist>
+		</structureMemeWeights>
 		<xenotypeSet>
 			<xenotypeChances>
 				<ERN_Expie>999</ERN_Expie>
@@ -172,7 +172,7 @@
 		</colorSpectrum>
 		<classicIdeo>true</classicIdeo>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>5</configurationListOrderPriority>
+		<configurationListOrderPriority>15</configurationListOrderPriority>
 	</FactionDef>
 
 	<FactionDef ParentName="CR_SawianOutlanderFactionBase">
@@ -188,6 +188,6 @@
 		<naturalEnemy>true</naturalEnemy>
 		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>6</configurationListOrderPriority>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
 	</FactionDef>
 </Defs>

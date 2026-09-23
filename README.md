@@ -3,7 +3,7 @@ Casualties: Rimknown Mod integrates elements of Casualties: Unknown into Rimworl
 ## Current [Development Phase](#Development-Phases):
 * **Active Phase: Phase 1**
 	* Phase #1 consist of adding the base layer for Factions from the C:R Alt-canon, including the backstories, cultures, etc.
-	* Also includes re-implementing all the features from [**Casualties: Rimknown - Sound Cannon**](https://steamcommunity.com/sharedfiles/filedetails/?id=3768377243) and some additional medicines.
+	* Also includes re-implementing all the features from [**Casualties: Rimknown - Sound Cannon**](https://steamcommunity.com/sharedfiles/filedetails/?id=3768377243) and some additional drugs.
 ## Lore
 **Casualties: Rimknown is an alt-canon where the events of Casualties: Unknown take place in the universe of Rimworld.**
 ## Features:

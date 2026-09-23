@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--
+	Backstories for both Experiments deployed on the CARGO MISSION and the follow-up extermination missions.
+	========================================================================================================
+	After being created by the scientists, these experiments were used as human-adjacent labrats with next
+	to zero care with their wellbeing. Operating unrestricted from basic ethics, The Company™ was able to
+	develop products more rapidly than other Glitterworld companies.
+	
+	GOAL COUNT: 17/30~40
+	-->
 	<!-- Physical Experiments -->
 	<BackstoryDef>
 		<defName>CR_ExpieChild_FemurBroken1</defName>
 		<title>femur broken child</title>
 		<titleShort>femur broken</titleShort>
-		<description>As a child, [PAWN_nameDef] underwent experiments on the durability of their bones. As a result, [PAWN_possessive] bones are stronger than usual, at the expense of [PAWN_nameDef]'s mental state.</description>
+		<description>As a child, [PAWN_nameDef] underwent experiments on the durability of [PAWN_possessive] bones. As a result, [PAWN_possessive] bones are stronger than usual, at the expense of [PAWN_nameDef]'s mental state.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CR_ExpieChildCompany</li>
@@ -86,7 +95,7 @@
 		<defName>CR_ExpieChild_SelflessChild5</defName>
 		<title>selfless child</title>
 		<titleShort>kind-hearted</titleShort>
-		<description>The odd one out in [PAWN_possessive] section; [PAWN_nameDef] was known for their exceptional kindness and optimistic worldview.</description>
+		<description>The odd one out in [PAWN_possessive] section; [PAWN_nameDef] was known for [PAWN_possessive] exceptional kindness and optimistic worldview.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CR_ExpieChildCompany</li>
@@ -142,6 +151,55 @@
 			<SlowLearner>0</SlowLearner>
 		</forcedTraits>
 	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_SicklyChild16</defName>
+		<title>sickly child</title>
+		<titleShort>sickly</titleShort>
+		<description>When compared to the other sawians, [PAWN_nameDef] seemed way more prone to getting sick than [PAWN_possessive] peers.
+		\nSensing an oppertunity, the scientists used [PAWN_objective] as a test subject for testing experimental medicines.
+		</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Immunity>-1</Immunity>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	
+	<!-- Intelligence Experiments -->
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_BurntSavant17</defName>
+		<title>burnt savant</title>
+		<titleShort>savant</titleShort>
+		<description>After discovering [PAWN_nameDef] talent in art, the scientists subjected [PAWN_objective] to an endless barrage of tests to gauge the extent of [PAWN_possessive] abilities.
+		\nWhile this experience would of burnt many people away from artistic pursuits forever, [PANW_nameDef] is unable to fight the urge to create.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>7</Artistic>
+			<Intellectual>2</Intellectual>
+			<Social>-4</Social>
+		</skillGains>
+		<forcedTraits>
+			<TorturedArtist>0</TorturedArtist>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	
+</BackstoryDef>
 	
 	<!-- Scientist' Pet Projects -->
 	<BackstoryDef>
@@ -174,7 +232,8 @@
 		<defName>CR_ExpieChild_Hunter4</defName>
 		<title>trained hunter</title>
 		<titleShort>hunter</titleShort>
-		<description>With the direction of a notorious scientist, [PAWN_nameDef] was raised to be a ruthless hunter.</description>
+		<description>With the direction of a notorious scientist, [PAWN_nameDef] was raised to be a ruthless hunter.
+		\nWith [PAWN_possessive] brain rewired, [PAWN_nameDef] became unable to socialize with [PAWN_possessive] peers, stitch up wounds, or aim carefully.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CR_ExpieChildCompany</li>
@@ -266,5 +325,51 @@
 		<forcedTraits>
 			<NaturalMood>-2</NaturalMood>
 		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_DefiantChild14</defName>
+		<title>defiant child</title>
+		<titleShort>defiant</titleShort>
+		<description>Despite [PAWN_nameDef]'s harsh treatment by the scientists and the company as a whole, [PAWN_possessive] will never broke. [PAWN_nameDef] remained defiant and caused issues with the scientists until [PAWN_pronoun] was deployed.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>2</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CR_ExpieChild_Improviser15</defName>
+		<title>improviser</title>
+		<titleShort>improviser</titleShort>
+		<description>From a young age, [PAWN_nameDef] knew that to survive under the gaze of The Company™ that [PAWN_pronoun] would need to be crafty.
+		\nWhile putting up less of a resistence than others, [PAWN_nameDef] put in the work to silently learn how improvise devices while others weren't looking</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CR_ExpieChildCompany</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>2</Melee>
+			<Shooting>-4</Shooting>
+			<Social>2</Social>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<forcedTraits>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
 	</BackstoryDef>
 </Defs>
