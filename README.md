@@ -61,7 +61,7 @@ Casualties: Rimknown Mod integrates elements of Casualties: Unknown into Rimworl
 	* Does include some assets such as sound sfx.
 * [**Erin's Experiments**](https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165) - Created by [Erin](https://www.patreon.com/Erinmhidni)
 	* Required Dependency for the Experiment Xenotype.
-* [**Rimworld Discord**](https://discord.com/invite/rimworld) - Members of the #mod-development channel
+* [**RimWorld Discord**](https://discord.com/invite/rimworld) - Members of the #mod-development channel
 	* Rendered assistance with coding and debugging problems.
 ## Development Phases
 Disclaimer: Development Phase Items subject to change at any time, nothing here is promised!
