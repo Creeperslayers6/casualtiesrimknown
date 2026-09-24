@@ -3,7 +3,32 @@
 	<packageId>Creeperslayers6.CasualtiesRimknown</packageId>
 	<name>Casualties: Rimknown</name>
 	<author>Creeperslayers6</author>
-	<description>Insert Description Here!</description>
+	<description>
+Casualties: Rimknown implements Factions and Content based off the Crossover AU between RimWorld and Casualties: Unknown.
+
+Features:
+- Experiment-based Civil and Rough Outlander Factions and Neutral Empire-based Faction.
+- Casualties: Rimknown-based Starting Scenario (w.i.p)
+- Braingrow, Mindwipe, and Neural Booster.
+- New Sound Cannon Security Turret.
+- Two new Extreme Mental Breaks
+- New Backstories for Experiment Xenotype
+- Last Stand Gene/Ability
+- Patches for Erin's Experiments
+	
+Requires:
+- RimWorld - Biotech DLC
+- Harmony Mod
+- Vanilla Expanded Framework
+- Erin's Experiments
+	
+Incompatible with:
+- Casualties: Rimknown - Sound Cannon
+	
+Casualties: Unknown Game/IP is Created/Owned by Orsoniks.
+	</description>
+	<modVersion>1.0.1</modVersion>
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=3807092899</url>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
