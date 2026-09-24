@@ -1,11 +1,11 @@
 # Casualties: Rimknown
-Casualties: Rimknown Mod integrates elements of Casualties: Unknown into Rimworld.
+Casualties: Rimknown Mod integrates elements of Casualties: Unknown into RimWorld.
 ## Current [Development Phase](#Development-Phases):
 * **Active Phase: Phase 1**
 	* Phase #1 consist of adding the base layer for Factions from the C:R Alt-canon, including the backstories, cultures, etc.
 	* Also includes re-implementing all the features from [**Casualties: Rimknown - Sound Cannon**](https://steamcommunity.com/sharedfiles/filedetails/?id=3768377243) and some additional drugs.
 ## Lore
-**Casualties: Rimknown is an alt-canon where the events of Casualties: Unknown take place in the universe of Rimworld.**
+**Casualties: Rimknown is an alt-canon where the events of Casualties: Unknown take place in the universe of RimWorld.**
 ## Features:
 * ### New Factions:
 	* Civil Sawian Settlements
@@ -61,7 +61,7 @@ Casualties: Rimknown Mod integrates elements of Casualties: Unknown into Rimworl
 	* Does include some assets such as sound sfx.
 * [**Erin's Experiments**](https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165) - Created by [Erin](https://www.patreon.com/Erinmhidni)
 	* Required Dependency for the Experiment Xenotype.
-* [**Rimworld Discord**](https://discord.com/invite/rimworld) - Members of the #mod-development channel
+* [**RimWorld Discord**](https://discord.com/invite/rimworld) - Members of the #mod-development channel
 	* Rendered assistance with coding and debugging problems.
 ## Development Phases
 Disclaimer: Development Phase Items subject to change at any time, nothing here is promised!
