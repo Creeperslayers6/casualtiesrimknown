@@ -116,10 +116,13 @@
     <Compile Include="Patches\Patch_Corpse.cs" />
     <Compile Include="Patches\Patch_Medical.cs" />
     <Compile Include="Patches\Patch_Faction.cs" />
+    <Compile Include="Patches\Patch_UIRootEntry.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowTurretRadius_ArcShock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScenParts\ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs_Ext.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Mindwiped.cs" />
     <Compile Include="Utilities\BrainHealingUtility.cs" />
+    <Compile Include="Utilities\SawianUtilty.cs" />
     <Compile Include="Utilities\VomitBloodUtility.cs" />
     <Compile Include="Verbs\Verb_ArcShockwave.cs" />
   </ItemGroup>

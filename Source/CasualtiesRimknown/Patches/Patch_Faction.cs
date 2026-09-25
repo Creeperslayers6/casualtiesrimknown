@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using CasualtiesRimknown.Utilities;
+using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace CasualtiesRimknown.Patches
 
         internal static void Postfix(Faction __instance,Pawn p)
         {
-            if (__instance == PlayerFaction && p.genes?.Xenotype == DefOfs.XenotypeDefOf.ERN_Expie)
+            if (__instance == PlayerFaction && p.IsASawianXenotype())
             {
                 Faction theCompany = Find.FactionManager.FirstFactionOfDef(DefOfs.FactionDefOf.CR_TheCompany);
                 //

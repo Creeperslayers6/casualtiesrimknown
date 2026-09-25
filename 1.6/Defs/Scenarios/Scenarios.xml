@@ -11,49 +11,18 @@
 			</playerFaction>
 			<parts>
 				<!-- Config pages -->
-				<!--
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
-					<def>ConfigurePawnsXenotypes</def>
+
+				<li Class="CasualtiesRimknown.ScenParts.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs_Ext">
+					<def>ConfigurePawnsKindDefs</def>
 					<pawnChoiceCount>8</pawnChoiceCount>
-					<overrideKinds>
+					<leftBehindPawnKind>CR_ExpieColonist</leftBehindPawnKind>
+					<kindCounts>
 						<li>
-							<xenotype>ERN_Expie</xenotype>
-							<pawnKind>Colonist</pawnKind>
-						</li>
-					</overrideKinds>
-					<xenotypeCounts>
-						<li>
-							<xenotype>ERN_Expie</xenotype>
+							<kindDef>CR_ExpieColonist</kindDef>
 							<count>3</count>
 							<requiredAtStart>true</requiredAtStart>
-							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
 						</li>
-					</xenotypeCounts>
-				</li>
-				
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>3</pawnCount>
-					<pawnChoiceCount>8</pawnChoiceCount>
-				</li>
-				-->
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
-					<def>ConfigurePawnsXenotypes</def>
-					<pawnChoiceCount>8</pawnChoiceCount>
-					<overrideKinds>
-						<li>
-							<xenotype>ERN_Expie</xenotype>
-							<pawnKind>CR_ExpieColonist</pawnKind>
-						</li>
-					</overrideKinds>
-					<xenotypeCounts>
-						<li>
-							<xenotype>ERN_Expie</xenotype>
-							<count>3</count>
-							<requiredAtStart>true</requiredAtStart>
-							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
-						</li>
-					</xenotypeCounts>
+					</kindCounts>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
@@ -167,16 +136,14 @@
 		<defaultFactionDef>CR_PlayerExpieColony</defaultFactionDef>
 		<xenotypeSet>
 			<xenotypeChances>
-				<ERN_Expie>999</ERN_Expie>
-				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
-				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
-				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
-				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
-				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
-				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
-				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
-				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
-				<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0</Starjack>
+				<!-- Species: Experiment -->
+				<ERN_Expie MayRequire="Erin.Expie">6</ERN_Expie>
+				<Expie_Xenotype MayRequire="Expieworld.Package">6</Expie_Xenotype>
+				<!-- Species: Milky -->
+				<Milky_Xenotype MayRequire="Milkyworld.Package">3</Milky_Xenotype>
+				<ERNLE_Milky MayRequire="kotovaann.ernloreexpansion">3</ERNLE_Milky>
+				<!-- Species: Dune -->
+				<ERNLE_Dune MayRequire="kotovaann.ernloreexpansion">1</ERNLE_Dune>
 			</xenotypeChances>
 		</xenotypeSet>
 		<!--<useFactionXenotypes>false</useFactionXenotypes>-->

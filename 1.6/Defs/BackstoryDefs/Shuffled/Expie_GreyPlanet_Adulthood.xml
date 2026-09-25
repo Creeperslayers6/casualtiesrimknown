@@ -27,7 +27,7 @@
 		<defName>CR_Expie_UnlicensedPharmacist1</defName>
 		<title>unlicensed pharmacist</title>
 		<titleShort>pharmacist</titleShort>
-		<description>During their descent into the grey planet, [PAWN_nameDef] encountered a mini-barrel full of fentanyl and decided for some reason to chug it.
+		<description>During [PAWN_possessive] descent into the grey planet, [PAWN_nameDef] encountered a mini-barrel full of fentanyl and decided for some reason to chug it.
 			\nHaving somehow survived the experience, [PAWN_pronoun] used this knowledge to dillute opioids for an unchipped settlement.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>

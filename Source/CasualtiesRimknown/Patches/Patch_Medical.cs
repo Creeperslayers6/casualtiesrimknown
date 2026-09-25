@@ -17,7 +17,6 @@ namespace CasualtiesRimknown.Patches
         {
             if (doctor == patient && doctor != null && doctor.health.hediffSet.HasHediff(DefOfs.HediffDefOf.CR_Chipped))
             {
-                Log.Message("Self-tend had Chipped Hediff! | Apply 90% Self-Tend Value");
                 float num = __result * (9/7); // Chipped Self-Tend Buff 70% -> 90%
                 __result = Mathf.Clamp(num, 0f, medicineQualityMax);
             }
