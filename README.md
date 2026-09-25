@@ -1,7 +1,7 @@
 # Casualties: Rimknown
 Casualties: Rimknown Mod integrates elements of Casualties: Unknown into RimWorld.
 ## Current [Development Phase](#Development-Phases):
-* **Active Phase: Phase 1**
+* **Active Phase: Phase 1->2**
 	* Phase #1 consist of adding the base layer for Factions from the C:R Alt-canon, including the backstories, cultures, etc.
 	* Also includes re-implementing all the features from [**Casualties: Rimknown - Sound Cannon**](https://steamcommunity.com/sharedfiles/filedetails/?id=3768377243) and some additional drugs.
 ## Lore
@@ -54,8 +54,12 @@ Casualties: Rimknown Mod integrates elements of Casualties: Unknown into RimWorl
 ## Dependencies
 * [**RimWorld - Biotech DLC**](https://store.steampowered.com/app/1826140/RimWorld__Biotech/) (Required)
 * [**Harmony**](https://steamcommunity.com/workshop/filedetails/?id=2009463077) (Required)
-* [**Vanilla Expanded Framework**](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) (Required - Erin's Experiments)
-* [**Erin's Experiments**](https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165) (Required)
+* [**Vanilla Expanded Framework**](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) (Required - Erin's Experiments | Pending Potential Removal?)
+## Supported Xenotype Mods (Requires At Least One!)
+* [**Erin's Experiments**](https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165)
+* [**Erin's Experiments, Milky and Dune Patch**](https://steamcommunity.com/sharedfiles/filedetails/?id=3780310706)
+* [**Gexies expies**](https://steamcommunity.com/sharedfiles/filedetails/?id=3738658775)
+* [**Gexies milkies**](https://steamcommunity.com/sharedfiles/filedetails/?id=3775745938)
 ## Credits:
 * [**Casualties: Unknown**](https://store.steampowered.com/app/4576490/Casualties_Unknown/) - Created by Orsoniks
 	* Does include some assets such as sound sfx.
