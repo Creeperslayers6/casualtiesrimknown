@@ -69,7 +69,14 @@
 		</backstoryFilters>
 		<xenotypeSet>
 			<xenotypeChances>
-				<ERN_Expie>999</ERN_Expie>
+				<!-- Species: Experiment -->
+				<ERN_Expie MayRequire="Erin.Expie">6</ERN_Expie>
+				<Expie_Xenotype MayRequire="Expieworld.Package">6</Expie_Xenotype>
+				<!-- Species: Milky -->
+				<Milky_Xenotype MayRequire="Milkyworld.Package">3</Milky_Xenotype>
+				<ERNLE_Milky MayRequire="kotovaann.ernloreexpansion">3</ERNLE_Milky>
+				<!-- Species: Dune -->
+				<ERNLE_Dune MayRequire="kotovaann.ernloreexpansion">1</ERNLE_Dune>
 			</xenotypeChances>
 		</xenotypeSet>
 		<permanentEnemyToEveryoneExcept>

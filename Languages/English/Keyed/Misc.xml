@@ -3,6 +3,9 @@
 	<!-- Casualties: Rimknown -->
 	<CasualtiesRimknownName>Casualties: Rimknown</CasualtiesRimknownName>
 	
+	<!-- Menu -->
+	<CR_Menu_MissingXenotypeModDialog>// !! WARNING !! //\n\nCasualties: Rimknown requires ONE of the following mods installed to work correctly:\n - Erin's Experiments!\n - Gexies expie!\n - Gexies milkies!\n\nSee Workshop Page or GitHub README.md for more details!\n\n// !! WARNING !! //</CR_Menu_MissingXenotypeModDialog>
+	
 	<!-- Last Stand -->
 	<CR_LastStandTriggered>{PAWN_nameDef} is not giving up just yet!</CR_LastStandTriggered>
 	

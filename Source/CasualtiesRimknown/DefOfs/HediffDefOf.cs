@@ -22,6 +22,7 @@ namespace CasualtiesRimknown.DefOfs
 
         public static HediffDef CR_InternalBleeding;
         public static HediffDef CR_Hemothorax;
+        public static HediffDef CR_DeepCut;
         static HediffDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));

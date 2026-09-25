@@ -3,6 +3,10 @@
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
-		<li IfModActive="Ludeon.RimWorld.Ideology">Ideology/1.6</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">DLCs/Ideology/1.6</li>
+		<li IfModActive="Erin.Expie">Mod_Support/Erin_Experiments/1.6</li>
+		<li IfModActive="Expieworld.Package">Mod_Support/Gexies_expies/1.6</li>
+		<li IfModActive="Milkyworld.Package">Mod_Support/Gexies_milkies/1.6</li>
+		<li IfModActive="kotovaann.ernloreexpansion">Mod_Support/Kotovaann_ERNLoreExpansion/1.6</li>
 	</v1.6>
 </loadFolders>

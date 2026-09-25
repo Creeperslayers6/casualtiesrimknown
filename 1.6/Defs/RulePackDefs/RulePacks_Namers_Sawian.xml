@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Generic Sawian Serial Number -->
+	<RulePackDef>
+		<defName>CR_NamerPersonSawianGeneric</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sawianSerialNumber_Final->[expieIDNumberHeader][expieIDNumber_rand][expieIDNumber_rand][expieIDNumber_rand]</li>
+				<!-- Generates a five-six digit number -->
+				<li>expieIDNumberHeader->[expieIDNumber_rand]</li>
+				<li>expieIDNumberHeader(p=3)->[expieIDNumber_rand][expieIDNumber_rand]</li>
+
+				<li>expieIDNumber_rand->0</li>
+				<li>expieIDNumber_rand->1</li>
+				<li>expieIDNumber_rand->2</li>
+				<li>expieIDNumber_rand->3</li>
+				<li>expieIDNumber_rand->4</li>
+				<li>expieIDNumber_rand->5</li>
+				<li>expieIDNumber_rand->6</li>
+				<li>expieIDNumber_rand->7</li>
+				<li>expieIDNumber_rand->8</li>
+				<li>expieIDNumber_rand->9</li>
+
+				<!-- Sawian Last Name, I have no reference for any last name so I'm defaulting to a Tribal Last Name. -->
+				<li>lastName(p=3)->[lastGenerated]</li>
+				<li>lastGenerated->[WordTribal]</li>
+
+				<li>WordTribal(p=3)->[SylG][SylG]</li>
+				<li>WordTribal(p=2)->[SylG][SylG][SylG]</li>
+				<li>WordTribal->[SylG][SylG][SylG][SylG]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<!-- Species: Experiment -->
+	<RulePackDef>
+		<defName>CR_NamerPersonExperiment</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[experimentFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>experimentFirstName->Names/Experiment_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Milky-->
+	<RulePackDef>
+		<defName>CR_NamerPersonMilky</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[milkyFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>milkyFirstName->Names/Milky_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Dune-->
+	<RulePackDef>
+		<defName>CR_NamerPersonDune</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[duneFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>duneFirstName->Names/Dune_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

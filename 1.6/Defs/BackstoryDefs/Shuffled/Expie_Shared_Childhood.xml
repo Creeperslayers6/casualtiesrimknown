@@ -181,7 +181,7 @@
 		<title>burnt savant</title>
 		<titleShort>savant</titleShort>
 		<description>After discovering [PAWN_nameDef] talent in art, the scientists subjected [PAWN_objective] to an endless barrage of tests to gauge the extent of [PAWN_possessive] abilities.
-		\nWhile this experience would of burnt many people away from artistic pursuits forever, [PANW_nameDef] is unable to fight the urge to create.</description>
+		\nWhile this experience would of burnt many people away from artistic pursuits forever, [PAWN_nameDef] is unable to fight the urge to create.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CR_ExpieChildCompany</li>

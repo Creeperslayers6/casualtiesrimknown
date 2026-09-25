@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CasualtiesRimknown.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace CasualtiesRimknown.MentalBreakWorkers
         }
         public override float CommonalityFor(Pawn pawn, bool moodCaused = false)
         {
-            if (pawn.genes.Xenotype != DefOfs.XenotypeDefOf.ERN_Expie && !CasualtiesRimknown_Mod.settings.selfHarmContent_allXenotypesSelfHarm)
+            if (pawn.IsASawianXenotype() == false && !CasualtiesRimknown_Mod.settings.selfHarmContent_allXenotypesSelfHarm)
             {
                 return 0f;
             }

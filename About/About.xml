@@ -20,14 +20,19 @@ Requires:
 - RimWorld - Biotech DLC
 - Harmony Mod
 - Vanilla Expanded Framework
+
+Supported Xenotype Mods (Requires One):
 - Erin's Experiments
+- Erin's Experiments, Milky and Dune Patch
+- Gexies expies
+- Gexies milkies
 	
 Incompatible with:
 - Casualties: Rimknown - Sound Cannon
 	
 Casualties: Unknown Game/IP is Created/Owned by Orsoniks.
 	</description>
-	<modVersion>1.0.1</modVersion>
+	<modVersion>1.1.0</modVersion>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=3807092899</url>
 	<supportedVersions>
 		<li>1.6</li>
@@ -35,20 +40,15 @@ Casualties: Unknown Game/IP is Created/Owned by Orsoniks.
 
 	<modDependencies>
 		<li>
-			<packageId>brrainz.harmony</packageId>
-			<displayName>Harmony</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-		</li>
-		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
 			<steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/</steamWorkshopUrl>
 		</li>
 		<li>
-			<packageId>Erin.Expie</packageId>
-			<displayName>Erin's Experiment (Expie)</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165</steamWorkshopUrl>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
@@ -63,6 +63,9 @@ Casualties: Unknown Game/IP is Created/Owned by Orsoniks.
 		<li>ludeon.rimworld.biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>Erin.Expie</li>
+		<li>kotovaann.ernloreexpansion</li>
+		<li>Expieworld.Package</li>
+		<li>Milkyworld.Package</li>
 	</loadAfter>
 	
 	<incompatibleWith>

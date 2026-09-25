@@ -57,7 +57,7 @@ namespace CasualtiesRimknown.AI
         private static void CutPawnBodyPart(Pawn pawn, BodyPartRecord targetBodyPartRecord)
         {
             float randomPartHealth = targetBodyPartRecord.def.GetMaxHealth(pawn);
-            Hediff_Injury slashHediff = (Hediff_Injury)HediffMaker.MakeHediff(DefOfs.HediffDefOf.Scratch, pawn);
+            Hediff_Injury slashHediff = (Hediff_Injury)HediffMaker.MakeHediff(DefOfs.HediffDefOf.CR_DeepCut, pawn);
             slashHediff.Part = targetBodyPartRecord;
             slashHediff.Severity = randomPartHealth * 0.15f;
             pawn.health.AddHediff(slashHediff, targetBodyPartRecord);
