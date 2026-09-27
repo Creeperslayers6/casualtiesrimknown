@@ -35,28 +35,40 @@
 		<xenotypeSet>
 			<xenotypeChances>
 				<!-- Species: Experiment -->
-				<ERN_Expie MayRequire="Erin.Expie">6</ERN_Expie>
-				<Expie_Xenotype MayRequire="Expieworld.Package">6</Expie_Xenotype>
-				<Expie_Xenotype MayRequire="yourimaine.GunsawXenotypes">6</Expie_Xenotype>
+				<ERN_Expie MayRequire="Erin.Expie">360</ERN_Expie>
+				<Expie_Xenotype MayRequire="Expieworld.Package">360</Expie_Xenotype>
+				<Expie_Xenotype MayRequire="yourimaine.GunsawXenotypes">360</Expie_Xenotype>
 				<!-- Species: Milky -->
-				<Milky_Xenotype MayRequire="Milkyworld.Package">3</Milky_Xenotype>
-				<ERNLE_Milky MayRequire="kotovaann.ernloreexpansion">3</ERNLE_Milky>
-				<Milky_Xenotype MayRequire="yourimaine.GunsawXenotypes">3</Milky_Xenotype>
+				<Milky_Xenotype MayRequire="Milkyworld.Package">128</Milky_Xenotype>
+				<ERNLE_Milky MayRequire="kotovaann.ernloreexpansion">128</ERNLE_Milky>
+				<Milky_Xenotype MayRequire="yourimaine.GunsawXenotypes">128</Milky_Xenotype>
 				<!-- Species: Dune -->
-				<ERNLE_Dune MayRequire="kotovaann.ernloreexpansion">1</ERNLE_Dune>
-				<Dune_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Dune_Xenotype>
+				<ERNLE_Dune MayRequire="kotovaann.ernloreexpansion">8</ERNLE_Dune>
+				<Dune_Xenotype MayRequire="yourimaine.GunsawXenotypes">8</Dune_Xenotype>
 				<!-- Species: Roza -->
-				<Roza_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Roza_Xenotype>
+				<Roza_Xenotype MayRequire="yourimaine.GunsawXenotypes">32</Roza_Xenotype>
 				<!-- Species: Orange -->
-				<Orange_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Orange_Xenotype>
+				<Orange_Xenotype MayRequire="yourimaine.GunsawXenotypes">208</Orange_Xenotype>
 				<!-- Species: Shelly -->
-				<Shelly_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Shelly_Xenotype>
+				<Shelly_Xenotype MayRequire="yourimaine.GunsawXenotypes">4</Shelly_Xenotype>
 				<!-- Species: Voyager -->
-				<Voyager_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Voyager_Xenotype>
+				<Voyager_Xenotype MayRequire="yourimaine.GunsawXenotypes">16</Voyager_Xenotype>
 				<!-- Species: Leapy -->
-				<Leapy_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Leapy_Xenotype>
+				<Leapy_Xenotype MayRequire="yourimaine.GunsawXenotypes">8</Leapy_Xenotype>
 				<!-- Species: Chompy -->
-				<Chompy_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Chompy_Xenotype>
+				<Chompy_Xenotype MayRequire="yourimaine.GunsawXenotypes">24</Chompy_Xenotype>
+				<!-- Species: Baron -->
+				<Baron_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Baron_Xenotype>
+				<!-- Species: Velvet -->
+				<Velvet_Xenotype MayRequire="yourimaine.GunsawXenotypes">2</Velvet_Xenotype>
+				<!-- Species: Crystal -->
+				<Crystal_Xenotype MayRequire="yourimaine.GunsawXenotypes">8</Crystal_Xenotype>
+				<!-- Species: Chik -->
+				<Chik_Xenotype MayRequire="yourimaine.GunsawXenotypes">16</Chik_Xenotype>
+				<!-- Species: Icke -->
+				<Icke_Xenotype MayRequire="yourimaine.GunsawXenotypes">4</Icke_Xenotype>
+				<!-- Species: Experiment (Albino) -->
+				<Albino_Xenotype MayRequire="yourimaine.GunsawXenotypes">4</Albino_Xenotype>
 			</xenotypeChances>
 		</xenotypeSet>
 		<backstoryFilters>

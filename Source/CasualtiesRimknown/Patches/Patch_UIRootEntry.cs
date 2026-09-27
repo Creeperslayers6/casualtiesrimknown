@@ -15,6 +15,7 @@ namespace CasualtiesRimknown.Patches
                     "Erin.Expie",
                     "Expieworld.Package",
                     "Milkyworld.Package",
+                    "yourimaine.GunsawXenotypes"
                     ]);
                 if (!isSawianXenotypeModLoaded)
                 {
