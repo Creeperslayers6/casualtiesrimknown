@@ -51,7 +51,7 @@
 		<defName>CR_ExpieCorp_PacifistMedic2</defName>
 		<title>pacifist medic</title>
 		<titleShort>pacifist</titleShort>
-		<description>Despite the scientist's best efforts, [PAWN_nameDef] refused to engage in violence, even to defend [PAWN_possessive]self. However, instead of being disposed of, one scientist figured out that [PAWN_pronoun] could serve as a medic in an extermination squad.
+		<description>Despite the scientist's best efforts, [PAWN_nameDef] refused to engage in violence, even to defend [PAWN_objective]self. However, instead of being disposed of, one scientist figured out that [PAWN_pronoun] could serve as a medic in an extermination squad.
 		\nWhile [PAWN_nameDef] hates combat, [PAWN_pronoun] would rather render medical aid than continue being tortured or executed by the scientists.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -248,7 +248,7 @@
 		<title>moving target</title>
 		<titleShort>target</titleShort>
 		<description>To increase the accuracy of the chipped soldiers being deployed, [PAWN_nameDef] and a few others were selected by the scientists to serve as live moving targets. The effectiveness of the program was designated inconclusive and the ethics board soon cracked down on it.
-		\nDespite expecting a bit of a respite after the program's termination, [PAWN_nameDef] found [PAWN_possessive] being deployed instead.</description>
+			\nDespite expecting a bit of a respite after the program's termination, [PAWN_nameDef] found [PAWN_objective]self being deployed instead.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CR_ExpieCompany</li>

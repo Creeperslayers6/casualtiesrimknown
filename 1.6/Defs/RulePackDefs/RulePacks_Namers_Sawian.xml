@@ -91,4 +91,143 @@
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
+	
+	<!-- Species: Roza -->
+	<RulePackDef>
+		<defName>CR_NamerPersonRoza</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[rozaFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>rozaFirstName->Names/Roza_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef> <!--// Masculine Names //-->
+		<defName>CR_NamerPersonRozaTrans</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[rozaFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>rozaFirstName->Names/RozaTrans_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	
+	<!-- Species: Orange-->
+	<RulePackDef>
+		<defName>CR_NamerPersonOrange</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[orangeFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>orangeFirstName->Names/Orange_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	
+	<!-- Species: Shelly-->
+	<RulePackDef>
+		<defName>CR_NamerPersonShelly</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[shellyFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>shellyFirstName->Names/Shelly_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Voyager-->
+	<RulePackDef>
+		<defName>CR_NamerPersonVoyager</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[voyagerFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>voyagerFirstName->Names/Voyager_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Leapy-->
+	<RulePackDef>
+		<defName>CR_NamerPersonLeapy</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[leapyFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>leapyFirstName->Names/Leapy_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Chompy-->
+	<RulePackDef>
+		<defName>CR_NamerPersonChompy</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[chompyFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+				<li>chompyFirstName->Names/Chompy_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
 </Defs>

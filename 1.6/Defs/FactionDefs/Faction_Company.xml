@@ -72,11 +72,26 @@
 				<!-- Species: Experiment -->
 				<ERN_Expie MayRequire="Erin.Expie">6</ERN_Expie>
 				<Expie_Xenotype MayRequire="Expieworld.Package">6</Expie_Xenotype>
+				<Expie_Xenotype MayRequire="yourimaine.GunsawXenotypes">6</Expie_Xenotype>
 				<!-- Species: Milky -->
 				<Milky_Xenotype MayRequire="Milkyworld.Package">3</Milky_Xenotype>
 				<ERNLE_Milky MayRequire="kotovaann.ernloreexpansion">3</ERNLE_Milky>
+				<Milky_Xenotype MayRequire="yourimaine.GunsawXenotypes">3</Milky_Xenotype>
 				<!-- Species: Dune -->
 				<ERNLE_Dune MayRequire="kotovaann.ernloreexpansion">1</ERNLE_Dune>
+				<Dune_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Dune_Xenotype>
+				<!-- Species: Roza -->
+				<Roza_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Roza_Xenotype>
+				<!-- Species: Orange -->
+				<Orange_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Orange_Xenotype>
+				<!-- Species: Shelly -->
+				<Shelly_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Shelly_Xenotype>
+				<!-- Species: Voyager -->
+				<Voyager_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Voyager_Xenotype>
+				<!-- Species: Leapy -->
+				<Leapy_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Leapy_Xenotype>
+				<!-- Species: Chompy -->
+				<Chompy_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Chompy_Xenotype>
 			</xenotypeChances>
 		</xenotypeSet>
 		<permanentEnemyToEveryoneExcept>

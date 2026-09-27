@@ -8,5 +8,6 @@
 		<li IfModActive="Expieworld.Package">Mod_Support/Gexies_expies/1.6</li>
 		<li IfModActive="Milkyworld.Package">Mod_Support/Gexies_milkies/1.6</li>
 		<li IfModActive="kotovaann.ernloreexpansion">Mod_Support/Kotovaann_ERNLoreExpansion/1.6</li>
+		<li IfModActive="yourimaine.GunsawXenotypes">Mod_Support/Gunsaw_Xenotypes/1.6</li>
 	</v1.6>
 </loadFolders>

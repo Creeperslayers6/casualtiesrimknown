@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Last Stand Gene Injection -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Expie_Xenotype"]/genes</xpath>
+		<value>
+			<li>CR_LastStand</li>
+		</value>
+	</Operation>
+
+	<!-- Lore Accurate Experiment Name Injection -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Expie_Xenotype"]</xpath>
+		<value>
+			<nameMaker>CR_NamerPersonExperiment</nameMaker>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		</value>
+	</Operation>
+</Patch>
