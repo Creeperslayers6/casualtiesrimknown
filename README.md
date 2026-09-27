@@ -60,6 +60,7 @@ Casualties: Rimknown Mod integrates elements of Casualties: Unknown into RimWorl
 * [**Erin's Experiments, Milky and Dune Patch**](https://steamcommunity.com/sharedfiles/filedetails/?id=3780310706)
 * [**Gexies expies**](https://steamcommunity.com/sharedfiles/filedetails/?id=3738658775)
 * [**Gexies milkies**](https://steamcommunity.com/sharedfiles/filedetails/?id=3775745938)
+* [**Gunsaw Xenotypes**](https://gitgud.io/cabradeartilharia/gunsaw-xenotypes/)
 ## Credits:
 * [**Casualties: Unknown**](https://store.steampowered.com/app/4576490/Casualties_Unknown/) - Created by Orsoniks
 	* Does include some assets such as sound sfx.
