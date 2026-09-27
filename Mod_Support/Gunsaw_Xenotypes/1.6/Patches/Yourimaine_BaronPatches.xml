@@ -2,18 +2,17 @@
 <Patch>
 	<!-- Last Stand Gene Injection -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/XenotypeDef[defName="Roza_Xenotype"]/genes</xpath>
+		<xpath>Defs/XenotypeDef[defName="Baron_Xenotype"]/genes</xpath>
 		<value>
 			<li>CR_LastStand</li>
 		</value>
 	</Operation>
 
-	<!-- Lore Accurate Roza Name Injection -->
+	<!-- Lore Accurate Baron Name Injection -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/XenotypeDef[defName="Roza_Xenotype"]</xpath>
+		<xpath>Defs/XenotypeDef[defName="Baron_Xenotype"]</xpath>
 		<value>
-			<nameMaker>CR_NamerPersonRozaTrans</nameMaker>
-			<nameMakerFemale>CR_NamerPersonRoza</nameMakerFemale>
+			<nameMaker>CR_NamerPersonBaron</nameMaker>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		</value>
 	</Operation>

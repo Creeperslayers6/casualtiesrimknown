@@ -5,10 +5,23 @@
 		<defName>CR_NamerPersonSawianGeneric</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>sawianSerialNumber_Final->[expieIDNumberHeader][expieIDNumber_rand][expieIDNumber_rand][expieIDNumber_rand]</li>
+				<li>sawianSerialNumber_Final->[expieIDNumberHeader][expieIDNumber_rand][expieIDNumber_rand][expieIDNumber_rand][expieIDNumber_rand]</li>
 				<!-- Generates a five-six digit number -->
-				<li>expieIDNumberHeader->[expieIDNumber_rand]</li>
-				<li>expieIDNumberHeader(p=3)->[expieIDNumber_rand][expieIDNumber_rand]</li>
+				<li>expieIDNumberHeader(p=3)->[expieIDNumberLeadValue][expieIDNumber_rand]</li>
+				<li>expieIDNumberHeader->[expieIDNumber_randNonZero]</li>
+				
+				<li>expieIDNumberLeadValue->1</li>
+				<li>expieIDNumberLeadValue->2</li>
+
+				<li>expieIDNumber_randNonZero->1</li>
+				<li>expieIDNumber_randNonZero->2</li>
+				<li>expieIDNumber_randNonZero->3</li>
+				<li>expieIDNumber_randNonZero->4</li>
+				<li>expieIDNumber_randNonZero->5</li>
+				<li>expieIDNumber_randNonZero->6</li>
+				<li>expieIDNumber_randNonZero->7</li>
+				<li>expieIDNumber_randNonZero->8</li>
+				<li>expieIDNumber_randNonZero->9</li>
 
 				<li>expieIDNumber_rand->0</li>
 				<li>expieIDNumber_rand->1</li>
@@ -29,6 +42,9 @@
 				<li>WordTribal(p=2)->[SylG][SylG][SylG]</li>
 				<li>WordTribal->[SylG][SylG][SylG][SylG]</li>
 			</rulesStrings>
+			<rulesFiles>
+				<li>SylG->WordParts/Syllables_Galician</li>
+			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 	
@@ -42,12 +58,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[experimentFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>experimentFirstName->Names/Experiment_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Experiment_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -62,12 +77,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[milkyFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>milkyFirstName->Names/Milky_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Milky_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -82,12 +96,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[duneFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>duneFirstName->Names/Dune_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Dune_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -102,12 +115,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[rozaFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>rozaFirstName->Names/Roza_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Roza_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -121,12 +133,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[rozaFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>rozaFirstName->Names/RozaTrans_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/RozaTrans_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -141,12 +152,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[orangeFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>orangeFirstName->Names/Orange_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Orange_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -161,12 +171,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[shellyFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>shellyFirstName->Names/Shelly_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Shelly_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -181,12 +190,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[voyagerFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>voyagerFirstName->Names/Voyager_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Voyager_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -201,12 +209,11 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[leapyFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>leapyFirstName->Names/Leapy_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Leapy_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -221,12 +228,161 @@
 			<rulesStrings>
 				<li>r_name->[expieFirstNameFinal] [lastName]</li>
 
-				<li>expieFirstNameFinal(p=8)->[chompyFirstName]</li>
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
 				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SylG->WordParts/Syllables_Galician</li>
-				<li>chompyFirstName->Names/Chompy_Gunsaw_FirstName</li>
+				<li>databaseFirstName->Names/Chompy_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Baron-->
+	<RulePackDef>
+		<defName>CR_NamerPersonBaron</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>databaseFirstName->Names/Baron_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Velvet-->
+	<RulePackDef>
+		<defName>CR_NamerPersonVelvet</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>databaseFirstName->Names/Velvet_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>CR_NamerPersonVelvetTrans</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>databaseFirstName->Names/VelvetTrans_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Crystal-->
+	<RulePackDef>
+		<defName>CR_NamerPersonCrystal</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>databaseFirstName->Names/Crystal_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>CR_NamerPersonCrystalTrans</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>databaseFirstName->Names/CrystalTrans_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Chik-->
+	<RulePackDef>
+		<defName>CR_NamerPersonChik</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>databaseFirstName->Names/Chik_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Icke-->
+	<RulePackDef>
+		<defName>CR_NamerPersonIcke</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>databaseFirstName->Names/Icke_Gunsaw_FirstName</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Species: Albino-->
+	<RulePackDef>
+		<defName>CR_NamerPersonAlbino</defName>
+		<include>
+			<li>CR_NamerPersonSawianGeneric</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[expieFirstNameFinal] [lastName]</li>
+
+				<li>expieFirstNameFinal(p=8)->[databaseFirstName]</li>
+				<li>expieFirstNameFinal->[sawianSerialNumber_Final]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>databaseFirstName->Names/Albino_Gunsaw_FirstName</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>

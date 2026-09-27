@@ -26,13 +26,14 @@ Supported Xenotype Mods (Requires One):
 - Erin's Experiments, Milky and Dune Patch
 - Gexies expies
 - Gexies milkies
+- Gunsaw Xenotypes
 	
 Incompatible with:
 - Casualties: Rimknown - Sound Cannon
 	
 Casualties: Unknown Game/IP is Created/Owned by Orsoniks.
 	</description>
-	<modVersion>1.1.0</modVersion>
+	<modVersion>1.2.0</modVersion>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=3807092899</url>
 	<supportedVersions>
 		<li>1.6</li>
@@ -66,6 +67,7 @@ Casualties: Unknown Game/IP is Created/Owned by Orsoniks.
 		<li>kotovaann.ernloreexpansion</li>
 		<li>Expieworld.Package</li>
 		<li>Milkyworld.Package</li>
+		<li>yourimaine.GunsawXenotypes</li>
 	</loadAfter>
 	
 	<incompatibleWith>

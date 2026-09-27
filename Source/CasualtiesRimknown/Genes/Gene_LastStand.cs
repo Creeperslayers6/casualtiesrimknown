@@ -23,6 +23,17 @@ namespace CasualtiesRimknown
         private bool IsHollowed => pawn.health.hediffSet.HasHediff(DefOfs.HediffDefOf.CR_Hollow); // Hollowed Pawns can't Last Stand!
         private bool BrainIntact => pawn.health.hediffSet.GetPartHealth(pawn.health.hediffSet.GetBrain()) > 0; // Brain must be intact to trigger Last Stand!
         public bool CouldResurrect => usesLeft > 0 && !IsHollowed && BrainIntact;
+        private float IsPlayerOwnedMultiplier
+        {
+            get
+            {
+                if (pawn.IsColonist)
+                {
+                    return 1f;
+                }
+                return 0.5f;
+            }
+        }
         
         private float mentalBreakThreshold = 0.2f;
 
@@ -159,7 +170,7 @@ namespace CasualtiesRimknown
         {
             if (NormalizedMoodValue > 0)
             {
-                return Rand.Chance(NormalizedMoodValue); // Normalize 0.5-1.0f -> 0.0-1.0f | Mood below 0.5 is treated as 0.
+                return Rand.Chance(NormalizedMoodValue * IsPlayerOwnedMultiplier); // Normalize 0.5-1.0f -> 0.0-1.0f | Mood below 0.5 is treated as 0.
             }
             return false;
         }
