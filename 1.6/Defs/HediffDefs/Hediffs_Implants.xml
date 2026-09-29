@@ -11,7 +11,9 @@
 		<duplicationAllowed>false</duplicationAllowed>
 		<defaultInstallPart>Brain</defaultInstallPart>
 		<stages>
-			<li>
+			<li/>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<minSeverity>0.01</minSeverity>
 				<becomeVisible>false</becomeVisible>
 			</li>
 			<li>
