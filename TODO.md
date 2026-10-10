@@ -5,27 +5,27 @@
 - The Company™ Raid Pod Core
 - The Company™ Raider Pod
 ### Apparels:
-- Scarf
-- Mercenary Scarf
-- Arm Warmers
-- Balaclava
-- Belly Armor
-- Bicycle Helmet
-- Carapace?
-- Dust Mask
-- Holiday Hat
-- Hoodie
-- Knee Pads
-- Latex Gloves
-- Limb Wraps
-- Makeshift Helmet
-- Riot Helmet
-- Safety Glasses
+#### Headgear
+- Makeshift Helmet - (Headgear) Covers: Upper Head
+- Bicycle Helmet - (Headgear) Covers: Upper Head
+- Riot Helmet - (Headgear) Covers: FullHead
+- Scarf - (Headgear) Covers: Neck
+- Mercenary Scarf - (Headgear) Covers: Neck
+- Balaclava - (Headgear) Covers: FullHead
+- Holiday Hat - (Headgear) Covers: Upper Head
+#### Torso
+- Carapace? - (Middle) Covers: Torso
+- Belly Armor - (Middle) Covers: Torso
+
+- Arm Warmers - (Skin) Left & Right Arm
+
+- Hoodie - (Outer) Covers: Torso, Neck, Shoulders, Arms, Legs
+- Limb Wraps - (Middle) Covers: Left & Right Arms, Left & Right Legs
+
+- Safety Glasses - (EyeCover) Covers: Eyes
 - Strider Pelt (C:R - Grey Planet?)
-- Tactical Boots
-- Tactical Gloves
-- Trauma Rig
-- Torn Shirt
+- Trauma Rig - (Middle) Covers: Torso
+- Torn Shirt - (Skin) Covers: Torso, Shoulders
 ### Security/Traps:
 - Coil
 - Gunmine

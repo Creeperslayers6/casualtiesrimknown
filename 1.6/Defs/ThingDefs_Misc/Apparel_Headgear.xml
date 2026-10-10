@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--| Makeshift Helmet |-->
+	<!--
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>CR_Apparel_MakeshiftHelmet</defName>
+		<label>makeshift helmet</label>
+		<description>TODO: WRITE DESCRIPTION!!!</description>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/MakeshiftHelmet/MakeshiftHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		!-!-! REQUIRES ANIMAL CARCASS
+	</ThingDef>
+	-->
+	<!--| Bicycle Helmet |-->
+	
+	<!--| Riot Helmet |-->
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>CR_Apparel_RiotHelmet</defName>
+		<label>riot helmet</label>
+		<description>TODO: WRITE DESCRIPTION!!!</description>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/RiotHelmet/RiotHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>1.2</Mass>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<costList>
+			<Apparel_AdvancedHelmet>1</Apparel_AdvancedHelmet>
+			<Plasteel>3</Plasteel>
+			<Neutroamine>1</Neutroamine>
+		</costList>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/RiotHelmet/RiotHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--| Scarf |-->
+	<ThingDef ParentName="ApparelMakeableBase" Name="CR_ScarfBase">
+		<defName>CR_Apparel_Scarf</defName>
+		<label>scarf</label>
+		<description>TODO: WRITE DESCRIPTION!!!</description>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/Scarf/Scarf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<displayPriority>250</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<wornGraphicPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/Scarf/Scarf</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Nudist</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--| Mercenary Scarf |-->
+	<ThingDef ParentName="CR_ScarfBase">
+		<defName>CR_Apparel_MercenaryScarf</defName>
+		<label>mercenary scarf</label>
+		<description>TODO: WRITE DESCRIPTION!!!</description>
+		<relicChance>2</relicChance>
+		<graphicData>
+			<color>(158,31,30,255)</color>
+		</graphicData>
+		<genericMarketSellable>false</genericMarketSellable>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<recipeMaker Inherit="false"/>
+		<stuffCategories Inherit="false"/>
+		<costStuffCount Inherit="false"/>
+		<tradeTags Inherit="false"/>
+		<apparel Inherit="false">
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<wornGraphicPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/Scarf/Scarf</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+			<MoveSpeed>1</MoveSpeed>
+			<CrawlSpeed>1</CrawlSpeed>
+			<MentalBreakThreshold>-0.18</MentalBreakThreshold>
+			<HuntingStealth>0.75</HuntingStealth>
+			<CarryingCapacity>5</CarryingCapacity>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<RangedCooldownFactor>-0.4</RangedCooldownFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.75</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<!--| Balaclava |-->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>CR_Apparel_Balaclava</defName>
+		<label>balaclava</label>
+		<description>TODO: WRITE DESCRIPTION!!!</description>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<!--REVIEW!!!-->
+			<displayPriority>100</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/Balaclava/Balaclava</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<statBases>
+			<WorkToMake>3000</WorkToMake> <!--REVIEW!!!-->
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!--REVIEW!!!-->
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/Balaclava/Balaclava</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li> <!--REVIEW!!!-->
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--| Holiday Hat |-->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>CR_Apparel_HolidayHat</defName>
+		<label>holiday hat</label>
+		<description>TODO: WRITE DESCRIPTION!!!</description>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite> <!--REVIEW!!!-->
+			<displayPriority>100</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/HolidayHat/HolidayHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.9, 0.9)</drawSize>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/HolidayHat/HolidayHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--| Safety Glasses |-->
+	<ThingDef ParentName="HatBase">
+		<defName>CR_Apparel_SafetyGlasses</defName>
+		<label>safety glasses</label>
+		<description>TODO: WRITE DESCRIPTION!!!</description>
+		<graphicData>
+			<texPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/SafetyGlasses/SafetyGlasses</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.07</Mass>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>CasualtiesRimknown/Things/Pawn/Humanlike/Apparel/SafetyGlasses/SafetyGlasses</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<drawData>
+				<defaultData>
+					<layer>61</layer>
+				</defaultData>
+			</drawData>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<smeltable>false</smeltable>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+</Defs>
