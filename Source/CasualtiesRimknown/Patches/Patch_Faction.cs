@@ -21,17 +21,20 @@ namespace CasualtiesRimknown.Patches
             {
                 Faction theCompany = Find.FactionManager.FirstFactionOfDef(DefOfs.FactionDefOf.CR_TheCompany);
                 //
-                FactionRelationKind playerRelationKind = theCompany.PlayerRelationKind;
-                //
-                int goodWillChangeAmount = PlayerFaction.GoodwillToMakeHostile(theCompany);
-                HistoryEventDef hostilityReason = DefOfs.HistoryEventDefOf.CR_AcceptedSawianXenotype;
-                PlayerFaction.TryAffectGoodwillWith(theCompany, goodWillChangeAmount, true, true, hostilityReason);
-                //
-                TaggedString text = "";
-                theCompany.TryAppendRelationKindChangedInfo(ref text, playerRelationKind, theCompany.PlayerRelationKind);
-                if (!text.NullOrEmpty())
+                if (theCompany != null)
                 {
-                    text = "\n\n" + text;
+                    FactionRelationKind playerRelationKind = theCompany.PlayerRelationKind;
+                    //
+                    int goodWillChangeAmount = PlayerFaction.GoodwillToMakeHostile(theCompany);
+                    HistoryEventDef hostilityReason = DefOfs.HistoryEventDefOf.CR_AcceptedSawianXenotype;
+                    PlayerFaction.TryAffectGoodwillWith(theCompany, goodWillChangeAmount, true, true, hostilityReason);
+                    //
+                    TaggedString text = "";
+                    theCompany.TryAppendRelationKindChangedInfo(ref text, playerRelationKind, theCompany.PlayerRelationKind);
+                    if (!text.NullOrEmpty())
+                    {
+                        text = "\n\n" + text;
+                    }
                 }
             }
         }
