@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.HediffCompProperties
 {
-    public class HediffCompProperties_HealBrainWounds : HediffCompProperties
+    public class HediffCompProperties_HealBrainWounds : Verse.HediffCompProperties
     {
         public float secondsBetweenHealCycle = 1f;
         public float severityReduction = 0.5f;

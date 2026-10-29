@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>CR_Event_LastStandTriggered</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_logentry(p=0.45)->[SUBJECT_definite]'s wounds miraciously tended itself.</li>
+				
+				<li>r_logentry(p=0.45)->Despite the odds, [SUBJECT_definite] managed to [lastStandTriggeredAction].</li>
+
+				<li>lastStandTriggeredAction->rise once again</li>
+				<li>lastStandTriggeredAction->wake back up</li>
+				
+				<li>r_logentry(p=0.1)->The Observer wasn't finished with [SUBJECT_definite] just yet.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

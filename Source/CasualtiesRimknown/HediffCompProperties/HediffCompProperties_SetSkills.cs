@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.Xml;
 using RimWorld;
 using Verse;
+using CasualtiesRimknown.HediffComps;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.HediffCompProperties
 {
-    public class HediffCompProperties_SetSkills : HediffCompProperties
+    public class HediffCompProperties_SetSkills : Verse.HediffCompProperties
     {
         public class SkillValue
         {

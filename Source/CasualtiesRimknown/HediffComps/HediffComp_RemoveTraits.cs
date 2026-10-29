@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using CasualtiesRimknown.HediffCompProperties;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.HediffComps
 {
     public class HediffComp_RemoveTraits : HediffComp
     {

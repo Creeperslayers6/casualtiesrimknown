@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>CR_PlaceMakerGreyPlanet</defName>
+		<rulePack>
+			<rulesStrings>
+				<!-- Adjective -->
+				<li>place_adjective->Sawian</li>
+				<li>place_adjective->Liathian</li>
+				<!-- Locations -->
+				<li>place_community->sawian colony</li>
+				<li>place_powerCenter->corporate camp</li>
+				<!-- Jobs (Universal) -->
+				<li>place_job->trap defuser</li>
+				<li>place_job->spider exterminator</li>
+				<li>place_job->colony doctor</li>
+				<li>place_job->colony guard</li>
+				<li>place_job->colony leader</li>
+				<!-- Weapons (Personal) -->
+				<li>place_personalWeapon->claw pack</li>
+				<li>place_personalWeapon->machete</li>
+				<li>place_personalWeapon->crude cleaver</li>
+				<li>place_personalWeapon->sickle</li>
+				<li>place_personalWeapon->digging tool</li>
+				<li>place_personalWeapon->rifle</li>
+				<li>place_personalWeapon->pump-action shotgun</li>
+				<!-- Weapons (Mass Weapon)-->
+				<li>place_massWeapon->a cave-in</li>
+				<!-- Foe Leaders -->
+				<li>place_foeLeader->scientist</li>
+				<!-- Foes -->
+				<li>place_foeSoldiers->chipped sawians</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<PlaceDef>
+		<defName>CR_Phrygia</defName>
+		<tags>
+			<li>CR_OriginCompany</li>
+		</tags>
+		<placeRules>
+			<rulesStrings>
+				<!-- The world that The Company™ is based on. -->
+				<li>place_name->Phrygia</li>
+				<li>place_adjective->Phrygian</li>
+				<li>place_summary->cold barren moon</li>
+				<li>place_community->sector</li>
+				<li>place_powerCenter->headquarters</li>
+				<li>place_job->scientist's pet</li>
+				<li>place_job->test subject</li>
+				<li>place_personalWeapon->knife</li>
+				<li>place_personalWeapon->pistol</li>
+				<li>place_personalWeapon->shank</li>
+				<li>place_massWeapon->sound cannon</li>
+				<li>place_foeLeader->executive</li>
+				<li>place_foeSoldiers->scientists</li>
+				<li>place_foeSoldiers->guards</li>
+			</rulesStrings>
+		</placeRules>
+	</PlaceDef>
+
+	<PlaceDef>
+		<defName>CR_GreyPlanet_GravelLands</defName>
+		<tags>
+			<li>CR_OriginGreyPlanet</li>
+		</tags>
+		<placeRules>
+			<include>
+				<li>CR_PlaceMakerGreyPlanet</li>
+			</include>
+			<rulesStrings>
+				<!-- Grey Planet: Gravel Lands & Deeper Gravel Lands Layers-->
+				<li>place_name->The Gravel Lands</li>
+				<li>place_adjective->Gravelian</li>
+				<li>place_summary->rocky layer</li>
+				<li>place_job->copper miner</li>
+				<li>place_job->cave engineer</li>
+				<li>place_job->hydreed farmer</li>
+				<li>place_job->lead harvester</li>
+				<li>place_massWeapon->cave tick infestation</li>
+				<li>place_foeSoldiers->shade crawlers</li>
+				<li>place_foeSoldiers->cave ticks</li>
+			</rulesStrings>
+		</placeRules>
+	</PlaceDef>
+	
+	<PlaceDef>
+		<defName>CR_GreyPlanet_DriedDesert</defName>
+		<tags>
+			<li>CR_OriginGreyPlanet</li>
+		</tags>
+		<placeRules>
+			<include>
+				<li>CR_PlaceMakerGreyPlanet</li>
+			</include>
+			<rulesStrings>
+				<!-- Grey Planet: Dried Desert Layer-->
+				<li>place_name->The Dried Desert</li>
+				<li>place_adjective->Barrenite</li>
+				<li>place_summary->arid sand layer</li>
+				<li>place_job->water seeker</li>
+				<li>place_job->battery recharger</li>
+				<li>place_job->crate breacher</li>
+				<li>place_job->stoneplant crusher</li>
+				<li>place_job->brownshroom forager</li>
+				<li>place_foeSoldiers->shade crawler</li>
+				<li>place_foeSoldiers->sand stalkers</li>
+			</rulesStrings>
+		</placeRules>
+	</PlaceDef>
+
+	<PlaceDef>
+		<defName>CR_GreyPlanet_Wasteland</defName>
+		<tags>
+			<li>CR_OriginGreyPlanet</li>
+		</tags>
+		<placeRules>
+			<include>
+				<li>CR_PlaceMakerGreyPlanet</li>
+			</include>
+			<rulesStrings>
+				<!-- Grey Planet: Wasteland Layer-->
+				<li>place_name->The Wastelands</li>
+				<li>place_adjective->Nukies</li>
+				<li>place_adjective->Wastelanders</li>
+				<li>place_summary->polluted arid layer</li>
+				<li>place_job->radiation cleaner</li>
+				<li>place_job->food box forager</li>
+				<li>place_job->popfruit orchardist</li>
+				<li>place_massWeapon->spent fuel</li>
+				<li>place_massWeapon->toxirock powder</li>
+			</rulesStrings>
+		</placeRules>
+	</PlaceDef>
+
+	<PlaceDef>
+		<defName>CR_GreyPlanet_OvergrownDepths</defName>
+		<tags>
+			<li>CR_OriginGreyPlanet</li>
+		</tags>
+		<placeRules>
+			<include>
+				<li>CR_PlaceMakerGreyPlanet</li>
+			</include>
+			<rulesStrings>
+				<!-- Grey Planet: Overgrown Depths Layer-->
+				<li>place_name->The Overgrown Depths</li>
+				<li>place_adjective->Sappers</li>
+				<li>place_adjective->Verdurians</li>
+				<li>place_summary->bioactive layer</li>
+				<li>place_job->tree sapper</li>
+				<li>place_job->groundwater extractor</li>
+				<li>place_job->foliage extractor</li>
+				<li>place_job->banana-plant farmer</li>
+				<li>place_job->geotree farmer</li>
+				<li>place_massWeapon->elder thornback</li>
+				<li>place_foeSoldiers->shade crawler</li>
+				<li>place_foeSoldiers->sand stalker</li>
+				<li>place_foeSoldiers->thornback</li>
+				<li>place_foeSoldiers->tentacle-plant</li>
+			</rulesStrings>
+		</placeRules>
+	</PlaceDef>
+</Defs>

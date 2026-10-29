@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>CR_LastStand</defName>
+		<label>last stand</label>
+		<description>Carriers of this gene demonstrate the inexplicable ability to suddenly recover from fatal non-cerebral injuries. While the mechanism which allow this to occur is unknown, it been noted that only happy carriers seem to recover.</description>
+		<iconPath>CasualtiesRimknown/UI/Abilities/LastStand</iconPath>
+		<geneClass>CasualtiesRimknown.Gene_LastStand</geneClass>
+		<displayCategory>Archite</displayCategory>
+		<customEffectDescriptions>
+			<li>Ability to recover from fatal wounds once after death.</li>
+			<li>Ability trigger depends on mood percentage. (+50%)</li>
+		</customEffectDescriptions>
+		<biostatCpx>7</biostatCpx>
+	</GeneDef>
+</Defs>

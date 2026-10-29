@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.HediffCompProperties
 {
-    public class HediffCompProperties_OnNeuralBoosting : HediffCompProperties
+    public class HediffCompProperties_OnNeuralBoosting : Verse.HediffCompProperties
     {
         public float neuralBoostPenaltySeverity = 1.0f;
         public HediffCompProperties_OnNeuralBoosting()

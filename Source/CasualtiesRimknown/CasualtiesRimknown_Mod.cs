@@ -111,23 +111,23 @@ namespace CasualtiesRimknown
             base.ExposeData();
         }
     }
-}
 
-[StaticConstructorOnStartup]
-public static class Casualties_MultiplayerCompat
-{
-    static Casualties_MultiplayerCompat()
+    [StaticConstructorOnStartup]
+    public static class Casualties_MultiplayerCompat
     {
-        if (CasualtiesRimknown_Mod.IsMultiplayerActive)
+        static Casualties_MultiplayerCompat()
         {
-            RegisterMultiplayer();
+            if (CasualtiesRimknown_Mod.IsMultiplayerActive)
+            {
+                RegisterMultiplayer();
+            }
         }
-    }
 
-    private static void RegisterMultiplayer()
-    {
-        if (!MP.enabled) return;
+        private static void RegisterMultiplayer()
+        {
+            if (!MP.enabled) return;
 
-        MP.RegisterAll();
+            MP.RegisterAll();
+        }
     }
 }

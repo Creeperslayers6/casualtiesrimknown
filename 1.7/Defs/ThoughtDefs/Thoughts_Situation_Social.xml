@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>CR_Mindwiped</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>CasualtiesRimknown.ThoughtWorkers.ThoughtWorker_Mindwiped</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+			<li>Kind</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>hollow being</label>
+				<baseOpinionOffset>-15</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

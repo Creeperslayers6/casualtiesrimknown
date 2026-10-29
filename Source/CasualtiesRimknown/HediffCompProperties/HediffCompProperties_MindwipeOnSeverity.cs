@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.HediffCompProperties
 {
-    public class HediffCompProperties_MindwipeOnSeverity : HediffCompProperties
+    public class HediffCompProperties_MindwipeOnSeverity : Verse.HediffCompProperties
     {
         public float mindwipeSeverity = 1.5f;
 

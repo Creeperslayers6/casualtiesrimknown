@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.HediffCompProperties
 {
-    public class HediffCompProperties_WipeBackstory :HediffCompProperties
+    public class HediffCompProperties_WipeBackstory : Verse.HediffCompProperties
     {
         public HediffCompProperties_WipeBackstory()
         {
