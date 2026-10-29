@@ -56,16 +56,14 @@ Casualties: Rimknown Mod integrates elements of Casualties: Unknown into RimWorl
 * [**Harmony**](https://steamcommunity.com/workshop/filedetails/?id=2009463077) (Required)
 * [**Vanilla Expanded Framework**](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) (Required - Erin's Experiments | Pending Potential Removal?)
 ## Supported Xenotype Mods (Requires At Least One!)
-* [**Erin's Experiments**](https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165)
-* [**Erin's Experiments, Milky and Dune Patch**](https://steamcommunity.com/sharedfiles/filedetails/?id=3780310706)
-* [**Gexies expies**](https://steamcommunity.com/sharedfiles/filedetails/?id=3738658775)
-* [**Gexies milkies**](https://steamcommunity.com/sharedfiles/filedetails/?id=3775745938)
-* [**Gunsaw Xenotypes**](https://gitgud.io/cabradeartilharia/gunsaw-xenotypes/)
+* [**Erin's Experiments**](https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165) by [Erin](https://www.patreon.com/Erinmhidni)
+* [**Gexies expies**](https://steamcommunity.com/sharedfiles/filedetails/?id=3738658775) by EX009
+* [**Gexies milkies**](https://steamcommunity.com/sharedfiles/filedetails/?id=3775745938) by EX009
+* [**Gunsaw Xenotypes**](https://gitgud.io/cabradeartilharia/gunsaw-xenotypes/) by yourimaine
+* ~~[**Erin's Experiments, Milky and Dune Patch**](https://steamcommunity.com/sharedfiles/filedetails/?id=3780310706)~~ [Mod was deleted/no longer accessible | Supported only for RimWorld 1.6-1.7]
 ## Credits:
 * [**Casualties: Unknown**](https://store.steampowered.com/app/4576490/Casualties_Unknown/) - Created by Orsoniks
 	* Does include some assets such as sound sfx.
-* [**Erin's Experiments**](https://steamcommunity.com/sharedfiles/filedetails/?id=3683718165) - Created by [Erin](https://www.patreon.com/Erinmhidni)
-	* Required Dependency for the Experiment Xenotype.
 * [**RimWorld Discord**](https://discord.com/invite/rimworld) - Members of the #mod-development channel
 	* Rendered assistance with coding and debugging problems.
 ## Development Phases
