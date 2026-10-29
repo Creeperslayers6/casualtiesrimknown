@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<SoundDef>
+		<defName>CR_BrainChip_SelfDestruct</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>CasualtiesRimknown/Misc/BrainChip/SelfDestruct</clipPath>
+					</li>
+				</grains>
+				<volumeRange>3</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>CR_BrainChip_GizmoSFX</defName>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>CasualtiesRimknown/UI/Gizmos/selfharmtap</clipPath>
+					</li>
+				</grains>
+				<volumeRange>10</volumeRange>
+				<pitchRange>1~1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>CR_ExtractionPodInsertion</defName>
+		<label>Extraction Pod Insertion</label>
+		<description>The modified extraction pod was where the contact said it would be. You and your two fellow sawians enter as the pod burns towards the nearest habitable planet in the system. Some time later, your pod slams into this unknown rimworld.</description>
+		<scenario>
+			<summary>Three crashlanded expies - similar to Crashlanded, but peace with The Company™ is unobtainable.</summary>
+			<playerFaction>
+				<factionDef>CR_PlayerExpieColony</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Config pages -->
+
+				<li Class="CasualtiesRimknown.ScenParts.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs_Ext">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<leftBehindPawnKind>CR_ExpieColonist</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>CR_ExpieColonist</kindDef>
+							<count>3</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+
+				<!-- Player pawns modifiers -->
+
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>800</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_BoltActionRifle</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_Revolver</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Plasteel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakPants</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakVest</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_AdvancedHelmet</thingDef>
+					<stuff>Plasteel</stuff>
+				</li>
+				<!--
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+				</li>
+				-->
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>7</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>The pod wasn't anything too elegant, but you and your friends would take anything to get off this forsaken planet.\n\nThe pod didn't quite survive the landing, but you are alive. Now its time to turn this planet into a new home.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>CR_ExpieColonist</defName>
+		<label>colonist</label>
+		<defaultFactionDef>CR_PlayerExpieColony</defaultFactionDef>
+		<xenotypeSet>
+			<xenotypeChances>
+				<!-- Species: Experiment -->
+				<ERN_Expie MayRequire="Erin.Expie">360</ERN_Expie>
+				<Expie_Xenotype MayRequire="Expieworld.Package">360</Expie_Xenotype>
+				<Expie_Xenotype MayRequire="yourimaine.GunsawXenotypes">360</Expie_Xenotype>
+				<!-- Species: Milky -->
+				<Milky_Xenotype MayRequire="Milkyworld.Package">128</Milky_Xenotype>
+				<ERNLE_Milky MayRequire="kotovaann.ernloreexpansion">128</ERNLE_Milky>
+				<Milky_Xenotype MayRequire="yourimaine.GunsawXenotypes">128</Milky_Xenotype>
+				<!-- Species: Dune -->
+				<ERNLE_Dune MayRequire="kotovaann.ernloreexpansion">8</ERNLE_Dune>
+				<Dune_Xenotype MayRequire="yourimaine.GunsawXenotypes">8</Dune_Xenotype>
+				<!-- Species: Roza -->
+				<Roza_Xenotype MayRequire="yourimaine.GunsawXenotypes">32</Roza_Xenotype>
+				<!-- Species: Orange -->
+				<Orange_Xenotype MayRequire="yourimaine.GunsawXenotypes">208</Orange_Xenotype>
+				<!-- Species: Shelly -->
+				<Shelly_Xenotype MayRequire="yourimaine.GunsawXenotypes">4</Shelly_Xenotype>
+				<!-- Species: Voyager -->
+				<Voyager_Xenotype MayRequire="yourimaine.GunsawXenotypes">16</Voyager_Xenotype>
+				<!-- Species: Leapy -->
+				<Leapy_Xenotype MayRequire="yourimaine.GunsawXenotypes">8</Leapy_Xenotype>
+				<!-- Species: Chompy -->
+				<Chompy_Xenotype MayRequire="yourimaine.GunsawXenotypes">24</Chompy_Xenotype>
+				<!-- Species: Baron -->
+				<Baron_Xenotype MayRequire="yourimaine.GunsawXenotypes">1</Baron_Xenotype>
+				<!-- Species: Velvet -->
+				<Velvet_Xenotype MayRequire="yourimaine.GunsawXenotypes">2</Velvet_Xenotype>
+				<!-- Species: Crystal -->
+				<Crystal_Xenotype MayRequire="yourimaine.GunsawXenotypes">8</Crystal_Xenotype>
+				<!-- Species: Chik -->
+				<Chik_Xenotype MayRequire="yourimaine.GunsawXenotypes">16</Chik_Xenotype>
+				<!-- Species: Icke -->
+				<Icke_Xenotype MayRequire="yourimaine.GunsawXenotypes">4</Icke_Xenotype>
+				<!-- Species: Experiment (Albino) -->
+				<Albino_Xenotype MayRequire="yourimaine.GunsawXenotypes">4</Albino_Xenotype>
+			</xenotypeChances>
+		</xenotypeSet>
+		<!--<useFactionXenotypes>false</useFactionXenotypes>-->
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

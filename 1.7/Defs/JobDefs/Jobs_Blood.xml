@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>CR_VomitBlood</defName>
+		<driverClass>CasualtiesRimknown.JobDrivers.JobDriver_VomitBlood</driverClass>
+		<playerInterruptible>false</playerInterruptible>
+		<casualInterruptible>false</casualInterruptible>
+		<reportString>vomiting blood.</reportString>
+		<suspendable>false</suspendable>
+	</JobDef>
+</Defs>

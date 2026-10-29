@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
 using Verse;
+using CasualtiesRimknown.HediffCompProperties;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.HediffComps
 {
     public class HediffComp_SetSkills : HediffComp
     {

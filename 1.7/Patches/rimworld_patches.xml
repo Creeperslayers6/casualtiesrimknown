@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- ===== Surgery Patch ====== -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName="Human"]/recipes/li[text()="ExciseCarcinoma"]</xpath>
+		<value>
+			<li>CR_ChestDrain</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName="Human"]/recipes/li[text()="ExciseCarcinoma"]</xpath>
+		<value>
+			<li>CR_BrainChipRemoval</li>
+		</value>
+	</Operation>
+	
+	<!-- ====== Empire Enemy To Everyone Except ===== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationInsert">
+			<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept/li[text()="PlayerColony"]</xpath>
+			<value>
+				<li>CR_PlayerExpieColony</li>
+				<li>CR_SawianOutlanderCivil</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

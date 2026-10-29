@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using CasualtiesRimknown.HediffComps;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.HediffCompProperties
 {
-    public class HediffCompProperties_RemoveTraits : HediffCompProperties
+    public class HediffCompProperties_RemoveTraits : Verse.HediffCompProperties
     {
         public float severity = 1f;
 

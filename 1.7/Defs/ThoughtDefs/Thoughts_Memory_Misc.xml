@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>CR_BrainChip_SelfDestructing</defName>
+		<durationDays>14</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>imminent termination</label>
+				<description>...Oh. Oh. OH. OH! NO. NO NO NO. WAIT. WHY? WHAT DID I DO!?</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

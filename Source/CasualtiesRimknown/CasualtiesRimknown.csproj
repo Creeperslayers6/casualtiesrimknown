@@ -1,39 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7AFD077C-09C9-494F-A6DB-6DC485826B40}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CasualtiesRimknown</RootNamespace>
-    <AssemblyName>CasualtiesRimknown</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <TargetFramework>net10.0</TargetFramework>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+	<OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <AssemblyTitle>Casualties Rimknown</AssemblyTitle>
+    <Product>CasualtiesRimknown</Product>
+    <Copyright>Copyright © 2026</Copyright>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <FileVersion>1.3.0.0</FileVersion>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Version>$(VersionPrefix)</Version>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
     <DebugType>embedded</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\1.6\Assemblies\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <OutputPath>..\..\1.7\Assemblies\</OutputPath>
     <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\1.6\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="0MultiplayerAPI">
@@ -41,91 +28,21 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityStubs">
+      <HintPath>..\..\..\..\UnityStubs.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VEF">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.7\Assemblies\VEF.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Waylith">
+      <HintPath>..\..\..\..\Waylith.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AI\Toils_Selfharm.cs" />
-    <Compile Include="Buildings\Building_TurretSonic.cs" />
-    <Compile Include="CasualtiesRimknown_Mod.cs" />
-    <Compile Include="DamageWorkers\DamageWorker_SonicShockwave.cs" />
-    <Compile Include="DefOfs\DamageDefOf.cs" />
-    <Compile Include="DefOfs\EffecterDefOf.cs" />
-    <Compile Include="DefOfs\BackstoryDefOf.cs" />
-    <Compile Include="DefOfs\FactionDefOf.cs" />
-    <Compile Include="DefOfs\GeneDefOf.cs" />
-    <Compile Include="DefOfs\HediffDefOf.cs" />
-    <Compile Include="DefOfs\HistoryEventDefOf.cs" />
-    <Compile Include="DefOfs\JobDefOf.cs" />
-    <Compile Include="DefOfs\RulePackDefOf.cs" />
-    <Compile Include="DefOfs\SoundDefOf.cs" />
-    <Compile Include="DefOfs\TaleDefOf.cs" />
-    <Compile Include="DefOfs\ThingDefOf.cs" />
-    <Compile Include="DefOfs\ThoughtDefOf.cs" />
-    <Compile Include="DefOfs\XenotypeDefOf.cs" />
-    <Compile Include="HediffCompProperties\HediffCompProperties_HealBrainWounds.cs" />
-    <Compile Include="HediffCompProperties\HediffCompProperties_MindwipeOnSeverity.cs" />
-    <Compile Include="HediffCompProperties\HediffCompProperties_OnNeuralBoosting.cs" />
-    <Compile Include="HediffCompProperties\HediffCompProperties_WipeBackstory.cs" />
-    <Compile Include="HediffComps\HediffComp_HealBrainWounds.cs" />
-    <Compile Include="HediffComps\HediffComp_MindwipeOnSeverity.cs" />
-    <Compile Include="HediffComps\HediffComp_OnNeuralBoosting.cs" />
-    <Compile Include="HediffComps\HediffComp_WipeBackstory.cs" />
-    <Compile Include="Hediffs\Hediff_Chipped.cs" />
-    <Compile Include="Hediffs\Hediff_Hemothorax.cs" />
-    <Compile Include="Hediffs\Hediff_InternalBleeding.cs" />
-    <Compile Include="IncidentWorkers\IncidentWorker_SoundCannonDrop.cs" />
-    <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_HealBrainWounds.cs" />
-    <Compile Include="JobDrivers\JobDriver_Selfharm.cs" />
-    <Compile Include="JobDrivers\JobDriver_SelfharmEye.cs" />
-    <Compile Include="JobDrivers\JobDriver_SelfharmSlashOnce.cs" />
-    <Compile Include="JobDrivers\JobDriver_SelfharmSlashTerminal.cs" />
-    <Compile Include="JobDrivers\JobDriver_VomitBlood.cs" />
-    <Compile Include="JobGivers\JobGiver_SeekingMindwipe.cs" />
-    <Compile Include="JobGivers\JobGiver_SelfharmEvent.cs" />
-    <Compile Include="Genes\Gene_LastStand.cs" />
-    <Compile Include="HediffCompProperties\HediffCompProperties_RemoveTraits.cs" />
-    <Compile Include="HediffCompProperties\HediffCompProperties_RemoveHediffs.cs" />
-    <Compile Include="HediffCompProperties\HediffCompProperties_SetSkills.cs" />
-    <Compile Include="HediffComps\HediffComp_RemoveTraits.cs" />
-    <Compile Include="HediffComps\HediffComp_RemoveHediffs.cs" />
-    <Compile Include="HediffComps\HediffComp_SetSkills.cs" />
-    <Compile Include="MentalBreakWorkers\MentalBreakWorker_SeekingMindwipe.cs" />
-    <Compile Include="MentalBreakWorkers\MentalBreakWorker_SelfharmEvent.cs" />
-    <Compile Include="MentalStates\MentalState_SeekingMindwipe.cs" />
-    <Compile Include="MentalStates\MentalState_SelfharmEvent.cs" />
-    <Compile Include="MentalStateWorkers\MentalStateWorker_SeekingMindwipe.cs" />
-    <Compile Include="Patches\Patch_AdministerIngestible.cs" />
-    <Compile Include="Patches\Patch_Corpse.cs" />
-    <Compile Include="Patches\Patch_Medical.cs" />
-    <Compile Include="Patches\Patch_Faction.cs" />
-    <Compile Include="Patches\Patch_UIRootEntry.cs" />
-    <Compile Include="PlaceWorkers\PlaceWorker_ShowTurretRadius_ArcShock.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScenParts\ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs_Ext.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Mindwiped.cs" />
-    <Compile Include="Utilities\BrainHealingUtility.cs" />
-    <Compile Include="Utilities\SawianUtilty.cs" />
-    <Compile Include="Utilities\VomitBloodUtility.cs" />
-    <Compile Include="Verbs\Verb_ArcShockwave.cs" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

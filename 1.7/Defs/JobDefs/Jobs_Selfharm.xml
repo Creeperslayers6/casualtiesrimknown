@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>CR_SelfharmSlashEye</defName>
+		<driverClass>CasualtiesRimknown.JobDrivers.JobDriver_SelfharmEye</driverClass>
+		<playerInterruptible>false</playerInterruptible>
+		<casualInterruptible>false</casualInterruptible>
+		<reportString>slashing eye.</reportString>
+		<suspendable>false</suspendable>
+	</JobDef>
+
+	<JobDef>
+		<defName>CR_SelfharmSlashOnce</defName>
+		<driverClass>CasualtiesRimknown.JobDrivers.JobDriver_SelfharmSlashOnce</driverClass>
+		<playerInterruptible>false</playerInterruptible>
+		<casualInterruptible>false</casualInterruptible>
+		<reportString>slashing body.</reportString>
+		<suspendable>false</suspendable>
+	</JobDef>
+
+	<JobDef>
+		<defName>CR_SelfharmSlashTerminal</defName>
+		<driverClass>CasualtiesRimknown.JobDrivers.JobDriver_SelfharmSlashTerminal</driverClass>
+		<playerInterruptible>false</playerInterruptible>
+		<casualInterruptible>false</casualInterruptible>
+		<reportString>slashing body (terminal).</reportString>
+		<suspendable>false</suspendable>
+	</JobDef>
+</Defs>

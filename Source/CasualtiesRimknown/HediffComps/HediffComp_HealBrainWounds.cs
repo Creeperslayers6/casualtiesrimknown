@@ -1,4 +1,5 @@
-﻿using CasualtiesRimknown.Utilities;
+﻿using CasualtiesRimknown.HediffCompProperties;
+using CasualtiesRimknown.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

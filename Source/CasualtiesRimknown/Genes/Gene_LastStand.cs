@@ -8,7 +8,7 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace CasualtiesRimknown
+namespace CasualtiesRimknown.Genes
 {
     public class Gene_LastStand : Gene
     {

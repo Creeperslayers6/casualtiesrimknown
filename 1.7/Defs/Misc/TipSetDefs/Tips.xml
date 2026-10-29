@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TipSetDef>
+		<defName>CasualtiesRimknownTips</defName>
+		<tips>
+			<!-- ===== The Company™ ====== -->
+			<li TKey="CR_CorporateXenotypePolicy">The Company™ mission on this Rimworld is to exterminate any and all trace of sawians. Colonies found harboring them will be eliminated.</li>
+			<li TKey="CR_LossPreventionPolicy">The Company™ has no need for sawians who are incapable of completing their mission. Stand back from any downed soldiers just in case.</li>
+			<li TKey="CR_NeuralChipEMP">The Uni-health Brain Chip is susceptible to electromagnetic interference. Using EMP Weapons might give doctors enough time to remove and destroy the chip before it can be remotely detonated.</li>
+			<li TKey="CR_UnchippedSoldiers">Corporate policy requires all sawians be chipped prior to being deployed. Despite this some unchipped saws manage to slip through the cracks.</li>
+
+			<!-- ===== Medicine ====== -->
+			<li TKey="CR_RapidNeuronRegenerationSicknessRisk">Doses of Braingrow or Neural Booster should be spaced out by around 1.5 days or else the pawn's mind could be lost.</li>
+			<li TKey="CR_Mindwipe">Mindwipe is a powerful medication which can be used to completely erase the mind of a colonist. However, the negatives typically outweigh the benefits outside of emergencies</li>
+			<li TKey="CR_SeekingMindwipe">Pawns in complete mental distress might try to resolve the problem themselves by using Mindwipe. Try to keep their mood above the extreme risk threshold, or keep the Mindwipe further away.</li>
+			<li TKey="CR_NeuralBooster">Neural Booster is a concoction devised by those from the Grey Planet. While each dose does increase movement speed, the side effects of additional doses are catastrophic.</li>
+
+			<!-- ====== Sawians ===== -->
+			<li TKey="CR_LastStandPrerequisite">A being demands that all sawians live miserable lives, even reviving them once should they manage to die happy. The chances of them reviving depends on how happy they were beforehand.</li>
+			<li TKey="CR_LastStandMindwipe">Mindwiped sawians are incapable of utilizing Last Stand.</li>
+		</tips>
+	</TipSetDef>
+</Defs>
