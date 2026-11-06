@@ -2,7 +2,7 @@
 <Patch>
 	<!-- Last Stand Gene Injection -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/XenotypeDef[defName="Milky_Xenotype"]/genes</xpath>
+		<xpath>Defs/XenotypeDef[defName="GX_Milky_Xenotype"]/genes</xpath>
 		<value>
 			<li>CR_LastStand</li>
 		</value>
@@ -10,7 +10,7 @@
 
 	<!-- Lore Accurate Milky Name Injection -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/XenotypeDef[defName="Milky_Xenotype"]</xpath>
+		<xpath>Defs/XenotypeDef[defName="GX_Milky_Xenotype"]</xpath>
 		<value>
 			<nameMaker>CR_NamerPersonMilky</nameMaker>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
