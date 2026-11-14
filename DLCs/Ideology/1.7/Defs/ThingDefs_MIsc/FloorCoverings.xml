@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingFloorCoveringMediumBase">
+		<defName>CR_CorpoloyaltyPanel_Medium</defName>
+		<label>the company™ panel (medium)</label>
+		<description>A metal panel print of The Company™ logo for decorating a floor.</description>
+		<dominantStyleCategory>CR_Corpoloyalty</dominantStyleCategory>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>CasualtiesRimknown/Things/Building/FloorCoverings/PanelCorpoloyaltyMedium</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingFloorCoveringBroadBase">
+		<defName>CR_CorpoloyaltyPanel_Broad</defName>
+		<label>the company™ panel (broad)</label>
+		<description>A metal panel print of The Company™ logo for decorating a floor.</description>
+		<dominantStyleCategory>CR_Corpoloyalty</dominantStyleCategory>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>CasualtiesRimknown/Things/Building/FloorCoverings/PanelCorpoloyaltyBroad</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<costList>
+			<Steel>150</Steel>
+		</costList>
+	</ThingDef>
+</Defs>

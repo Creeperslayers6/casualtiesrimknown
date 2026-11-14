@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Scenario: CR_ExtractionPodInsertion -->
+	<!-- REMINDER: THIS PATCH ADDS AMMO FOR DEFAULT CRASHLANDED GUNS!!! UPDATE IF C: U GUNS ARE ADDED!!!! -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ScenarioDef[defName="CR_ExtractionPodInsertion"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Ammo_303British_FMJ</thingDef>
+				<count>100</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Ammo_44Magnum_FMJ</thingDef>
+				<count>60</count>
+			</li>
+		</value>
+	</Operation>
+</Patch>
