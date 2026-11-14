@@ -13,6 +13,7 @@ namespace CasualtiesRimknown.DefOfs
     {
         // Rimworld HediffDef
         public static HediffDef Scratch;
+        public static HediffDef TraumaSavant;
 
         // Casualties: Rimknown HediffDef
         public static HediffDef CR_MuscleStrain;

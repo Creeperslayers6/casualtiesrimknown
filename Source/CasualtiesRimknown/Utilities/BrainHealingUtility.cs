@@ -18,6 +18,10 @@ namespace CasualtiesRimknown.Utilities
                 {
                     result.Severity -= severityReduction;
                 }
+                else if(pawn.health.hediffSet.TryGetHediff(DefOfs.HediffDefOf.TraumaSavant, out var traumaSavant))
+                {
+                    HealthUtility.Cure(traumaSavant);
+                }
             }
         }
     }
