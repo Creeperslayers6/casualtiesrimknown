@@ -39,6 +39,67 @@ namespace CasualtiesRimknown.Utilities
             {
                 return true;
             }
+            // Gunsaw Xenotypes
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Expie_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Orange_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Milky_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Leapy_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Chompy_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Roza_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Voyager_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Baron_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Chik_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Crystal_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Velvet_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Dune_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Shelly_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_Icke_Xenotype)
+            {
+                return true;
+            }
+            if (pawn.genes?.Xenotype == DefOfs.XenotypeDefOf.GX_G4A_Awakened_Xenotype)
+            {
+                return true;
+            }
             return false;
         }
     }

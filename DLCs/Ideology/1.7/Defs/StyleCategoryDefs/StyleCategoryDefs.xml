@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StyleCategoryDef>
+		<defName>CR_Corpoloyalty</defName>
+		<label>Company™ Standard</label>
+		<iconPath>CasualtiesRimknown/UI/StyleCategories/Corpoloyalty</iconPath>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		<addDesignators>
+			<li>CR_CorpoloyaltyPanel_Medium</li>
+			<li>CR_CorpoloyaltyPanel_Broad</li>
+		</addDesignators>
+	</StyleCategoryDef>
+</Defs>

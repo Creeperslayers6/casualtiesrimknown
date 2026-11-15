@@ -8,8 +8,8 @@
     <AssemblyTitle>Casualties Rimknown</AssemblyTitle>
     <Product>CasualtiesRimknown</Product>
     <Copyright>Copyright © 2026</Copyright>
-    <AssemblyVersion>1.3.0.0</AssemblyVersion>
-    <FileVersion>1.3.0.0</FileVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <FileVersion>1.3.1.0</FileVersion>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Version>$(VersionPrefix)</Version>
   </PropertyGroup>
