@@ -14,25 +14,14 @@ namespace CasualtiesRimknown.Utilities
             BodyPartRecord pawnBrain = pawn.health.hediffSet.GetBrain();
             if (pawnBrain != null)
             {
-                Hediff randomBrainInjury = pawn.health.hediffSet.hediffs.Where((Hediff hediff) => hediff.Part == pawnBrain && hediff.IsPermanent()).RandomElement();
-                if (randomBrainInjury != null)
+                if (pawn.health.hediffSet.hediffs.Where((Hediff hediff) => hediff.Part == pawnBrain && hediff.IsPermanent()).TryRandomElement(out var result))
                 {
-                    Log.Message("Run1");
-                    randomBrainInjury.Severity -= severityReduction;
+                    result.Severity -= severityReduction;
                 }
-                if (pawn.health.hediffSet.TryGetHediff(DefOfs.HediffDefOf.TraumaSavant, out var traumaSavant))
+                else if (pawn.health.hediffSet.TryGetHediff(DefOfs.HediffDefOf.TraumaSavant, out var traumaSavant))
                 {
-                    Log.Message("Run2");
                     HealthUtility.Cure(traumaSavant);
                 }
-                //if (pawn.health.hediffSet.hediffs.Where((Hediff hediff) => hediff.Part == pawnBrain && hediff.IsPermanent()).TryRandomElement(out var result))
-                //{
-                //    result.Severity -= severityReduction;
-                //}
-                //else if(pawn.health.hediffSet.TryGetHediff(DefOfs.HediffDefOf.TraumaSavant, out var traumaSavant))
-                //{
-                //    HealthUtility.Cure(traumaSavant);
-                //}
             }
         }
     }
